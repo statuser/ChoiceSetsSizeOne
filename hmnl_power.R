@@ -67,25 +67,25 @@ hmnl.random.design <- function(nBlocks, nQuestions, nAlternatives, attributes, n
 }
 
 
-codeDesign <- function(design, noneOption = TRUE) {
+codeDesign <- function(design, nAlternatives, noneOption = TRUE) {
   #Code the design
   
   design <- model.matrix(~., design)
   design <- design[,-1, drop = FALSE]
   
-  # if(noneOption) {
-  #   design <- cbind(design, 0)
-  #   noneOptions <- data.frame(matrix(0, nrow = nBlocks * nQuestions, ncol = nAttributes + 4))
-  #   noneOptions[1, ] <- rep(1:nBlocks, each = nQuestions)
-  #   noneOptions[2, ] <- rep(1:nQuestions, times = nBlocks)
-  #   noneOptions[3, ] <- rep(nAlternatives + 1, times = nBlocks * nQuestions)
-  #   noneOptions[nAttributes + 4] <- rep(1, times = nBlocks * nQuestions)
-  #   names(noneOptions) <- names(design)
-  #   
-  #   design <- rbind(design, noneOptions)
-  #   design <- design[order(design[1:3,]),]
-  #   names(design)[nAttributes + 4] <- "None"
-  # }
+  
+  if(noneOption) {
+   nQuestions <- nrow(design) %/% nAlternatives
+   design <- cbind(design, 0)
+   noneOptions <- matrix(0, nrow = nQuestions, ncol = ncol(design))
+   noneOptions[, ncol(noneOptions)] <- 1
+   
+   questions <- c(rep(1:nQuestions, each = nAlternatives), 1:nQuestions)
+   alternatives <- c(rep(1:nAlternatives, times = nQuestions), rep(nAlternatives+1, times = nQuestions))
+   
+   design <- rbind(design, noneOptions)
+   design <- design[order(questions, alternatives),]
+  }
   
   
   return(design)
@@ -135,9 +135,9 @@ sim.hmnl.data <- function(nResp, priorMeans, design) {
     respBeta <- rnorm(length(priorMeans), mean = priorMeans, 0.5)
     for(question in 1:nQuestions) {
       des <- design[design[, 1] == data[resp, 2] & design[,2] == question, 4:ncol(design), drop = FALSE]
-      des <- codeDesign(des)
+      des <- codeDesign(des, nAlternatives = nAlternatives)
       
-      data[resp, question + 2] <- sample(x=nAlternatives, size=1, prob=exp(des%*%respBeta))
+      data[resp, question + 2] <- sample(x=nAlternatives + 1, size=1, prob=exp(des%*%respBeta))
     }
   }
   
@@ -170,7 +170,7 @@ format.bayesm <- function(data, design) {
   bayesmData <- list()
   for(resp in 1:nResp) {
     des <- design[design[, 1] == data[resp, 2], 4:ncol(design), drop = FALSE]
-    des <- codeDesign(des)
+    des <- codeDesign(des, nAlternatives = length(levels(as.factor(design[,3]))))
     
     bayesmData[[resp]] <- list(y = unlist(data[resp, -c(1,2)]), X = des)
   }
