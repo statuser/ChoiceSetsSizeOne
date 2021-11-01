@@ -272,7 +272,7 @@ calculateHDIWidth <- function(meanBetas, design, scenario, nResp = 300, nSims = 
     # Start Loop
     Y <- sim.hmnl.data(nResp, meanBetas, design)
     lgtdata <- format.bayesm(Y, design)
-    capture.output({testOut <- bayesm::rhierMnlRwMixture(Data = list(lgtdata = lgtdata, p = 2), Prior = list(ncomp = 1), Mcmc = list(R = 10000))})
+    capture.output({testOut <- bayesm::rhierMnlRwMixture(Data = list(lgtdata = lgtdata, p = max(design$Alternative)+1), Prior = list(ncomp = 1), Mcmc = list(R = 10000))})
     savedDraws <- 5001:10000
     results <- simulate.bayesm(testOut$betadraw[,,savedDraws, drop = FALSE], scenario)
     inter <- HDInterval::hdi(results, credMass = intervalWidth)
