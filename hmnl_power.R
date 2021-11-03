@@ -132,7 +132,7 @@ sim.hmnl.data <- function(nResp, priorMeans, design) {
     data[resp, 1] <- resp
     data[resp, 2] <- as.numeric(sample(levels(as.factor(design[,1])), 1, replace = FALSE))
     
-    respBeta <- rnorm(length(priorMeans), mean = priorMeans, 0.5)
+    respBeta <- rnorm(length(priorMeans), mean = priorMeans, 1)
     for(question in 1:nQuestions) {
       des <- design[design[, 1] == data[resp, 2] & design[,2] == question, 4:ncol(design), drop = FALSE]
       des <- codeDesign(des, nAlternatives = nAlternatives)

@@ -13,7 +13,7 @@ set.seed(10212021)
 # Pets - Yes, No
 
 # Total Parameters = 15 + 9(or 1 is continuous) + 6 + 5*2 - 8 + 1 = 25
-meanBetas <- c(runif(14, -2, 2), -1, runif(5, -1.5, 1.5), runif(5, -1, 1), -.5)
+meanBetas <- c(runif(14, -2, 2), -.40, runif(5, -1.5, 1.5), runif(5, -1, 1), -.5)
 
 # Test baseline scenario
 scenario <- rbind(c(2, 1.59, 3, 1, 1, 1, 2, 1),
@@ -40,7 +40,7 @@ numConcepts <- 1:3
 numTasks <- seq(6, 30, by=3)
 averageWidth <- array(0, dim = c(length(numConcepts), length(numTasks), nrow(scenario)))
 
-nSims <- 1
+nSims <- 100
 nResp <- 500
 
 for(i in 1:length(numConcepts)) {
@@ -63,4 +63,10 @@ for(i in 1:length(numConcepts)) {
     averageWidth[i, j, ] <- colMeans(result)
   }
 }
+
+# Create Plots
+plot(c(1,9), c(min(averageWidth[,,1]), max(averageWidth[,,1])), type="n")
+lines(averageWidth[1,,1], type="l")
+lines(averageWidth[2,,1], type="l", col="red")
+lines(averageWidth[3,,1], type="l", col="blue")
 
