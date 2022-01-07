@@ -11,6 +11,6 @@ some small changes that need to be made if you want to run the progrma in headle
 
 This would be:
 
-[] Disable the Menu by hardcoding the scenario choice or passing it in the command line
-[] Save the graph and data to a file rather than placing it in the environment
+- [ ] Disable the Menu by hardcoding the scenario choice or passing it in the command line
+- [ ] Save the graph and data to a file rather than placing it in the environment
 
