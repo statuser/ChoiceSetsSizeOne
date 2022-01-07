@@ -53,7 +53,7 @@ hmnl.random.design <- function(nBlocks, nQuestions, nAlternatives, attributes, n
   design[,3] <- rep(1:nAlternatives, times = nBlocks * nQuestions)
   for(att in 1:nAttributes) {
     if(tolower(attributes[[att]]$type) == "continuous") {
-      design[,att+3] <- runif(n=nrow(design), min = attributes[[att]]$values[1], max = attributes[[att]]$values[2])
+      design[,att+3] <- as.numeric(sample(attributes[[att]]$values, nrow(design), replace = TRUE))
     } else if(tolower(attributes[[att]]$type) == "factor") {
       design[,att+3] <- as.factor(sample(attributes[[att]]$values, nrow(design), replace = TRUE))
     } else {
