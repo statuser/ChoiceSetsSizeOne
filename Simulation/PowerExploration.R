@@ -18,7 +18,8 @@ TESTING = FALSE
 # Load the simulation utilities
 source("hmnl_power.R")
 
-set.seed(10212021)
+start_time <- Sys.time()
+set.seed(start_time)
 
 scenarioToRun <- menu(c("Scenario 1 - Small", "Scenario 2 - Many Attributes", "Scenario 3 - Many Levels"), title="Which scenario would you like to run?")
 switch( scenarioToRun + 1,
@@ -52,12 +53,17 @@ for(i in 1:length(numConcepts)) {
   }
 }
 
-simScenarioToPlot = 1
-plottingColors = c("red", "green", "blue")
+
+jpeg(paste("Power Simulation Scenario",scenarioToRun, "-", start_time, ".jpeg"))
+simScenarioToPlot <- 1
+plottingColors <- c("red", "green", "blue")
 plot(y = c(0, max(averageWidth[,,simScenarioToPlot])), x = c(1, length(numTasks)), xaxt="n", type="n", main=paste("Width of HPD Intervals for Scenario", scenarioToRun), xlab="Number of coice sets", ylab="Width of HDPI")
 for(i in 1:length(numConcepts)) {
   lines(averageWidth[i,,simScenarioToPlot], col=plottingColors[i], lwd=3)  
 }
 axis(side=1, at=1:length(numTasks), labels=numTasks)
+dev.off()
+
+save(averageWidth, start_time, file = paste("Power Simulation Scenario",scenarioToRun, "-", start_time, ".rdata"))
 
 
