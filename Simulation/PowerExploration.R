@@ -8,7 +8,7 @@
 # Install packages if they don't currently exist
 usedPackages <- c("here", "doParallel", "foreach", "bayesm", "HDInterval")
 for(package in usedPackages) {
-  if(find.package(package) == "") {
+  if(find.package(package, quiet = TRUE) == "") {
     install.packages(package)
   }
 }
@@ -16,7 +16,7 @@ for(package in usedPackages) {
 TESTING = FALSE
 
 # Load the simulation utilities
-source(here::here("Simulation", "hmnl_power.R"))
+source("hmnl_power.R")
 
 start_time <- Sys.time()
 set.seed(start_time)
@@ -25,9 +25,9 @@ scenarioToRun <- menu(c("Scenario 1 - Small", "Scenario 2 - Many Attributes", "S
 
 switch( scenarioToRun + 1,
        stop("program aborted\n"),
-       source(here::here("Simulation", "Scenario1Setup.R")),
-       source(here::here("Simulation", "Scenario2Setup.R")),
-       source(here::here("Simulation", "Scenario3Setup.R")))
+       source("Scenario1Setup.R"),
+       source("Scenario2Setup.R"),
+       source("Scenario3Setup.R"))
 
 if(TESTING) {
   # Check that the overall shares are reasonable
