@@ -58,11 +58,19 @@ for(i in 1:length(numConcepts)) {
 jpeg(paste("Power Simulation Scenario",scenarioToRun, "-", start_time, ".jpeg"))
 simScenarioToPlot <- 1
 plottingColors <- c("red", "green", "blue")
-plot(y = c(0, max(averageWidth[,,simScenarioToPlot])), x = c(1, length(numTasks)), xaxt="n", type="n", main=paste("Width of HPD Intervals for Scenario", scenarioToRun), xlab="Number of coice sets", ylab="Width of HDPI")
+plot(y = c(0, max(averageWidth[,,simScenarioToPlot])), x = c(1, length(numTasks)), xaxt="n", type="n", main=paste("Width of HPD Intervals for Scenario", scenarioToRun), xlab="Number of choice sets", ylab="Width of HDPI")
 for(i in 1:length(numConcepts)) {
   lines(averageWidth[i,,simScenarioToPlot], col=plottingColors[i], lwd=3)  
 }
 axis(side=1, at=1:length(numTasks), labels=numTasks)
+legend("topright",
+       legend = c("Single Concept", "Two Concepts", "Three Concepts"),
+       col=plottingColors,
+       pch=15,
+       bty = "n",
+       text.col = "black",
+       cex = 1.2,
+       inset = c(0.05, 0.05))
 dev.off()
 
 save(averageWidth, start_time, file = paste("Power Simulation Scenario",scenarioToRun, "-", start_time, ".rdata"))
