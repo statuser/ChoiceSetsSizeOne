@@ -8,7 +8,7 @@
 # Install packages if they don't currently exist
 usedPackages <- c("here", "doParallel", "foreach", "bayesm", "HDInterval")
 for(package in usedPackages) {
-  if(find.package(package, quiet = TRUE) == "") {
+  if(find.package(package, quiet = TRUE) == character(0)) {
     install.packages(package)
   }
 }

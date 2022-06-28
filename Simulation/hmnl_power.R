@@ -13,6 +13,8 @@
 # John R. Howell, john_howell@byu.edu
 # 22 August 2019
 # Some of this code is borrowed from https://github.com/ksvanhorn/ART-Forum-2017-Stan-Tutorial
+# 2022-6-28
+# Updated to run basic MSE
 
 
 # Function: hmnl.random.design
@@ -103,17 +105,15 @@ codeDesign <- function(design, nAlternatives, noneOption = TRUE) {
 
 
 # Function: sim.hmnl.data
-# Simulate Data for a CBC conjoint study based on a hmnl model.  The function uses a set of priors
+# Simulate Data for a CBC conjoint study based on a hmnl model.  The function uses a set of respondent Betas
 # and a design object to generate a set of choices for each respondent.  Each respondent is randomly
-# assigned a block and a random vector of part-worth utilities.  The part-worth utilities are 
-# drawn from a multivariate normal distribution with a mean of the supplied priors and an identity
-# variance-covaraiance matrix.
+# assigned a block.
 #
-# The attributes that are factors should be specified as such prior to simulatring data.
+# The attributes that are factors should be specified as such prior to simulating data.
 #
 # Output: a nRespondent by nQuestion + 2 data.frame
 # 
-# Column 1: Integer Respondent Number
+# Column 1: Matrix of respondent parameters (nResp rows X nParam Columns )
 # Column 2: The block number of the design used
 # Column 3-N: The choice for the specific question
 #
@@ -121,23 +121,27 @@ codeDesign <- function(design, nAlternatives, noneOption = TRUE) {
 # nResp: (Integer) The number of respondents to generate
 # priorMeans: (Double Array) The prior means for the generation.  There should be total number of levels - the number of attributes
 # design: (data.frame) The design file formatted according the format described by hmnl.random.design.  (Labels don't matter)
+#
+# Change Log:
+# 2022-6-28 - Break out simulating respondent parameters from function so that respondent parameters can be saved separately 
+# and reused with multiple models
 
-
-
-sim.hmnl.data <- function(nResp, priorMeans, design) {
+sim.hmnl.data <- function(respBetas, priorMeans, design) {
+  nResp <- nrow(respBetas)
   nQuestions <- length(levels(as.factor(design[,2])))
   nAlternatives <- length(levels(as.factor(design[,3])))
+  
   data <- data.frame(matrix(-1, nrow = nResp, ncol = nQuestions + 2))
   for(resp in 1:nResp) {
     data[resp, 1] <- resp
     data[resp, 2] <- as.numeric(sample(levels(as.factor(design[,1])), 1, replace = FALSE))
     
-    respBeta <- rnorm(length(priorMeans), mean = priorMeans, 1)
+    
     for(question in 1:nQuestions) {
       des <- design[design[, 1] == data[resp, 2] & design[,2] == question, 4:ncol(design), drop = FALSE]
       des <- codeDesign(des, nAlternatives = nAlternatives)
       
-      data[resp, question + 2] <- sample(x=nAlternatives + 1, size=1, prob=exp(des%*%respBeta))
+      data[resp, question + 2] <- sample(x=nAlternatives + 1, size=1, prob=exp(des%*%respBetas[resp,]))
     }
   }
   
@@ -260,6 +264,12 @@ simulate.bayesm <- function(draws, scenario) {
 
 calculateHDIWidth <- function(meanBetas, design, scenario, nResp = 300, nSims = 10, intervalWidth = 0.95) {
   
+  #Generate Respondent Betas
+  respBetas <- matrix(0, nResp, length(meanBetas))
+  for(resp in 1:nResp) {
+    respBetas[resp, ] <- rnorm(length(meanBetas), mean = meanBetas, 1)  
+  }
+  
   hdiWidth <- matrix(0, nrow = nSims, ncol = nrow(scenario))
   cores <- parallel::detectCores()
   cl <- parallel::makeCluster(cores[1] - 1)
@@ -270,7 +280,7 @@ calculateHDIWidth <- function(meanBetas, design, scenario, nResp = 300, nSims = 
   finalHdiWidth <- foreach(simNumber = 1:nSims, .combine='rbind') %dopar% {
     
     # Start Loop
-    Y <- sim.hmnl.data(nResp, meanBetas, design)
+    Y <- sim.hmnl.data(respBetas, meanBetas, design)
     lgtdata <- format.bayesm(Y, design)
     capture.output({testOut <- bayesm::rhierMnlRwMixture(Data = list(lgtdata = lgtdata, p = max(design$Alternative)+1), Prior = list(ncomp = 1), Mcmc = list(R = 10000))})
     savedDraws <- 5001:10000
@@ -289,7 +299,7 @@ calculateHDIWidth <- function(meanBetas, design, scenario, nResp = 300, nSims = 
 
 
 # This is the test procedure.  We really need to run this a number of times to determine the posterior highest density interval width
-#Test code for hmnl.dandom design
+#Test code for hmnl.random design
 # set.seed(09062019)
 # nSims <- 100
 # nResp <- 300
