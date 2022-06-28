@@ -120,5 +120,5 @@ for(iter in seq_along(numTasks)) {
 }
  parallel::stopCluster(cl)
 
- plot(colMeans(result))
+plot(numTasks, colMeans(result))
  
