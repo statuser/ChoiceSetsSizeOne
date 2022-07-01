@@ -36,7 +36,7 @@ switch( scenarioToRun + 1,
 
 
 cat(exp(scenario%*%meanBetas)/sum(exp(scenario%*%meanBetas)))
-savedDraws <- 5001:10000
+savedDraws <- 15001:20000
 
 # Generate Respondent Betas
 nResp <- 500
@@ -46,32 +46,46 @@ for(resp in 1:nResp) {
 }
 
 
+# Run Simulations in Parallel
+numSims <- 40
+cores <- parallel::detectCores()
+cl <- parallel::makeCluster(cores[1] - 1)
+parallel::clusterExport(cl, c("hmnl.random.design", "sim.hmnl.data", "format.bayesm"))
+doParallel::registerDoParallel(cl)
+require(foreach)
 
 # Run Baseline
 numConcepts <- 3
-numTasks <- 8
+tasks <- 8
 
+baseLineResult <- foreach(sim = 1:numSims, .combine='rbind') %dopar% {
+  
+  # Start Loop
+  
+  # Create Design
+  design <- hmnl.random.design(nBlocks=nResp, 
+                               nQuestions=tasks, 
+                               nAlternatives=numConcepts, 
+                               attributes=attributes, 
+                               noneOption = TRUE)
+  # Simulate Data
+  data <- sim.hmnl.data(respBetas, meanBetas, design)
+  
+  
+  # Run Model
+  lgtdata <- format.bayesm(data, design)
+  capture.output({testOut <- bayesm::rhierMnlRwMixture(Data = list(lgtdata = lgtdata, 
+                                                                   p = max(design$Alternative)+1), 
+                                                       Prior = list(ncomp = 1), 
+                                                       Mcmc = list(R = tail(savedDraws, 1)))})
+  
+  # Summarize Results
+  hyperDraws <- apply(testOut$betadraw[,,savedDraws, drop = FALSE], c(2,3), mean)
+  mean((hyperDraws - meanBetas)^2)
+  
+}
+parallel::stopCluster(cl)
 
-# Create Design
-design <- hmnl.random.design(nBlocks=nResp, 
-                        nQuestions=numTasks, 
-                        nAlternatives=numConcepts, 
-                        attributes=attributes, 
-                        noneOption = TRUE)
-
-# Simulate Data
-data <- sim.hmnl.data(respBetas, meanBetas, design)
-
-# Run Model
-lgtdata <- format.bayesm(data, design)
-capture.output({testOut <- bayesm::rhierMnlRwMixture(Data = list(lgtdata = lgtdata, 
-                                                 p = max(design$Alternative)+1), 
-                                     Prior = list(ncomp = 1), 
-                                     Mcmc = list(R = tail(savedDraws, 1)))})
-
-# Summarize Results
-hyperDraws <- apply(testOut$betadraw[,,savedDraws, drop = FALSE], c(2,3), mean)
-baseLineResult <- mean((hyperDraws - meanBetas)^2)
 
 # Run Model Results
 numConcepts <- 1
@@ -79,7 +93,7 @@ numTasks <- 8:24
 modelResults <- double(length(numTasks))
 
 # Run Simulations in Parallel
-numSims <- 20
+numSims <- 40
 cores <- parallel::detectCores()
 cl <- parallel::makeCluster(cores[1] - 1)
 parallel::clusterExport(cl, c("hmnl.random.design", "sim.hmnl.data", "format.bayesm"))
@@ -110,7 +124,7 @@ for(iter in seq_along(numTasks)) {
                                                          Prior = list(ncomp = 1), 
                                                          Mcmc = list(R = tail(savedDraws, 1)))})
     
-    savedDraws <- 5001:10000
+
     # Summarize Results
     hyperDraws <- apply(testOut$betadraw[,,savedDraws, drop = FALSE], c(2,3), mean)
     mean((hyperDraws - meanBetas)^2)
@@ -121,4 +135,19 @@ for(iter in seq_along(numTasks)) {
  parallel::stopCluster(cl)
 
 plot(numTasks, colMeans(result))
- 
+abline(h = mean(baseLineResult) )
+save(baseLineResult, result, numTasks, start_time, file = paste("MSE Simulation Scenario",scenarioToRun, "-", start_time, ".rdata"))
+
+library(tidyverse)
+library(ggthemes)
+
+data.frame(numTasks, mse=colMeans(result))  %>%
+  ggplot(aes(y=mse, x=numTasks)) +
+  geom_point(size=2.5) +
+  labs(title = "Efficieny and Convergence of Choice Sets of Size One",
+       subtitle = "",
+       x = "Number of Tasks",
+       y = "Average MSE") +
+  theme_fivethirtyeight() + 
+  theme(axis.title = element_text())
+
