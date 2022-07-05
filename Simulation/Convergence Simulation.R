@@ -144,7 +144,8 @@ library(ggthemes)
 data.frame(numTasks, mse=colMeans(result))  %>%
   ggplot(aes(y=mse, x=numTasks)) +
   geom_point(size=2.5) +
-  labs(title = "Efficieny and Convergence of Choice Sets of Size One",
+  geom_hline(yintercept = mean(baseLineResult), size=1.5, color="navy") +
+  labs(title = "Efficiency and Convergence of Choice Sets of Size One",
        subtitle = "",
        x = "Number of Tasks",
        y = "Average MSE") +
