@@ -6,7 +6,7 @@
 ## 
 
 
-### Calculate Indivual average MSE
+### Calculate Individual average MSE
 
 # Created by: John Howell
 # Created on: 2022-06-22
@@ -82,6 +82,8 @@ baseLineResult <- foreach(sim = 1:numSims, .combine='rbind') %dopar% {
   # Summarize Results
   hyperDraws <- apply(testOut$betadraw[,,savedDraws, drop = FALSE], c(2,3), mean)
   mean((hyperDraws - meanBetas)^2)
+  rm(testOut)
+  rm(hyperDraws)
   
 }
 parallel::stopCluster(cl)
@@ -128,6 +130,8 @@ for(iter in seq_along(numTasks)) {
     # Summarize Results
     hyperDraws <- apply(testOut$betadraw[,,savedDraws, drop = FALSE], c(2,3), mean)
     mean((hyperDraws - meanBetas)^2)
+    rm(testOut)
+    rm(hyperDraws)
     
   }
   result[,iter] <- modelResults
