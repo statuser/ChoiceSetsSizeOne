@@ -49,7 +49,7 @@ for(resp in 1:nResp) {
 # Run Simulations in Parallel
 numSims <- 40
 cores <- parallel::detectCores()
-cl <- parallel::makeCluster(cores[1] - 1)
+cl <- parallel::makeCluster(2)
 parallel::clusterExport(cl, c("hmnl.random.design", "sim.hmnl.data", "format.bayesm"))
 doParallel::registerDoParallel(cl)
 require(foreach)
@@ -81,9 +81,9 @@ baseLineResult <- foreach(sim = 1:numSims, .combine='rbind') %dopar% {
   
   # Summarize Results
   hyperDraws <- apply(testOut$betadraw[,,savedDraws, drop = FALSE], c(2,3), mean)
-  mean((hyperDraws - meanBetas)^2)
   rm(testOut)
-  rm(hyperDraws)
+  mean((hyperDraws - meanBetas)^2)
+
   
 }
 parallel::stopCluster(cl)
@@ -97,7 +97,7 @@ modelResults <- double(length(numTasks))
 # Run Simulations in Parallel
 numSims <- 40
 cores <- parallel::detectCores()
-cl <- parallel::makeCluster(cores[1] - 1)
+cl <- parallel::makeCluster(2)
 parallel::clusterExport(cl, c("hmnl.random.design", "sim.hmnl.data", "format.bayesm"))
 doParallel::registerDoParallel(cl)
 require(foreach)
@@ -129,14 +129,14 @@ for(iter in seq_along(numTasks)) {
 
     # Summarize Results
     hyperDraws <- apply(testOut$betadraw[,,savedDraws, drop = FALSE], c(2,3), mean)
-    mean((hyperDraws - meanBetas)^2)
     rm(testOut)
-    rm(hyperDraws)
+    mean((hyperDraws - meanBetas)^2)
+    
     
   }
   result[,iter] <- modelResults
 }
- parallel::stopCluster(cl)
+parallel::stopCluster(cl)
 
 plot(numTasks, colMeans(result))
 abline(h = mean(baseLineResult) )
@@ -149,8 +149,8 @@ data.frame(numTasks, mse=colMeans(result))  %>%
   ggplot(aes(y=mse, x=numTasks)) +
   geom_point(size=2.5) +
   geom_hline(yintercept = mean(baseLineResult), size=1.5, color="navy") +
-  labs(title = "Efficiency and Convergence of Choice Sets of Size One",
-       subtitle = "",
+  labs(title = "Simulation Investigating Efficiency and Convergence",
+       subtitle = "Scenario 1 - Base Case",
        x = "Number of Tasks",
        y = "Average MSE") +
   theme_fivethirtyeight() + 
