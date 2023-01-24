@@ -150,9 +150,11 @@ data.frame(numTasks, mse=colMeans(result))  %>%
   geom_point(size=2.5) +
   geom_hline(yintercept = mean(baseLineResult), size=1.5, color="navy") +
   labs(title = "Simulation Investigating Efficiency and Convergence",
-       subtitle = "Scenario 1 - Base Case",
+       subtitle = "Scenario 3 - Many Levels",
        x = "Number of Tasks",
        y = "Average MSE") +
   theme_fivethirtyeight() + 
-  theme(axis.title = element_text())
+  theme(axis.title = element_text()) + 
+  coord_cartesian(ylim=c(0, 0.5))
+
 
