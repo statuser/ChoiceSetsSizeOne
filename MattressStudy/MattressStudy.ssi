@@ -1,0 +1,1934 @@
+__Lighthouse_Studio_Study_File__
+2
+9.14.2
+15
+0
+2
+4
+0
+2
+Q1List
+6
+3
+1
+Within the last year
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Between 2 and 3 years ago
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Between 3 and 5 years ago
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Between 5 and 10 years ago
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+More than 10 years ago
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+I wasn't the one that purchased the mattress
+
+False
+True
+1
+100
+False
+
+
+False
+
+1
+True
+False
+0
+2
+Q2List
+2
+3
+1
+Yes
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+No
+
+False
+True
+1
+100
+False
+
+
+False
+
+1
+True
+False
+0
+2
+Q3List
+4
+3
+1
+Within the next month
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Within the next 6 months
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Within the next year
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+In more than a year
+
+False
+True
+1
+100
+False
+
+
+False
+
+1
+True
+False
+0
+2
+Q4List
+7
+3
+1
+Online, direct from the manufacture
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Online, from a third party store (Amazon, Specialty Mattress retailer, etc.)
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+From a manufactores showroom
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+From a specialty mattress store
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+From a furniture store
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+From a department store (Macy's, Dillards, etc.)
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+From a general goods store (Costco, Walmart, etc.)
+
+False
+True
+1
+100
+False
+
+
+False
+
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+3
+0
+1
+1
+True
+False
+3
+1
+8
+CBC
+1
+False
+0
+0
+0
+True
+0
+-1
+5
+4
+1672925750
+4
+False
+1
+300
+False
+0
+249
+5
+9
+True
+1
+3
+
+
+1
+1
+1
+8
+1
+If these were your only options, which would you choose?
+3
+
+
+1
+1
+1
+8
+1
+([%CBCCurrentTask()%] of [%CBCTotalTasks()%])
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+
+
+
+1
+
+3
+
+
+1
+1
+1
+8
+1
+Best
+False
+
+
+
+1
+
+3
+
+
+1
+1
+1
+8
+1
+Worst
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+False
+False
+3
+
+
+1
+1
+1
+8
+1
+
+0
+1
+
+3
+
+
+1
+1
+1
+8
+1
+Select
+True
+
+
+
+
+False
+
+
+
+
+
+False
+
+
+
+
+1
+1
+100
+1
+
+1
+
+False
+False
+True
+1
+Total:
+1
+
+1
+1
+0
+1
+0
+1
+
+1
+1
+
+
+
+1
+3
+1
+2
+1
+NONE: I wouldn't choose any of these.
+3
+
+
+1
+1
+1
+8
+1
+Given what you know about the market, would you really buy the XXXXXXXXX you chose above?
+3
+
+
+1
+1
+1
+8
+1
+
+
+No
+Yes
+1
+True
+False
+2
+2
+2
+4
+1
+-2,-2,-2,-2,-2,-2,-2
+1
+-2,-2,-2,-2,-2,-2,-2
+1
+-2,-2,-2,-2,-2,-2,-2
+1
+-2,-2,-2,-2,-2,-2,-2
+2
+4
+1
+-2,-2,-2,-2,-2,-2,-2
+1
+-2,-2,-2,-2,-2,-2,-2
+1
+-2,-2,-2,-2,-2,-2,-2
+1
+-2,-2,-2,-2,-2,-2,-2
+2
+7
+3
+6
+{
+  "DisplayText": "Brand",
+  "FriendlyLabel": "",
+  "RankOrder": "None",
+  "LevelCount": "16"
+}
+2
+5
+{
+  "DisplayText": "casper",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "nectar",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "purple",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "sealy",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "serta",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "sleepnumber",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "tempurpedic",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "dreamcloud",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "saatva",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "helix",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "winkbed",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "layla",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "leesa",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "novafoam (Costco)",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "tuft & needle",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "ikea",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+3
+6
+{
+  "DisplayText": "Verified Buyer Reviews",
+  "FriendlyLabel": "",
+  "RankOrder": "None",
+  "LevelCount": "5"
+}
+2
+5
+{
+  "DisplayText": "3",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "3.5",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "4",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "4.5",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "5",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+3
+6
+{
+  "DisplayText": "Mattress Type",
+  "FriendlyLabel": "",
+  "RankOrder": "None",
+  "LevelCount": "5"
+}
+2
+5
+{
+  "DisplayText": "Memory Foam",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "Innerspring",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "Hybrid",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "Latex Foam",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "Hyper-elastic polymer",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+3
+6
+{
+  "DisplayText": "Firmness",
+  "FriendlyLabel": "",
+  "RankOrder": "None",
+  "LevelCount": "5"
+}
+2
+5
+{
+  "DisplayText": "Extra Firm",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "Firm",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "Medium",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "Soft",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "Extra Soft",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+3
+6
+{
+  "DisplayText": "Trial Period",
+  "FriendlyLabel": "",
+  "RankOrder": "None",
+  "LevelCount": "4"
+}
+2
+5
+{
+  "DisplayText": "30 Nights",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "90 Nights",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "180 Nights",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "365 Nights",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+3
+6
+{
+  "DisplayText": "Warranty",
+  "FriendlyLabel": "",
+  "RankOrder": "None",
+  "LevelCount": "4"
+}
+2
+5
+{
+  "DisplayText": "None",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "1 Year",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "5 Year",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "10 Year",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+3
+6
+{
+  "DisplayText": "Price Range (Queen)",
+  "FriendlyLabel": "",
+  "RankOrder": "None",
+  "LevelCount": "7"
+}
+2
+5
+{
+  "DisplayText": "$499",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "$749",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "$999",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "$1,249",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "$1,499",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "$1,749",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "$1,999",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+0
+1
+True
+False
+False
+0
+0
+True
+2
+0
+0
+1
+True
+False
+2
+0
+1
+0
+True
+True
+True
+True
+True
+1
+2
+False
+True
+300
+15
+1
+0
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+2
+1
+True
+False
+2
+0
+1
+1
+True
+False
+11
+#218EBC
+
+
+
+8
+
+
+
+
+
+
+
+8
+8
+False
+True
+False
+1
+
+False
+1
+
+
+3
+
+
+1
+1
+1
+8
+1
+
+1
+1
+Next
+True
+1
+Back
+1
+
+True
+1
+
+
+
+True
+1
+
+1
+
+1
+
+1
+
+
+
+True
+
+False
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+
+4
+2
+8
+1
+0
+1
+100
+
+
+
+
+
+1
+100
+False
+9
+3
+
+
+1
+1
+1
+8
+1
+
+1
+True
+False
+22
+18
+1
+An error has occurred on this page.  Please fix this error and try again.
+0
+1
+A response is required.  [%ErrText()%]
+1
+1
+The minimum number of checks is [%ErrMin()%].  [%ErrText()%]
+2
+1
+The maximum number of checks is [%ErrMax()%].  [%ErrText()%]
+3
+1
+The response must be between [%ErrMin()%] and [%ErrMax()%].  [%ErrText()%]
+4
+1
+The response must be a number.  [%ErrText()%]
+5
+1
+The response must contain at least [%ErrMin()%] characters.  [%ErrText()%]
+6
+1
+The response cannot contain more than [%ErrMax()%] characters.  [%ErrText()%]
+7
+1
+No additional interviewing permitted using this identifier.
+8
+1
+Your survey has already been submitted.  Thank you.
+9
+1
+Invalid login.  Access denied.
+10
+1
+Each response needs to be unique.  [%ErrText()%]
+11
+1
+Please rank [%ErrTotal()%] items.  [%ErrText()%]
+12
+1
+"None of the Above" and another option cannot both be selected.  [%ErrText()%]
+13
+1
+The responses need to sum to [%ErrTotal()%]. Their current sum is [%ErrCurSum()%].  [%ErrText()%]
+15
+1
+The same item cannot be selected twice.  [%ErrText()%]
+16
+1
+You've chosen some features that together are not feasible. The prohibited combinations are highlighted. Please reconsider.  [%ErrText()%]
+17
+1
+The price has changed on one or more of the items that you selected. Please review the price.
+19
+1
+The survey is currently being updated.  Please try again in a few seconds.
+20
+1
+Product cannot be chosen as both Best and Worst
+21
+1
+This survey requires a JavaScript-enabled browser. Please enable JavaScript for your browser and then enter the survey again.
+22
+1
+You are using a web browser that is not supported by this survey. Please update your web browser (or use a different one) and try again.
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+True
+True
+True
+Mountain Standard Time
+0
+
+10
+{
+  "EnableEmbedding": "False",
+  "EmbeddingDomains": "",
+  "EnableRemoteResources": "False",
+  "RemoteResourceDomains": "",
+  "EnableCustomHeaders": "False",
+  "CustomHeaders": "Cache-Control: no-cache, max-age=86400\nContent-Security-Policy: default-src 'self' 'unsafe-inline' data:; frame-ancestors 'self'\nSet-Cookie: HttpOnly; Secure;\nStrict-Transport-Security: max-age=31536000; includeSubDomains\nX-Content-Type-Options: nosniff\nX-Frame-Options: SAMEORIGIN\nX-XSS-Protection: 1; mode=block",
+  "UseHeadersInLocalhost": "True",
+  "EnableCookiesOverHttp": "False"
+}
+7
+9
+{
+  "MaxDatabaseFields": "100",
+  "RespNumStart": "",
+  "Users": "[{\"UserName\":\"admin\",\"Key\":\"64GsIXycBMlfvPfSFIUf8OSzq6UzNyDR7heE5aLvZCw=\",\"Salt\":\"o2V2hjGjRxvEUqrWparGxEnEK6rajIepsrxBSqI7R84=\",\"FullAccess\":true,\"Password\":\"X1cUEz5thu5w0x7641IMpWb07GXc5Hii0rs53Bwz0A0=\"}]",
+  "SelfHostRemoteStudyPath": "",
+  "SsiHostRemoteStudyPath": "",
+  "SelfHostSelectedAccount": "",
+  "SsiHostSelectedAccount": ""
+}
+5
+37
+6
+3
+False
+2
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+3
+Thanks of taking this survey.  We are interested in learnign about your preferences regarding purchasing a mattress. We will ask various questions that will help us understand different factors that influence you preferences for various mattresses. 
+
+Please click the next button to start the survey.
+1
+0
+1
+
+1
+
+Intro
+1
+True
+False
+
+19
+2
+PageBreak13
+1
+True
+False
+2
+3
+False
+False
+True
+1
+2
+1
+1
+0
+1
+0
+1
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+How recently did you purchase the mattress that yo currently sleep on?
+3
+
+
+1
+1
+1
+8
+1
+
+1
+0
+
+
+1
+
+1
+
+Q1List
+Q1
+
+1
+True
+False
+3
+
+
+1
+1
+1
+8
+1
+
+19
+2
+PageBreak14
+1
+True
+False
+2
+3
+False
+False
+True
+1
+2
+1
+1
+0
+1
+0
+1
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+Are you currently considering purchasing a new mattress?
+3
+
+
+1
+1
+1
+8
+1
+
+1
+0
+
+
+1
+
+1
+
+Q2List
+Q2
+
+1
+True
+False
+3
+
+
+1
+1
+1
+8
+1
+
+19
+2
+PageBreak15
+1
+True
+False
+2
+3
+False
+False
+True
+1
+2
+1
+1
+0
+1
+0
+1
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+When do you expect to purchase a new mattress?
+3
+
+
+1
+1
+1
+8
+1
+
+1
+0
+
+
+1
+
+1
+
+Q3List
+Q3
+
+1
+True
+False
+3
+
+
+1
+1
+1
+8
+1
+
+19
+2
+PageBreak16
+1
+True
+False
+2
+3
+False
+False
+True
+1
+2
+1
+1
+0
+1
+0
+1
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+Thinking the mattress you currently sleep on, where did you purchase the mattress?
+3
+
+
+1
+1
+1
+8
+1
+
+1
+1
+2
+False
+1
+0
+
+1
+Q1 = 6
+Q4
+
+
+
+
+1
+
+1
+
+Q4List
+Q4
+
+1
+True
+False
+3
+
+
+1
+1
+1
+8
+1
+
+19
+2
+PageBreak17
+1
+True
+False
+13
+2
+CBC_Random1
+1
+True
+False
+19
+2
+PageBreak
+1
+True
+False
+13
+2
+CBC_Random2
+1
+True
+False
+19
+2
+PageBreak1
+1
+True
+False
+13
+2
+CBC_Random3
+1
+True
+False
+19
+2
+PageBreak2
+1
+True
+False
+13
+2
+CBC_Random4
+1
+True
+False
+19
+2
+PageBreak3
+1
+True
+False
+13
+2
+CBC_Random5
+1
+True
+False
+19
+2
+PageBreak11
+1
+True
+False
+14
+2
+CBC_Fixed1
+1
+True
+False
+19
+2
+PageBreak4
+1
+True
+False
+13
+2
+CBC_Random6
+1
+True
+False
+19
+2
+PageBreak5
+1
+True
+False
+13
+2
+CBC_Random7
+1
+True
+False
+19
+2
+PageBreak6
+1
+True
+False
+13
+2
+CBC_Random8
+1
+True
+False
+19
+2
+PageBreak7
+1
+True
+False
+13
+2
+CBC_Random9
+1
+True
+False
+19
+2
+PageBreak12
+1
+True
+False
+14
+2
+CBC_Fixed2
+1
+True
+False
+19
+2
+PageBreak8
+1
+True
+False
+13
+2
+CBC_Random10
+1
+True
+False
+19
+2
+PageBreak9
+1
+True
+False
+13
+2
+CBC_Random11
+1
+True
+False
+19
+2
+PageBreak10
+1
+True
+False
+13
+2
+CBC_Random12
+1
+True
+False
+1
+0
+1
+0
+1
+0
+1
+0
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+3
+0
+1
+1
+True
+False
+False
+2
+0
+1
+1
+True
+False
+3
+True
+1
+
+
+False
+2
+0
+1
+True
+False
+2
+0
+1
+True
+False
+2
+0
+1
+True
+False
+2
+True
+
+2
+
+False
+False
+False
+
+False
+False
+False
+False
+1
+
+
+3
+0
+0
+2
+3
+1
+IncompleteFieldOnly
+Incomplete (test data removed)
+sys_RespStatus = 2 AND sys_DataSource < 4
+1
+DisqualifiedFieldOnly
+Disqualified (test data removed)
+sys_RespStatus = 4 AND sys_DataSource < 4
+1
+CompleteFieldOnly
+Qualified / Complete (test data removed)
+sys_RespStatus = 5 AND sys_DataSource < 4
+1
+
+1
+True
+1
+0
+0
+
+
+
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+0
+1
+0
+3
+70
+100
+0
+False
+False
+8
+False
+False
+
+1
+
+False
+False
+False
+SZ5ZZ7A71TS6T2J5TVP98M5TZWBXH9HS

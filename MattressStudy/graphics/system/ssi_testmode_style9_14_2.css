@@ -1,0 +1,305 @@
+.test_mode {
+    margin-top: 43px;
+}
+
+.test_mode body
+{
+    padding: 0px;
+}
+
+/*Top bar should be gone when in the iframe*/
+
+.test_mode.test_frame {
+    margin-top: 0;
+}
+
+.test_mode .show_names .test_question_label, 
+.test_mode .show_vars .test_var_label {
+	display: inline-block;
+}
+
+#test_mode_bar {
+    display: none;
+    padding: 8px 10px;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    top: 0px;
+    background-color: #FAFAFA;
+    -webkit-box-shadow: 0px 1px 13px -1px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: 0px 1px 13px -1px rgba(0, 0, 0, 0.54);
+    box-shadow: 0px 1px 13px -1px rgba(0, 0, 0, 0.54);
+}
+
+.test_mode #test_mode_bar #skip_col, .test_mode #test_mode_bar select, .test_mode #test_mode_bar select option, .test_mode #test_options_dialog, .test_mode #test_options_dialog label
+{
+    font: 16px Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-weight: normal;
+}
+
+#test_mode_bar select
+{
+	background-color: #ffffff;
+}
+
+.test_mode #test_options_dialog .checkbox
+{
+	width: 16px;
+	height: 16px;
+	margin: 10px 10px 0 5px;
+}
+
+.test_options_row
+{
+	display: flex;
+	align-items: center;
+}
+
+html.test_mode_shell
+{
+	background-color: #eaeaea;
+}
+
+.test_mode #test_mode_bar
+{
+    display: block;
+    z-index: 100;
+    box-sizing: border-box;
+    height: 43px;
+}
+
+.test_mode html,
+.test_mode body        
+{
+    height: 100%;
+}
+
+.test_mode #mobile_size,
+.test_mode #skip_question_name
+{
+    font-size: .9em;
+}
+
+#skip_question_name
+{
+    min-width: 100px;
+}
+        
+.test_mode #mobile_display
+{
+    display: none;
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 20px auto;
+    z-index: 1;
+}
+
+.test_mode .iframe_container        
+{
+    border: 1px solid #dedee0;
+    position:relative;
+    height: 100%;
+    background-color: #ffffff;
+	margin-bottom: 50px;
+}
+
+.test_mode .iframe_container iframe 
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%; 
+    height:100%;
+}
+     
+.test_mode .row
+{
+    overflow: hidden;
+}
+
+.test_mode .row .col
+{
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.test_mode #test_options_link
+{
+    float: right;
+    margin-top: 1px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background: url(sprite.png) no-repeat -100px -101px;
+    margin-right: 0;
+}
+
+.test_mode #test_options_dialog
+{
+	padding: 10px;
+    margin: 0 0 0 1px;
+    border: 1px solid #d2d4d5;
+    position: fixed;
+    z-index: 9999;
+    background-color: white;
+    text-align: left;
+    right: 6px;
+    display: none;
+    top: 45px;
+    float: right;
+	width: 325px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 20px #000;
+	font: 16px/28px Arial, Helvetica, sans-serif;
+}
+
+.test_mode #test_options_dialog::before 
+{
+    content: "";
+	width: 0;
+	height: 0;
+	border: 0.8em solid transparent;
+	position: absolute;
+	left: 91%;
+	top: -20px;
+	border-bottom: 10px solid #fff;
+}
+
+.test_mode #skip_col
+{
+    margin-left: 50px;
+	margin-top: 3px;
+}
+
+.test_mode #close_row
+{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.test_mode #mobile_view
+{
+    background: url('mobile_off.png') no-repeat center center;
+    width: 15px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.test_mode #mobile_view.selected
+{
+    background: url('mobile_on.png') no-repeat center center;
+}
+
+.test_mode #desktop_view
+{
+    background: url('desktop_off.png') no-repeat center center;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.test_mode #desktop_view.selected
+{
+    background: url('desktop_on.png') no-repeat center center;
+}
+
+.test_mode #rotate.portrait
+{
+    background: url('portrait.png') no-repeat center center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.test_mode #rotate.landscape
+{
+    background: url('landscape.png') no-repeat center center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.test_mode #desktop_view, 
+.test_mode #mobile_view, 
+.test_mode #rotate
+{
+    margin-top: 4px;
+}
+
+.test_mode .mobile_view_settings
+{
+    display: none;
+}
+
+.test_mode #size_display
+{
+    min-width: 85px;
+}
+
+.test_mode .respnum_content
+{
+    display: none;
+}
+
+.test_mode #respnum_box
+{
+    margin-left: 32px;
+}
+
+.test_mode #respnum_note
+{
+	font-size: .7em;
+    line-height: 1.2em;
+    margin: 5px 0 0 32px;
+}
+
+.test_mode #close_test_options_link
+{
+    padding: 5px;
+}
+
+.test_mode #overlay
+{
+  content: " ";
+  position: fixed;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 1;
+}
+
+#test_mode_bar input:hover, 
+#test_mode_bar input:focus, 
+#test_mode_bar textarea:hover, 
+#test_mode_bar textarea:focus, 
+#test_mode_bar select:hover
+{
+   border: 1px solid #218EBC;
+}
+
+
+@media only screen and (max-width: 800px)
+{
+    .test_mode #skip_col
+    {
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 500px)
+{
+    .test_mode #skip_col select
+    {
+        max-width: 100px;
+    }
+}
