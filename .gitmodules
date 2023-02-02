@@ -1,3 +1,5 @@
 [submodule "Overleaf-Paper"]
 	path = Overleaf-Paper
 	url = https://john_howell%40byu.edu@git.overleaf.com/5dd320d075010a0001d38a84
+[submodule "MattressStudy/SwipeInterfaceTutorial"]
+	path = MattressStudy/SwipeInterfaceTutorial
