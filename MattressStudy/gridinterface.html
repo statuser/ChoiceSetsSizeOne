@@ -1,389 +1,721 @@
 <!DOCTYPE html>
 <!-- saved from url=(0200)http://localhost:61501/Test%20Survey/cgi-bin/ciwweb.pl?hid_s=Av8AAO2CMUvcXld7YI6rwGqyoGJNAAAAvtgEEYZpFkxR2vj2PoDqV7nUYXLkE2IvOtnpmCKL6DHBsQZ87mxgQlS9h_FZnpFU2rcFf-lqZU5MvJ7sWp7tA96xAj-oLDIIE93ftQ7LjFI -->
-<html class="test_mode flexbox flexwrap mediaqueries"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html class="test_mode flexbox flexwrap mediaqueries">
 
-<!-- Sawtooth Software Web Interviewing System - Lighthouse Studio 9_14_2 -->
-<!-- Copyright Sawtooth Software, Inc. 1998-2022 - www.sawtoothsoftware.com - USA - (801) 477-4700 -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<link rel="shortcut icon" href="http://localhost:61501/graphics/system/survey.ico" type="image/x-icon">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Sawtooth Software Web Interviewing System - Lighthouse Studio 9_14_2 -->
+  <!-- Copyright Sawtooth Software, Inc. 1998-2022 - www.sawtoothsoftware.com - USA - (801) 477-4700 -->
 
-<meta name="robots" content="noindex, nofollow">
+  <link rel="shortcut icon" href="http://localhost:61501/graphics/system/survey.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-<title></title>
-<script type="text/javascript" src="./gridinterface_files/jquery-3.6.0.min.js.download"></script>
-<script type="text/javascript" src="./gridinterface_files/jquery-ui-1.12.1.min.js.download"></script>
-<script type="text/javascript" src="./gridinterface_files/jquery.ui.touch-punch.min.js.download"></script>
-<script type="text/javascript" src="./gridinterface_files/jquery.dialogOptions.js.download"></script>
-<script type="text/javascript" src="./gridinterface_files/owl.carousel.min.js.download"></script><script type="text/javascript" src="./gridinterface_files/modernizr-3.11.7.js.download"></script>
-<script type="text/javascript" src="./gridinterface_files/ssi_javascript9_14_2.js.download"></script>
-<script type="text/javascript" src="./gridinterface_files/ssi_base9_14_2.js.download"></script>
-<link rel="stylesheet" type="text/css" href="./gridinterface_files/jquery-ui-1.12.1.min.css">
+  <meta name="robots" content="noindex, nofollow">
 
-<link rel="stylesheet" type="text/css" href="./gridinterface_files/owl.carousel.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title></title>
+  <script type="text/javascript" src="./gridinterface_files/jquery-3.6.0.min.js.download"></script>
+  <script type="text/javascript" src="./gridinterface_files/jquery-ui-1.12.1.min.js.download"></script>
+  <script type="text/javascript" src="./gridinterface_files/jquery.ui.touch-punch.min.js.download"></script>
+  <script type="text/javascript" src="./gridinterface_files/jquery.dialogOptions.js.download"></script>
+  <script type="text/javascript" src="./gridinterface_files/owl.carousel.min.js.download"></script>
+  <script type="text/javascript" src="./gridinterface_files/modernizr-3.11.7.js.download"></script>
+  <script type="text/javascript" src="./gridinterface_files/ssi_javascript9_14_2.js.download"></script>
+  <script type="text/javascript" src="./gridinterface_files/ssi_base9_14_2.js.download"></script>
+  <link rel="stylesheet" type="text/css" href="./gridinterface_files/jquery-ui-1.12.1.min.css">
 
-<link rel="stylesheet" type="text/css" href="./gridinterface_files/ssi_style9_14_2.css">
-<link rel="stylesheet" type="text/css" href="./gridinterface_files/ssi_testmode_style9_14_2.css">
-<script type="text/javascript" src="./gridinterface_files/ssi_test_mode9_14_2.js.download"></script>
+  <link rel="stylesheet" type="text/css" href="./gridinterface_files/owl.carousel.min.css">
 
-<link rel="stylesheet" type="text/css" href="./gridinterface_files/sawtooth_style1.css">
-<style type="text/css">
+  <link rel="stylesheet" type="text/css" href="./gridinterface_files/ssi_style9_14_2.css">
+  <link rel="stylesheet" type="text/css" href="./gridinterface_files/ssi_testmode_style9_14_2.css">
+  <script type="text/javascript" src="./gridinterface_files/ssi_test_mode9_14_2.js.download"></script>
 
-#next_button:hover
-{
- background-color: #1582b0;
-}
+  <link rel="stylesheet" type="text/css" href="./gridinterface_files/sawtooth_style1.css">
+  <style type="text/css">
+    #next_button:hover {
+      background-color: #1582b0;
+    }
 
-.acbc_screener .acbc_task_bottom_row td, .acbc_choicetask .acbc_task_bottom_row td, .acbc_calibration .acbc_task_bottom_row td
-{
- border-top: 1px solid #218EBC;
-}
+    .acbc_screener .acbc_task_bottom_row td,
+    .acbc_choicetask .acbc_task_bottom_row td,
+    .acbc_calibration .acbc_task_bottom_row td {
+      border-top: 1px solid #218EBC;
+    }
 
-.background_primary_color
-{
- background-color: #218EBC;
-}
+    .background_primary_color {
+      background-color: #218EBC;
+    }
 
-.border_primary_color
-{
- border-color: #218EBC;
-}
+    .border_primary_color {
+      border-color: #218EBC;
+    }
 
-.cbc .task_select_button:hover, .cbc .dual_response_none_button:hover
-{
- background-color: #218EBC; border-color:#218EBC;
-}
+    .cbc .task_select_button:hover,
+    .cbc .dual_response_none_button:hover {
+      background-color: #218EBC;
+      border-color: #218EBC;
+    }
 
-.cbc_concept.best .best_button, .cbc_concept.discrete.best .task_select_button, .dual_response_none_button.would_button.selected, .dual_response_none_button.would_not_button.selected, .custom_position_none.best .best_button
-{
- background-color: #218EBC; border-color:#218EBC; color: #ffffff;
-}
+    .cbc_concept.best .best_button,
+    .cbc_concept.discrete.best .task_select_button,
+    .dual_response_none_button.would_button.selected,
+    .dual_response_none_button.would_not_button.selected,
+    .custom_position_none.best .best_button {
+      background-color: #218EBC;
+      border-color: #218EBC;
+      color: #ffffff;
+    }
 
-.fill_primary_color
-{
- fill: #218EBC;
-}
+    .fill_primary_color {
+      fill: #218EBC;
+    }
 
-.font_primary_color
-{
- color: #218EBC;
-}
+    .font_primary_color {
+      color: #218EBC;
+    }
 
-.nav_dot.best .nav_dot_border
-{
- stroke: #218EBC;
-}
+    .nav_dot.best .nav_dot_border {
+      stroke: #218EBC;
+    }
 
-.nav_dot.best .nav_dot_circle
-{
- fill: #218EBC;
-}
+    .nav_dot.best .nav_dot_circle {
+      fill: #218EBC;
+    }
 
-.slider_control .ui-slider-handle
-{
- border-color: #218EBC;
-}
+    .slider_control .ui-slider-handle {
+      border-color: #218EBC;
+    }
 
-.stroke_primary_color
-{
- stroke: #218EBC;
-}
+    .stroke_primary_color {
+      stroke: #218EBC;
+    }
 
-input:hover, input:focus, textarea:hover, textarea:focus, select:hover
-{
- border: 1px solid #218EBC;
-}
- #CBC_Random2_div .attribute_label_column {
- width:15%;
- }
+    input:hover,
+    input:focus,
+    textarea:hover,
+    textarea:focus,
+    select:hover {
+      border: 1px solid #218EBC;
+    }
 
- #CBC_Random2_div .cbc_task .cbc_concept {
- width:19.25%;
- margin-left:2%;
- }
- #CBC_Random2_div .cbc_concept.lower_none {
- margin-left: 17%;
- }
-#CBC_Random2_div .none_cell{
- align-items: flex-start;
-}
-.page {
- min-width: 800px;
-}
-}
-</style><link href="./gridinterface_files/choiceStyle.css" rel="stylesheet">
-<script src="./gridinterface_files/hammer.min.js.download"></script>
+    #CBC_Random2_div .attribute_label_column {
+      width: 15%;
+    }
+
+    #CBC_Random2_div .cbc_task .cbc_concept {
+      width: 19.25%;
+      margin-left: 2%;
+    }
+
+    #CBC_Random2_div .cbc_concept.lower_none {
+      margin-left: 17%;
+    }
+
+    #CBC_Random2_div .none_cell {
+      align-items: flex-start;
+    }
+
+    .page {
+      min-width: 800px;
+    }
+    }
+  </style>
+  <link href="./gridinterface_files/choiceStyle.css" rel="stylesheet">
+  <script src="./gridinterface_files/hammer.min.js.download"></script>
 </head>
+
 <body class="using-keyboard">
-<div id="test_mode_bar" class="row">
-<div id="desktop_view" class="col selected"></div>
-<div id="mobile_view" class="col"></div>
-<div class="col mobile_view_settings">
-<select id="mobile_size" tabindex="0">
-<option value="1">Small Phone</option>
-<option value="2" selected="">Medium Phone</option>
-<option value="3">Large Phone</option>
-<option value="4">Tablet</option>
-</select>
-</div>
-<div id="size_display" class="col mobile_view_settings">
-</div>
-<div id="rotate" class="col portrait mobile_view_settings"></div>
-<div class="col mobile_view_settings">
-</div>
-<div id="skip_col" class="col">Skip to: 
-<select id="skip_question_name" tabindex="0">
-<option value=""></option>
-<option id="test_Intro" value="Intro">Intro</option>
-<option id="test_Q1" value="Q1">Q1</option>
-<option id="test_Q2" value="Q2">Q2</option>
-<option id="test_Q3" value="Q3">Q3</option>
-<option id="test_Q4" value="Q4">Q4</option>
-<option id="test_CBC_Random1" value="CBC_Random1">CBC_Random1</option>
-<option id="test_CBCSwipex1x1" value="CBCSwipex1x1">CBCSwipex1x1</option>
-<option id="test_CBC_Random2" value="CBC_Random2">CBC_Random2</option>
-<option id="test_CBC_Random3" value="CBC_Random3">CBC_Random3</option>
-<option id="test_CBC_Random4" value="CBC_Random4">CBC_Random4</option>
-<option id="test_CBC_Random5" value="CBC_Random5">CBC_Random5</option>
-<option id="test_CBC_Random6" value="CBC_Random6">CBC_Random6</option>
-<option id="test_CBC_Random7" value="CBC_Random7">CBC_Random7</option>
-<option id="test_CBC_Random8" value="CBC_Random8">CBC_Random8</option>
-<option id="test_CBC_Random9" value="CBC_Random9">CBC_Random9</option>
-<option id="test_CBC_Random10" value="CBC_Random10">CBC_Random10</option>
-<option id="test_CBC_Random11" value="CBC_Random11">CBC_Random11</option>
-<option id="test_CBC_Random12" value="CBC_Random12">CBC_Random12</option>
-<option id="test_Gender" value="Gender">Gender</option>
-<option id="test_Age" value="Age">Age</option>
-<option id="test_Race" value="Race">Race</option>
-<option id="test_Education" value="Education">Education</option>
-<option id="test_Income" value="Income">Income</option>
-<option id="test_Terminate" value="Terminate">Terminate</option>
-</select></div><div id="test_options_link" class="col"></div>
-</div>
-<div id="mobile_display">
-<div class="iframe_container">
-<iframe id="display_iframe" src="./gridinterface_files/saved_resource.html" frameborder="0" allowfullscreen=""></iframe>
-</div>
-</div>
-<div id="test_options_dialog"><div class="test_options_row"><div><input id="show_quest_names" type="checkbox" class="checkbox" value="1" tabindex="0"></div><div><label for="show_quest_names">Show Question Names</label></div></div><div class="test_options_row"><div><input id="show_var_names" type="checkbox" class="checkbox" value="1" tabindex="0"></div><div><label for="show_var_names">Show Variable Names</label></div></div><div class="test_options_row"><div><input id="remove_skip_logic" type="checkbox" class="checkbox" value="1" tabindex="0"></div><div><label for="remove_skip_logic">Remove All Skip Logic</label></div></div><div class="test_options_row"><div><input id="remove_randomization" type="checkbox" class="checkbox" value="1" tabindex="0"></div><div><label for="remove_randomization">Remove Randomization</label></div></div><div class="test_options_row"><div><input id="remove_terminate" type="checkbox" class="checkbox" value="1" tabindex="0"></div><div><label for="remove_terminate">Disable Terminate/Link Functionality</label></div></div><div class="test_options_row respnum_content"><div><input id="use_respnum" type="checkbox" class="checkbox" value="1" tabindex="0"></div><div><label for="use_respnum">Use Internal Respondent Number</label></div></div><div id="respnum_box" class="respnum_content"><input id="test_respnum" type="text" class="text_input" maxlength="9" size="9" tabindex="0"></div><div id="respnum_note" class="respnum_content">(Warning: Existing test data with the same respondent number will be overwritten!)</div></div><div id="overlay"></div><form name="mainform" onsubmit="SSI_SubmitMe(); return false;" method="post" action="http://localhost:61501/Test%20Survey/cgi-bin/ciwweb.pl?hid_s=Av8AABBdsalvfeN6o-4ojDhkoNBNAAAAQweE8zVKok2Sunu6bFbq5UQL4ZBXMNYu-blq1HBd6IM8boaeXU_UQ5fdBL0MSJHmJ2iFnVpJ1kKP3B2gCEjtsSNugt0bD4YJ0L1c-VwdjOA">
-<input type="hidden" name="hid_test_mode" value="SZ5ZZ7A71TS6T2J5TVP98M5TZWBXH9HS">
-<input type="hidden" name="hid_test_mode_settings" id="hid_test_mode_settings" value=",0,0,0,0,0,0,0">
+  <div id="test_mode_bar" class="row">
+    <div id="desktop_view" class="col selected"></div>
+    <div id="mobile_view" class="col"></div>
+    <div class="col mobile_view_settings">
+      <select id="mobile_size" tabindex="0">
+        <option value="1">Small Phone</option>
+        <option value="2" selected="">Medium Phone</option>
+        <option value="3">Large Phone</option>
+        <option value="4">Tablet</option>
+      </select>
+    </div>
+    <div id="size_display" class="col mobile_view_settings">
+    </div>
+    <div id="rotate" class="col portrait mobile_view_settings"></div>
+    <div class="col mobile_view_settings">
+    </div>
+    <div id="skip_col" class="col">Skip to:
+      <select id="skip_question_name" tabindex="0">
+        <option value=""></option>
+        <option id="test_Intro" value="Intro">Intro</option>
+        <option id="test_Q1" value="Q1">Q1</option>
+        <option id="test_Q2" value="Q2">Q2</option>
+        <option id="test_Q3" value="Q3">Q3</option>
+        <option id="test_Q4" value="Q4">Q4</option>
+        <option id="test_CBC_Random1" value="CBC_Random1">CBC_Random1</option>
+        <option id="test_CBCSwipex1x1" value="CBCSwipex1x1">CBCSwipex1x1</option>
+        <option id="test_CBC_Random2" value="CBC_Random2">CBC_Random2</option>
+        <option id="test_CBC_Random3" value="CBC_Random3">CBC_Random3</option>
+        <option id="test_CBC_Random4" value="CBC_Random4">CBC_Random4</option>
+        <option id="test_CBC_Random5" value="CBC_Random5">CBC_Random5</option>
+        <option id="test_CBC_Random6" value="CBC_Random6">CBC_Random6</option>
+        <option id="test_CBC_Random7" value="CBC_Random7">CBC_Random7</option>
+        <option id="test_CBC_Random8" value="CBC_Random8">CBC_Random8</option>
+        <option id="test_CBC_Random9" value="CBC_Random9">CBC_Random9</option>
+        <option id="test_CBC_Random10" value="CBC_Random10">CBC_Random10</option>
+        <option id="test_CBC_Random11" value="CBC_Random11">CBC_Random11</option>
+        <option id="test_CBC_Random12" value="CBC_Random12">CBC_Random12</option>
+        <option id="test_Gender" value="Gender">Gender</option>
+        <option id="test_Age" value="Age">Age</option>
+        <option id="test_Race" value="Race">Race</option>
+        <option id="test_Education" value="Education">Education</option>
+        <option id="test_Income" value="Income">Income</option>
+        <option id="test_Terminate" value="Terminate">Terminate</option>
+      </select>
+    </div>
+    <div id="test_options_link" class="col"></div>
+  </div>
+  <div id="mobile_display">
+    <div class="iframe_container">
+      <iframe id="display_iframe" src="./gridinterface_files/saved_resource.html" frameborder="0" allowfullscreen=""></iframe>
+    </div>
+  </div>
+  <div id="test_options_dialog">
+    <div class="test_options_row">
+      <div><input id="show_quest_names" type="checkbox" class="checkbox" value="1" tabindex="0"></div>
+      <div><label for="show_quest_names">Show Question Names</label></div>
+    </div>
+    <div class="test_options_row">
+      <div><input id="show_var_names" type="checkbox" class="checkbox" value="1" tabindex="0"></div>
+      <div><label for="show_var_names">Show Variable Names</label></div>
+    </div>
+    <div class="test_options_row">
+      <div><input id="remove_skip_logic" type="checkbox" class="checkbox" value="1" tabindex="0"></div>
+      <div><label for="remove_skip_logic">Remove All Skip Logic</label></div>
+    </div>
+    <div class="test_options_row">
+      <div><input id="remove_randomization" type="checkbox" class="checkbox" value="1" tabindex="0"></div>
+      <div><label for="remove_randomization">Remove Randomization</label></div>
+    </div>
+    <div class="test_options_row">
+      <div><input id="remove_terminate" type="checkbox" class="checkbox" value="1" tabindex="0"></div>
+      <div><label for="remove_terminate">Disable Terminate/Link Functionality</label></div>
+    </div>
+    <div class="test_options_row respnum_content">
+      <div><input id="use_respnum" type="checkbox" class="checkbox" value="1" tabindex="0"></div>
+      <div><label for="use_respnum">Use Internal Respondent Number</label></div>
+    </div>
+    <div id="respnum_box" class="respnum_content"><input id="test_respnum" type="text" class="text_input" maxlength="9" size="9" tabindex="0"></div>
+    <div id="respnum_note" class="respnum_content">(Warning: Existing test data with the same respondent number will be overwritten!)</div>
+  </div>
+  <div id="overlay"></div>
+  <form name="mainform" onsubmit="SSI_SubmitMe(); return false;" method="post" action="http://localhost:61501/Test%20Survey/cgi-bin/ciwweb.pl?hid_s=Av8AABBdsalvfeN6o-4ojDhkoNBNAAAAQweE8zVKok2Sunu6bFbq5UQL4ZBXMNYu-blq1HBd6IM8boaeXU_UQ5fdBL0MSJHmJ2iFnVpJ1kKP3B2gCEjtsSNugt0bD4YJ0L1c-VwdjOA">
+    <input type="hidden" name="hid_test_mode" value="SZ5ZZ7A71TS6T2J5TVP98M5TZWBXH9HS">
+    <input type="hidden" name="hid_test_mode_settings" id="hid_test_mode_settings" value=",0,0,0,0,0,0,0">
 
-<div class="page" id="page" role="main">
-<input type="hidden" name="hid_backup" value="MattressStudy,25,377227943,8,1">
-<input type="hidden" name="hid_studyname" value="MattressStudy">
-<input type="hidden" name="hid_respnum" value="25,377227943">
-<input type="hidden" name="hid_s" id="hid_s" value="Av8AABBdsalvfeN6o-4ojDhkoNBNAAAAQweE8zVKok2Sunu6bFbq5UQL4ZBXMNYu-blq1HBd6IM8boaeXU_UQ5fdBL0MSJHmJ2iFnVpJ1kKP3B2gCEjtsSNugt0bD4YJ0L1c-VwdjOA">
-<input type="hidden" id="hid_pagenum" name="hid_pagenum" value="8">
-<input type="hidden" name="hid_javascript" value="0">
-<input type="hidden" name="hid_previous" value="0">
-<input type="hidden" id="hid_screenwidth" name="hid_screenwidth" value="1263">
-<div class="page_header font_primary_color">
-</div>
-<div id="error_box" class="page_error error_messages HideElement" role="alert"></div>
-<div id="alert_dialog" class="dialog"></div><div class="question cbc" id="CBC_Random2_div">
- <span class="test_label test_question_label">CBC_Random2</span> <div class="header2">
-<div>
-	<svg style="width:0; height: 0;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-		<defs>
-			<mask id="half">
-				<rect x="0" y="0" width="32" height="32" fill="white"></rect>
-				<rect x="50%" y="0" width="32" height="32" fill="black"></rect>
-			</mask>
-			
-			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="star">
-				<path d="M31.547 12a.848.848 0 00-.677-.577l-9.427-1.376-4.224-8.532a.847.847 0 00-1.516 0l-4.218 8.534-9.427 1.355a.847.847 0 00-.467 1.467l6.823 6.664-1.612 9.375a.847.847 0 001.23.893l8.428-4.434 8.432 4.432a.847.847 0 001.229-.894l-1.615-9.373 6.822-6.665a.845.845 0 00.214-.869z"></path>
-			</symbol>
-		</defs>
-	</svg>
-</div>
+    <div class="page" id="page" role="main">
+      <input type="hidden" name="hid_backup" value="MattressStudy,25,377227943,8,1">
+      <input type="hidden" name="hid_studyname" value="MattressStudy">
+      <input type="hidden" name="hid_respnum" value="25,377227943">
+      <input type="hidden" name="hid_s" id="hid_s" value="Av8AABBdsalvfeN6o-4ojDhkoNBNAAAAQweE8zVKok2Sunu6bFbq5UQL4ZBXMNYu-blq1HBd6IM8boaeXU_UQ5fdBL0MSJHmJ2iFnVpJ1kKP3B2gCEjtsSNugt0bD4YJ0L1c-VwdjOA">
+      <input type="hidden" id="hid_pagenum" name="hid_pagenum" value="8">
+      <input type="hidden" name="hid_javascript" value="0">
+      <input type="hidden" name="hid_previous" value="0">
+      <input type="hidden" id="hid_screenwidth" name="hid_screenwidth" value="1263">
+      <div class="page_header font_primary_color">
+      </div>
+      <div id="error_box" class="page_error error_messages HideElement" role="alert"></div>
+      <div id="alert_dialog" class="dialog"></div>
+      <div class="question cbc" id="CBC_Random2_div">
+        <span class="test_label test_question_label">CBC_Random2</span>
+        <div class="header2">
+          <div>
+            <svg style="width:0; height: 0;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <defs>
+                <mask id="half">
+                  <rect x="0" y="0" width="32" height="32" fill="white"></rect>
+                  <rect x="50%" y="0" width="32" height="32" fill="black"></rect>
+                </mask>
 
-If these were your only options, which would you choose?</div>
-<div class="question_body">
-<div class="no_mobile">
-<div class="task_controls"><div class="task_nav">
+                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="star">
+                  <path d="M31.547 12a.848.848 0 00-.677-.577l-9.427-1.376-4.224-8.532a.847.847 0 00-1.516 0l-4.218 8.534-9.427 1.355a.847.847 0 00-.467 1.467l6.823 6.664-1.612 9.375a.847.847 0 001.23.893l8.428-4.434 8.432 4.432a.847.847 0 001.229-.894l-1.615-9.373 6.822-6.665a.845.845 0 00.214-.869z"></path>
+                </symbol>
+              </defs>
+            </svg>
+          </div>
 
-<div class="carousel_prev carousel_arrow"><svg width="16" height="23" viewBox="0 0 16 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Left_task_arrow" data-name="Left task arrow" class="cbc_nav_arrow cbc_nav_arrow_left" d="M16 1.05025L16 21.9498C16 22.7829 15.0409 23.2507 14.3844 22.7378L1.00867 12.288C0.496197 11.8877 0.496197 11.1123 1.00867 10.712L14.3844 0.26222C15.0409 -0.250702 16 0.217098 16 1.05025Z" fill="#666666"></path></svg></div>
-<div class="task_nav_dots"><div class="nav_dot dot_1"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle class="nav_dot_circle" cx="6" cy="6" r="4" fill="#c4c4c4"></circle><circle class="nav_dot_border" cx="6" cy="6" r="5.5" stroke="#2796C6"></circle></svg></div><div class="nav_dot dot_2"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle class="nav_dot_circle" cx="6" cy="6" r="4" fill="#c4c4c4"></circle><circle class="nav_dot_border" cx="6" cy="6" r="5.5" stroke="#2796C6"></circle></svg></div><div class="nav_dot dot_3"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle class="nav_dot_circle" cx="6" cy="6" r="4" fill="#c4c4c4"></circle><circle class="nav_dot_border" cx="6" cy="6" r="5.5" stroke="#2796C6"></circle></svg></div><div class="nav_dot dot_4"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle class="nav_dot_circle" cx="6" cy="6" r="4" fill="#c4c4c4"></circle><circle class="nav_dot_border" cx="6" cy="6" r="5.5" stroke="#2796C6"></circle></svg></div><div class="nav_dot dot_5"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle class="nav_dot_circle" cx="6" cy="6" r="4" fill="#c4c4c4"></circle><circle class="nav_dot_border" cx="6" cy="6" r="5.5" stroke="#2796C6"></circle></svg></div></div>
-<div class="carousel_next carousel_arrow"><svg width="16" height="23" viewBox="0 0 16 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Right_task_arrow" data-name="Right task arrow" class="cbc_nav_arrow cbc_nav_arrow_right" d="M0 1.05025L0 21.9498C0 22.7829 0.959101 23.2507 1.61564 22.7378L14.9913 12.288C15.5038 11.8877 15.5038 11.1123 14.9913 10.712L1.61564 0.26222C0.959101 -0.250702 0 0.217098 0 1.05025Z" fill="#666666"></path></svg>
-</div>
-</div></div>
-<div class="cbc_task discrete">
-<div class="attribute_label_column">
-<div class="cbc_cell attribute_label_cell att_1 att_label first_att adjusted_height" style="height: 42.1172px;"><div class="att_label_text">Brand</div></div><div class="cbc_cell attribute_label_cell att_2 att_label adjusted_height" style="height: 64px;"><div class="att_label_text">Verified Buyer Ratings</div></div><div class="cbc_cell attribute_label_cell att_3 att_label adjusted_height" style="height: 41px;"><div class="att_label_text">Mattress Type</div></div><div class="cbc_cell attribute_label_cell att_4 att_label adjusted_height" style="height: 20.5px;"><div class="att_label_text">Firmness</div></div><div class="cbc_cell attribute_label_cell att_5 att_label adjusted_height" style="height: 20.5px;"><div class="att_label_text">Trial Period</div></div><div class="cbc_cell attribute_label_cell att_6 att_label adjusted_height" style="height: 20.5px;"><div class="att_label_text">Warranty</div></div><div class="cbc_cell attribute_label_cell att_7 att_label adjusted_height" style="height: 20.5px;"><div class="att_label_text">Price (Queen)</div></div><div class="cbc_cell concept_cell cbc_response_cell attribute_label_cell bottom_corner_label adjusted_height" style="height: 30px;"></div>
-</div>
-<div class="cbc_concept concept_1 discrete first_in_row">
-<div class="cbc_cell concept_cell att_1 att_label first_att adjusted_height" style="height: 42.1172px;"><div class="mobile_attribute_label"><div class="att_label_text">Brand</div></div><div class="level"><span class="level_text"><img src="./gridinterface_files/saatva.svg" alt="staava" border="0" class="logo"></span></div></div><div class="cbc_cell concept_cell att_2 att_label adjusted_height" style="height: 64px;"><div class="mobile_attribute_label"><div class="att_label_text">Verified Buyer Ratings</div></div><div class="level"><span class="level_text"><p class="star-rating" aria-label="3 stars out of 5">
-  <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star"></use>
-  </svg>
-  <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star"></use>
-  </svg>
-  <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star"></use>
-  </svg>
-  <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star"></use>
-  </svg>
-  <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
-  	<use xlink:href="#star" fill="lightgrey"></use>
-    <use xlink:href="#star"></use>
-  </svg>
-</p></span></div></div><div class="cbc_cell concept_cell att_3 att_label adjusted_height" style="height: 41px;"><div class="mobile_attribute_label"><div class="att_label_text">Mattress Type</div></div><div class="level"><span class="level_text">Latex Foam</span></div></div><div class="cbc_cell concept_cell att_4 att_label adjusted_height" style="height: 20.5px;"><div class="mobile_attribute_label"><div class="att_label_text">Firmness</div></div><div class="level"><span class="level_text">Extra Soft</span></div></div><div class="cbc_cell concept_cell att_5 att_label adjusted_height" style="height: 20.5px;"><div class="mobile_attribute_label"><div class="att_label_text">Trial Period</div></div><div class="level"><span class="level_text">365 Nights</span></div></div><div class="cbc_cell concept_cell att_6 att_label adjusted_height" style="height: 20.5px;"><div class="mobile_attribute_label"><div class="att_label_text">Warranty</div></div><div class="level"><span class="level_text">None</span></div></div><div class="cbc_cell concept_cell att_7 att_label adjusted_height" style="height: 20.5px;"><div class="mobile_attribute_label"><div class="att_label_text">Price (Queen)</div></div><div class="level"><span class="level_text">$1,499</span></div></div><div class="cbc_cell concept_cell cbc_response_cell concept_cell adjusted_height" style="height: 30px;"><div> <span class="test_label test_var_label">CBC_Random2</span> </div><div class="task_select_button best_button adjusted_height" aria-label="Select 1" tabindex="0" style="height: 30px;"><div class="clickable input_cell HideElement"> <span class="test_label test_var_label">CBC_Random2=1</span> <div id="CBC_Random2_1_graphical" class="graphical_select radiobox" role="radio" aria-checked="false" aria-labelledby="CBC_Random2_1_label" tabindex="0">
-<svg class="radio_svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-<circle class="stroke_primary_color" cx="11" cy="11" r="10.5" stroke="#808080"></circle>
-<circle class="fill_primary_color" cx="11" cy="11" r="7" fill="#808080"></circle>
-</svg>
-</div><input name="CBC_Random2" value="1" type="radio" id="CBC_Random2_1" class="HideElement">
-</div><div class="input_label">Select</div><div class="selected_image show_when_selected"></div></div></div>
-</div>
-<div class="cbc_concept concept_2 discrete">
-<div class="cbc_cell concept_cell att_1 att_label first_att adjusted_height" style="height: 42.1172px;"><div class="mobile_attribute_label"><div class="att_label_text">Brand</div></div><div class="level"><span class="level_text"><img src="./gridinterface_files/novaform.svg" alt="novafoam (Costco)" border="0" class="logo"></span></div></div><div class="cbc_cell concept_cell att_2 att_label adjusted_height" style="height: 64px;"><div class="mobile_attribute_label"><div class="att_label_text">Verified Buyer Ratings</div></div><div class="level"><span class="level_text"><p class="star-rating" aria-label="3 stars out of 5">
-  <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star"></use>
-  </svg>
-  <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star"></use>
-  </svg>
-  <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star"></use>
-  </svg>
-  <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star"></use>
-  </svg>
-  <svg class="c-star" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star"></use>
-  </svg>
-</p></span></div></div><div class="cbc_cell concept_cell att_3 att_label adjusted_height" style="height: 41px;"><div class="mobile_attribute_label"><div class="att_label_text">Mattress Type</div></div><div class="level"><span class="level_text">Memory Foam</span></div></div><div class="cbc_cell concept_cell att_4 att_label adjusted_height" style="height: 20.5px;"><div class="mobile_attribute_label"><div class="att_label_text">Firmness</div></div><div class="level"><span class="level_text">Firm</span></div></div><div class="cbc_cell concept_cell att_5 att_label adjusted_height" style="height: 20.5px;"><div class="mobile_attribute_label"><div class="att_label_text">Trial Period</div></div><div class="level"><span class="level_text">30 Nights</span></div></div><div class="cbc_cell concept_cell att_6 att_label adjusted_height" style="height: 20.5px;"><div class="mobile_attribute_label"><div class="att_label_text">Warranty</div></div><div class="level"><span class="level_text">10 Year</span></div></div><div class="cbc_cell concept_cell att_7 att_label adjusted_height" style="height: 20.5px;"><div class="mobile_attribute_label"><div class="att_label_text">Price (Queen)</div></div><div class="level"><span class="level_text">$499</span></div></div><div class="cbc_cell concept_cell cbc_response_cell concept_cell adjusted_height" style="height: 30px;"><div> <span class="test_label test_var_label">CBC_Random2</span> </div><div class="task_select_button best_button adjusted_height" aria-label="Select 2" tabindex="0" style="height: 30px;"><div class="clickable input_cell HideElement"> <span class="test_label test_var_label">CBC_Random2=2</span> <div id="CBC_Random2_2_graphical" class="graphical_select radiobox" role="radio" aria-checked="false" aria-labelledby="CBC_Random2_2_label" tabindex="0">
-<svg class="radio_svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-<circle class="stroke_primary_color" cx="11" cy="11" r="10.5" stroke="#808080"></circle>
-<circle class="fill_primary_color" cx="11" cy="11" r="7" fill="#808080"></circle>
-</svg>
-</div><input name="CBC_Random2" value="2" type="radio" id="CBC_Random2_2" class="HideElement">
-</div><div class="input_label">Select</div><div class="selected_image show_when_selected"></div></div></div>
-</div>
-<div class="cbc_concept concept_3 discrete">
-<div class="cbc_cell concept_cell att_1 att_label first_att adjusted_height" style="height: 42.1172px;"><div class="mobile_attribute_label"><div class="att_label_text">Brand</div></div><div class="level"><span class="level_text"><img src="./gridinterface_files/purple.svg" alt="purple" border="0" class="logo"></span></div></div><div class="cbc_cell concept_cell att_2 att_label adjusted_height" style="height: 64px;"><div class="mobile_attribute_label"><div class="att_label_text">Verified Buyer Ratings</div></div><div class="level"><span class="level_text"><p class="star-rating" aria-label="3 stars out of 5">
-  <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star"></use>
-  </svg>
-  <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star"></use>
-  </svg>
-  <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star"></use>
-  </svg>
-  <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star" fill="lightgrey"></use>
-	<use xlink:href="#star" mask="url(&quot;#half&quot;)"></use>
-	
-	
-  </svg>
-  <svg class="c-star" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star"></use>
-  </svg>
-</p></span></div></div><div class="cbc_cell concept_cell att_3 att_label adjusted_height" style="height: 41px;"><div class="mobile_attribute_label"><div class="att_label_text">Mattress Type</div></div><div class="level"><span class="level_text">Hybrid</span></div></div><div class="cbc_cell concept_cell att_4 att_label adjusted_height" style="height: 20.5px;"><div class="mobile_attribute_label"><div class="att_label_text">Firmness</div></div><div class="level"><span class="level_text">Medium</span></div></div><div class="cbc_cell concept_cell att_5 att_label adjusted_height" style="height: 20.5px;"><div class="mobile_attribute_label"><div class="att_label_text">Trial Period</div></div><div class="level"><span class="level_text">180 Nights</span></div></div><div class="cbc_cell concept_cell att_6 att_label adjusted_height" style="height: 20.5px;"><div class="mobile_attribute_label"><div class="att_label_text">Warranty</div></div><div class="level"><span class="level_text">5 Year</span></div></div><div class="cbc_cell concept_cell att_7 att_label adjusted_height" style="height: 20.5px;"><div class="mobile_attribute_label"><div class="att_label_text">Price (Queen)</div></div><div class="level"><span class="level_text">$999</span></div></div><div class="cbc_cell concept_cell cbc_response_cell concept_cell adjusted_height" style="height: 30px;"><div> <span class="test_label test_var_label">CBC_Random2</span> </div><div class="task_select_button best_button adjusted_height" aria-label="Select 3" tabindex="0" style="height: 30px;"><div class="clickable input_cell HideElement"> <span class="test_label test_var_label">CBC_Random2=3</span> <div id="CBC_Random2_3_graphical" class="graphical_select radiobox" role="radio" aria-checked="false" aria-labelledby="CBC_Random2_3_label" tabindex="0">
-<svg class="radio_svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-<circle class="stroke_primary_color" cx="11" cy="11" r="10.5" stroke="#808080"></circle>
-<circle class="fill_primary_color" cx="11" cy="11" r="7" fill="#808080"></circle>
-</svg>
-</div><input name="CBC_Random2" value="3" type="radio" id="CBC_Random2_3" class="HideElement">
-</div><div class="input_label">Select</div><div class="selected_image show_when_selected"></div></div></div>
-</div>
-<div class="cbc_concept concept_4 discrete">
-<div class="cbc_cell concept_cell att_1 att_label first_att adjusted_height" style="height: 42.1172px;"><div class="mobile_attribute_label"><div class="att_label_text">Brand</div></div><div class="level"><span class="level_text"><img src="./gridinterface_files/tuftandneedle.svg" alt="tuft &amp; needle" border="0" class="logo"></span></div></div><div class="cbc_cell concept_cell att_2 att_label adjusted_height" style="height: 64px;"><div class="mobile_attribute_label"><div class="att_label_text">Verified Buyer Ratings</div></div><div class="level"><span class="level_text"><p class="star-rating" aria-label="3 stars out of 5">
-  <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star"></use>
-  </svg>
-  <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star"></use>
-  </svg>
-  <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star"></use>
-  </svg>
-  <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star"></use>
-  </svg>
-  <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
-    <use xlink:href="#star"></use>
-  </svg>
-</p></span></div></div><div class="cbc_cell concept_cell att_3 att_label adjusted_height" style="height: 41px;"><div class="mobile_attribute_label"><div class="att_label_text">Mattress Type</div></div><div class="level"><span class="level_text">Hyper-elastic polymer</span></div></div><div class="cbc_cell concept_cell att_4 att_label adjusted_height" style="height: 20.5px;"><div class="mobile_attribute_label"><div class="att_label_text">Firmness</div></div><div class="level"><span class="level_text">Extra Firm</span></div></div><div class="cbc_cell concept_cell att_5 att_label adjusted_height" style="height: 20.5px;"><div class="mobile_attribute_label"><div class="att_label_text">Trial Period</div></div><div class="level"><span class="level_text">90 Nights</span></div></div><div class="cbc_cell concept_cell att_6 att_label adjusted_height" style="height: 20.5px;"><div class="mobile_attribute_label"><div class="att_label_text">Warranty</div></div><div class="level"><span class="level_text">1 Year</span></div></div><div class="cbc_cell concept_cell att_7 att_label adjusted_height" style="height: 20.5px;"><div class="mobile_attribute_label"><div class="att_label_text">Price (Queen)</div></div><div class="level"><span class="level_text">$1,249</span></div></div><div class="cbc_cell concept_cell cbc_response_cell concept_cell adjusted_height" style="height: 30px;"><div> <span class="test_label test_var_label">CBC_Random2</span> </div><div class="task_select_button best_button adjusted_height" aria-label="Select 4" tabindex="0" style="height: 30px;"><div class="clickable input_cell HideElement"> <span class="test_label test_var_label">CBC_Random2=4</span> <div id="CBC_Random2_4_graphical" class="graphical_select radiobox" role="radio" aria-checked="false" aria-labelledby="CBC_Random2_4_label" tabindex="0">
-<svg class="radio_svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-<circle class="stroke_primary_color" cx="11" cy="11" r="10.5" stroke="#808080"></circle>
-<circle class="fill_primary_color" cx="11" cy="11" r="7" fill="#808080"></circle>
-</svg>
-</div><input name="CBC_Random2" value="4" type="radio" id="CBC_Random2_4" class="HideElement">
-</div><div class="input_label">Select</div><div class="selected_image show_when_selected"></div></div></div>
-</div>
-<div class="cbc_concept concept_5 discrete first_in_row none_concept lower_none">
-<div class="cbc_cell none_cell first_att"><div class="level"><span class="level_text">NONE: I wouldn't choose any of these.</span></div></div><div class="cbc_cell concept_cell cbc_response_cell concept_cell none adjusted_height" style="height: 30px;"><div> <span class="test_label test_var_label">CBC_Random2</span> </div><div class="task_select_button best_button adjusted_height" aria-label="Select 5" tabindex="0" style="height: 30px;"><div class="clickable input_cell HideElement"> <span class="test_label test_var_label">CBC_Random2=5</span> <div id="CBC_Random2_5_graphical" class="graphical_select radiobox" role="radio" aria-checked="false" aria-labelledby="CBC_Random2_5_label" tabindex="0">
-<svg class="radio_svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-<circle class="stroke_primary_color" cx="11" cy="11" r="10.5" stroke="#808080"></circle>
-<circle class="fill_primary_color" cx="11" cy="11" r="7" fill="#808080"></circle>
-</svg>
-</div><input name="CBC_Random2" value="5" type="radio" id="CBC_Random2_5" class="HideElement">
-</div><div class="input_label">Select</div><div class="selected_image show_when_selected"></div></div></div>
-</div>
-</div>
-</div>
-</div>
-<div class="footer">
-(2 of 12)</div>
-</div>
+          If these were your only options, which would you choose?
+        </div>
+        <div class="question_body">
+          <div class="no_mobile">
+            <div class="task_controls">
+              <div class="task_nav">
 
-<input type="hidden" name="hid_q_CBC_Random2" value="CBC_Random2">
+                <div class="carousel_prev carousel_arrow"><svg width="16" height="23" viewBox="0 0 16 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="Left_task_arrow" data-name="Left task arrow" class="cbc_nav_arrow cbc_nav_arrow_left" d="M16 1.05025L16 21.9498C16 22.7829 15.0409 23.2507 14.3844 22.7378L1.00867 12.288C0.496197 11.8877 0.496197 11.1123 1.00867 10.712L14.3844 0.26222C15.0409 -0.250702 16 0.217098 16 1.05025Z" fill="#666666"></path>
+                  </svg></div>
+                <div class="task_nav_dots">
+                  <div class="nav_dot dot_1"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle class="nav_dot_circle" cx="6" cy="6" r="4" fill="#c4c4c4"></circle>
+                      <circle class="nav_dot_border" cx="6" cy="6" r="5.5" stroke="#2796C6"></circle>
+                    </svg></div>
+                  <div class="nav_dot dot_2"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle class="nav_dot_circle" cx="6" cy="6" r="4" fill="#c4c4c4"></circle>
+                      <circle class="nav_dot_border" cx="6" cy="6" r="5.5" stroke="#2796C6"></circle>
+                    </svg></div>
+                  <div class="nav_dot dot_3"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle class="nav_dot_circle" cx="6" cy="6" r="4" fill="#c4c4c4"></circle>
+                      <circle class="nav_dot_border" cx="6" cy="6" r="5.5" stroke="#2796C6"></circle>
+                    </svg></div>
+                  <div class="nav_dot dot_4"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle class="nav_dot_circle" cx="6" cy="6" r="4" fill="#c4c4c4"></circle>
+                      <circle class="nav_dot_border" cx="6" cy="6" r="5.5" stroke="#2796C6"></circle>
+                    </svg></div>
+                  <div class="nav_dot dot_5"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle class="nav_dot_circle" cx="6" cy="6" r="4" fill="#c4c4c4"></circle>
+                      <circle class="nav_dot_border" cx="6" cy="6" r="5.5" stroke="#2796C6"></circle>
+                    </svg></div>
+                </div>
+                <div class="carousel_next carousel_arrow"><svg width="16" height="23" viewBox="0 0 16 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="Right_task_arrow" data-name="Right task arrow" class="cbc_nav_arrow cbc_nav_arrow_right" d="M0 1.05025L0 21.9498C0 22.7829 0.959101 23.2507 1.61564 22.7378L14.9913 12.288C15.5038 11.8877 15.5038 11.1123 14.9913 10.712L1.61564 0.26222C0.959101 -0.250702 0 0.217098 0 1.05025Z" fill="#666666"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="cbc_task discrete">
+              <div class="attribute_label_column">
+                <div class="cbc_cell attribute_label_cell att_1 att_label first_att adjusted_height" style="height: 42.1172px;">
+                  <div class="att_label_text">Brand</div>
+                </div>
+                <div class="cbc_cell attribute_label_cell att_2 att_label adjusted_height" style="height: 64px;">
+                  <div class="att_label_text">Verified Buyer Ratings</div>
+                </div>
+                <div class="cbc_cell attribute_label_cell att_3 att_label adjusted_height" style="height: 41px;">
+                  <div class="att_label_text">Mattress Type</div>
+                </div>
+                <div class="cbc_cell attribute_label_cell att_4 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="att_label_text">Firmness</div>
+                </div>
+                <div class="cbc_cell attribute_label_cell att_5 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="att_label_text">Trial Period</div>
+                </div>
+                <div class="cbc_cell attribute_label_cell att_6 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="att_label_text">Warranty</div>
+                </div>
+                <div class="cbc_cell attribute_label_cell att_7 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="att_label_text">Price (Queen)</div>
+                </div>
+                <div class="cbc_cell concept_cell cbc_response_cell attribute_label_cell bottom_corner_label adjusted_height" style="height: 30px;"></div>
+              </div>
+              <div class="cbc_concept concept_1 discrete first_in_row">
+                <div class="cbc_cell concept_cell att_1 att_label first_att adjusted_height" style="height: 42.1172px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Brand</div>
+                  </div>
+                  <div class="level"><span class="level_text"><img src="./gridinterface_files/saatva.svg" alt="staava" border="0" class="logo"></span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_2 att_label adjusted_height" style="height: 64px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Verified Buyer Ratings</div>
+                  </div>
+                  <div class="level"><span class="level_text">
+                      <p class="star-rating" aria-label="3 stars out of 5">
+                        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star" fill="lightgrey"></use>
+                          <use xlink:href="#star"></use>
+                        </svg>
+                      </p>
+                    </span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_3 att_label adjusted_height" style="height: 41px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Mattress Type</div>
+                  </div>
+                  <div class="level"><span class="level_text">Latex Foam</span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_4 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Firmness</div>
+                  </div>
+                  <div class="level"><span class="level_text">Extra Soft</span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_5 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Trial Period</div>
+                  </div>
+                  <div class="level"><span class="level_text">365 Nights</span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_6 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Warranty</div>
+                  </div>
+                  <div class="level"><span class="level_text">None</span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_7 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Price (Queen)</div>
+                  </div>
+                  <div class="level"><span class="level_text">$1,499</span></div>
+                </div>
+                <div class="cbc_cell concept_cell cbc_response_cell concept_cell adjusted_height" style="height: 30px;">
+                  <div> <span class="test_label test_var_label">CBC_Random2</span> </div>
+                  <div class="task_select_button best_button adjusted_height" aria-label="Select 1" tabindex="0" style="height: 30px;">
+                    <div class="clickable input_cell HideElement"> <span class="test_label test_var_label">CBC_Random2=1</span>
+                      <div id="CBC_Random2_1_graphical" class="graphical_select radiobox" role="radio" aria-checked="false" aria-labelledby="CBC_Random2_1_label" tabindex="0">
+                        <svg class="radio_svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                          <circle class="stroke_primary_color" cx="11" cy="11" r="10.5" stroke="#808080"></circle>
+                          <circle class="fill_primary_color" cx="11" cy="11" r="7" fill="#808080"></circle>
+                        </svg>
+                      </div><input name="CBC_Random2" value="1" type="radio" id="CBC_Random2_1" class="HideElement">
+                    </div>
+                    <div class="input_label">Select</div>
+                    <div class="selected_image show_when_selected"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="cbc_concept concept_2 discrete">
+                <div class="cbc_cell concept_cell att_1 att_label first_att adjusted_height" style="height: 42.1172px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Brand</div>
+                  </div>
+                  <div class="level"><span class="level_text"><img src="./gridinterface_files/novaform.svg" alt="novafoam (Costco)" border="0" class="logo"></span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_2 att_label adjusted_height" style="height: 64px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Verified Buyer Ratings</div>
+                  </div>
+                  <div class="level"><span class="level_text">
+                      <p class="star-rating" aria-label="3 stars out of 5">
+                        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="c-star" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                      </p>
+                    </span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_3 att_label adjusted_height" style="height: 41px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Mattress Type</div>
+                  </div>
+                  <div class="level"><span class="level_text">Memory Foam</span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_4 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Firmness</div>
+                  </div>
+                  <div class="level"><span class="level_text">Firm</span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_5 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Trial Period</div>
+                  </div>
+                  <div class="level"><span class="level_text">30 Nights</span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_6 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Warranty</div>
+                  </div>
+                  <div class="level"><span class="level_text">10 Year</span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_7 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Price (Queen)</div>
+                  </div>
+                  <div class="level"><span class="level_text">$499</span></div>
+                </div>
+                <div class="cbc_cell concept_cell cbc_response_cell concept_cell adjusted_height" style="height: 30px;">
+                  <div> <span class="test_label test_var_label">CBC_Random2</span> </div>
+                  <div class="task_select_button best_button adjusted_height" aria-label="Select 2" tabindex="0" style="height: 30px;">
+                    <div class="clickable input_cell HideElement"> <span class="test_label test_var_label">CBC_Random2=2</span>
+                      <div id="CBC_Random2_2_graphical" class="graphical_select radiobox" role="radio" aria-checked="false" aria-labelledby="CBC_Random2_2_label" tabindex="0">
+                        <svg class="radio_svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                          <circle class="stroke_primary_color" cx="11" cy="11" r="10.5" stroke="#808080"></circle>
+                          <circle class="fill_primary_color" cx="11" cy="11" r="7" fill="#808080"></circle>
+                        </svg>
+                      </div><input name="CBC_Random2" value="2" type="radio" id="CBC_Random2_2" class="HideElement">
+                    </div>
+                    <div class="input_label">Select</div>
+                    <div class="selected_image show_when_selected"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="cbc_concept concept_3 discrete">
+                <div class="cbc_cell concept_cell att_1 att_label first_att adjusted_height" style="height: 42.1172px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Brand</div>
+                  </div>
+                  <div class="level"><span class="level_text"><img src="./gridinterface_files/purple.svg" alt="purple" border="0" class="logo"></span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_2 att_label adjusted_height" style="height: 64px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Verified Buyer Ratings</div>
+                  </div>
+                  <div class="level"><span class="level_text">
+                      <p class="star-rating" aria-label="3 stars out of 5">
+                        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star" fill="lightgrey"></use>
+                          <use xlink:href="#star" mask="url(&quot;#half&quot;)"></use>
 
-<input type="hidden" name="hid_prev_CBC_Random2" value="6,CBC_Random2,8,34e126e408c276ad42c1cf0b3aace490">
+
+                        </svg>
+                        <svg class="c-star" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                      </p>
+                    </span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_3 att_label adjusted_height" style="height: 41px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Mattress Type</div>
+                  </div>
+                  <div class="level"><span class="level_text">Hybrid</span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_4 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Firmness</div>
+                  </div>
+                  <div class="level"><span class="level_text">Medium</span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_5 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Trial Period</div>
+                  </div>
+                  <div class="level"><span class="level_text">180 Nights</span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_6 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Warranty</div>
+                  </div>
+                  <div class="level"><span class="level_text">5 Year</span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_7 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Price (Queen)</div>
+                  </div>
+                  <div class="level"><span class="level_text">$999</span></div>
+                </div>
+                <div class="cbc_cell concept_cell cbc_response_cell concept_cell adjusted_height" style="height: 30px;">
+                  <div> <span class="test_label test_var_label">CBC_Random2</span> </div>
+                  <div class="task_select_button best_button adjusted_height" aria-label="Select 3" tabindex="0" style="height: 30px;">
+                    <div class="clickable input_cell HideElement"> <span class="test_label test_var_label">CBC_Random2=3</span>
+                      <div id="CBC_Random2_3_graphical" class="graphical_select radiobox" role="radio" aria-checked="false" aria-labelledby="CBC_Random2_3_label" tabindex="0">
+                        <svg class="radio_svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                          <circle class="stroke_primary_color" cx="11" cy="11" r="10.5" stroke="#808080"></circle>
+                          <circle class="fill_primary_color" cx="11" cy="11" r="7" fill="#808080"></circle>
+                        </svg>
+                      </div><input name="CBC_Random2" value="3" type="radio" id="CBC_Random2_3" class="HideElement">
+                    </div>
+                    <div class="input_label">Select</div>
+                    <div class="selected_image show_when_selected"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="cbc_concept concept_4 discrete">
+                <div class="cbc_cell concept_cell att_1 att_label first_att adjusted_height" style="height: 42.1172px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Brand</div>
+                  </div>
+                  <div class="level"><span class="level_text"><img src="./gridinterface_files/tuftandneedle.svg" alt="tuft &amp; needle" border="0" class="logo"></span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_2 att_label adjusted_height" style="height: 64px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Verified Buyer Ratings</div>
+                  </div>
+                  <div class="level"><span class="level_text">
+                      <p class="star-rating" aria-label="3 stars out of 5">
+                        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="c-star active" width="32" height="32" viewBox="0 0 32 32">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                      </p>
+                    </span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_3 att_label adjusted_height" style="height: 41px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Mattress Type</div>
+                  </div>
+                  <div class="level"><span class="level_text">Hyper-elastic polymer</span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_4 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Firmness</div>
+                  </div>
+                  <div class="level"><span class="level_text">Extra Firm</span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_5 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Trial Period</div>
+                  </div>
+                  <div class="level"><span class="level_text">90 Nights</span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_6 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Warranty</div>
+                  </div>
+                  <div class="level"><span class="level_text">1 Year</span></div>
+                </div>
+                <div class="cbc_cell concept_cell att_7 att_label adjusted_height" style="height: 20.5px;">
+                  <div class="mobile_attribute_label">
+                    <div class="att_label_text">Price (Queen)</div>
+                  </div>
+                  <div class="level"><span class="level_text">$1,249</span></div>
+                </div>
+                <div class="cbc_cell concept_cell cbc_response_cell concept_cell adjusted_height" style="height: 30px;">
+                  <div> <span class="test_label test_var_label">CBC_Random2</span> </div>
+                  <div class="task_select_button best_button adjusted_height" aria-label="Select 4" tabindex="0" style="height: 30px;">
+                    <div class="clickable input_cell HideElement"> <span class="test_label test_var_label">CBC_Random2=4</span>
+                      <div id="CBC_Random2_4_graphical" class="graphical_select radiobox" role="radio" aria-checked="false" aria-labelledby="CBC_Random2_4_label" tabindex="0">
+                        <svg class="radio_svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                          <circle class="stroke_primary_color" cx="11" cy="11" r="10.5" stroke="#808080"></circle>
+                          <circle class="fill_primary_color" cx="11" cy="11" r="7" fill="#808080"></circle>
+                        </svg>
+                      </div><input name="CBC_Random2" value="4" type="radio" id="CBC_Random2_4" class="HideElement">
+                    </div>
+                    <div class="input_label">Select</div>
+                    <div class="selected_image show_when_selected"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="cbc_concept concept_5 discrete first_in_row none_concept lower_none">
+                <div class="cbc_cell none_cell first_att">
+                  <div class="level"><span class="level_text">NONE: I wouldn't choose any of these.</span></div>
+                </div>
+                <div class="cbc_cell concept_cell cbc_response_cell concept_cell none adjusted_height" style="height: 30px;">
+                  <div> <span class="test_label test_var_label">CBC_Random2</span> </div>
+                  <div class="task_select_button best_button adjusted_height" aria-label="Select 5" tabindex="0" style="height: 30px;">
+                    <div class="clickable input_cell HideElement"> <span class="test_label test_var_label">CBC_Random2=5</span>
+                      <div id="CBC_Random2_5_graphical" class="graphical_select radiobox" role="radio" aria-checked="false" aria-labelledby="CBC_Random2_5_label" tabindex="0">
+                        <svg class="radio_svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                          <circle class="stroke_primary_color" cx="11" cy="11" r="10.5" stroke="#808080"></circle>
+                          <circle class="fill_primary_color" cx="11" cy="11" r="7" fill="#808080"></circle>
+                        </svg>
+                      </div><input name="CBC_Random2" value="5" type="radio" id="CBC_Random2_5" class="HideElement">
+                    </div>
+                    <div class="input_label">Select</div>
+                    <div class="selected_image show_when_selected"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          (2 of 12)</div>
+      </div>
+
+      <input type="hidden" name="hid_q_CBC_Random2" value="CBC_Random2">
+
+      <input type="hidden" name="hid_prev_CBC_Random2" value="6,CBC_Random2,8,34e126e408c276ad42c1cf0b3aace490">
 
 
-<script type="text/javascript">
-var GlobalQuestHash = 0;
-var strGlobalError_missing = "A response is required.  [%ERRTEXT()%]";
-var strGlobalError_page_error = "An error has occurred on this page.  Please fix this error and try again.";
+      <script type="text/javascript">
+        var GlobalQuestHash = 0;
+        var strGlobalError_missing = "A response is required.  [%ERRTEXT()%]";
+        var strGlobalError_page_error = "An error has occurred on this page.  Please fix this error and try again.";
 
-var blnGlobalCommaForDecimal = false;
-function SSI_Verify(){
-SSI_InitializeErrors();
-SSI_RadCheck("CBC_Random2","CBC_Random2","",1, true);
-SSI_RemoveErrors();
-return SSI_ShowErrors();
-}
+        var blnGlobalCommaForDecimal = false;
 
-</script>
-<input type="hidden" name="hid_pagetime" value="1675445458">
+        function SSI_Verify() {
+          SSI_InitializeErrors();
+          SSI_RadCheck("CBC_Random2", "CBC_Random2", "", 1, true);
+          SSI_RemoveErrors();
+          return SSI_ShowErrors();
+        }
+      </script>
+      <input type="hidden" name="hid_pagetime" value="1675445458">
 
-<div class="submit_div">
-<div id="previous_button" role="button" class="navigation_button text_nav_button" tabindex="0" style="width: 35.2812px; visibility: visible;">Back</div><div id="next_button" role="button" class="navigation_button text_nav_button background_primary_color" tabindex="0" style="width: 35.2812px; visibility: visible;">Next<div id="test_mode_submit_msg" class="new_tooltip">Submit this page to apply the options set above.</div></div></div><div class="progress_bar">
-<table class="progress_bar_table"><tbody><tr>
-<td class="left_cell">0%</td><td class="middle_cell">
-<div class="progress_bar_outer">
-<div class="progress_bar_inner background_primary_color" style="width: 33%"><p class="sr-only">33%</p></div></div>
-</td><td class="right_cell">100%</td></tr></tbody></table></div><div class="page_footer">
+      <div class="submit_div">
+        <div id="previous_button" role="button" class="navigation_button text_nav_button" tabindex="0" style="width: 35.2812px; visibility: visible;">Back</div>
+        <div id="next_button" role="button" class="navigation_button text_nav_button background_primary_color" tabindex="0" style="width: 35.2812px; visibility: visible;">Next<div id="test_mode_submit_msg" class="new_tooltip">Submit this page to apply the options set above.</div>
+        </div>
+      </div>
+      <div class="progress_bar">
+        <table class="progress_bar_table">
+          <tbody>
+            <tr>
+              <td class="left_cell">0%</td>
+              <td class="middle_cell">
+                <div class="progress_bar_outer">
+                  <div class="progress_bar_inner background_primary_color" style="width: 33%">
+                    <p class="sr-only">33%</p>
+                  </div>
+                </div>
+              </td>
+              <td class="right_cell">100%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="page_footer">
 
-</div>
+      </div>
 
 
-<script type="text/javascript">
-function SSI_Initialize(){
-SSI_PageInitialize();
-SSI_InitializeErrors();
-SSI_SubmitInitialize();
-GlobalGraphicalSelect = true;
-SSI_ClickableInitialize(true);
-SSI_SetupToolTips();
-}
+      <script type="text/javascript">
+        function SSI_Initialize() {
+          SSI_PageInitialize();
+          SSI_InitializeErrors();
+          SSI_SubmitInitialize();
+          GlobalGraphicalSelect = true;
+          SSI_ClickableInitialize(true);
+          SSI_SetupToolTips();
+        }
 
-GlobalDocumentReadyArray.push(function(){SSI_Initialize();})
+        GlobalDocumentReadyArray.push(function() {
+          SSI_Initialize();
+        })
+      </script>
 
-</script>
+    </div>
+  </form>
+  <div id="submit_overlay">
+    <div id="submit_progress_bar"><img src="./gridinterface_files/loading.gif" border="0" alt="Loading..."></div>
+  </div>
 
-</div>
-</form>
-<div id="submit_overlay"><div id="submit_progress_bar"><img src="./gridinterface_files/loading.gif" border="0" alt="Loading..."></div></div>
+</body>
 
-</body></html>
+</html>

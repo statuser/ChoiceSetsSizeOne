@@ -1,0 +1,19 @@
+{
+  "swatches" : [
+    {
+      "color" : "#87d435ff",
+      "name" : "Green",
+      "space" : "srgb"
+    },
+    {
+      "color" : "#ff3d16ff",
+      "name" : "Red",
+      "space" : "srgb"
+    },
+    {
+      "color" : "#ffffffff",
+      "name" : "White",
+      "space" : "srgb"
+    }
+  ]
+}

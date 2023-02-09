@@ -2,8 +2,8 @@ class SwipeCards {
 	constructor(element) {
 		this.board = element
 		
-		this.push()
-		this.push()
+		// Push a new card onto the bottom of the stack
+		//this.push()
 		
 		// handle gestures
 		this.handle()
@@ -18,7 +18,7 @@ class SwipeCards {
 		this.topCard = this.cards[this.cards.length - 1]
 		
 		//get next card
-		this.nextCard = this.cards[this.cards.length - 2]
+		// this.nextCard = this.cards[this.cards.length - 2]
 		
 		if (this.cards.length > 0) {
 			
@@ -27,7 +27,8 @@ class SwipeCards {
 				'translateX(-50%) translateY(-50%) rotate(0deg) rotateY(0deg) scale(1)'
 			
 			// destroy previous Hammer instance, if present
-			if (this.hammer) this.hammer.destroy()
+			if (this.hammer) 
+				this.hammer.destroy()
 			
 			// listen for pan gesture on top card
 			this.hammer = new Hammer(this.topCard)
@@ -43,6 +44,10 @@ class SwipeCards {
 			this.hammer.on('pan', (e) => {
 				this.onPan(e)
 			})
+		} else {
+			//Advanced to the next screen
+			SSI_ShowAlert("Task Completed", "Task Completed", 300, 150, () => {} )
+			//SSI_SubmitMe(false)
 		}
 	}
 	
@@ -52,7 +57,8 @@ class SwipeCards {
 			
 			//remove transition property
 			this.topCard.style.transition = null
-			if (this.nextCard) this.nextCard.style.transition = null
+			// if (this.nextCard) 
+			// 	this.nextCard.style.transition = null
 			
 			//get starting coordinates
 			let style = window.getComputedStyle(this.topCard)
@@ -65,6 +71,12 @@ class SwipeCards {
 			
 			//get finger position, top(1) or bottom(-1) of the card
 			this.isDraggingFrom = (e.center.y - bounds.top) > this.topCard.clientHeight / 2 ? -1 : 1
+			
+			//Create an overlay to indicate direction
+			this.overlay = document.createElement("div")
+			this.overlay.id = "overlay"
+			this.overlay.classList.add("card", "green")
+			this.board.insertBefore(this.overlay, this.topCard)
 			
 		}
 		
@@ -89,10 +101,18 @@ class SwipeCards {
 		//move card and rotate top card
 		this.topCard.style.transform = 
 			'translateX(' + posX + 'px) translateY(' + posY + 'px) rotate(' + deg + 'deg) rotateY(0deg) scale(1)'
-			
+		
+		
 		// scale up next card
-		if (this.nextCard) this.nextCard.style.transform = 
-			'translateX(-50%) translateY(-50%) rotate(0deg) rotateY(0deg) scale(' + scale + ')'
+		if (this.overlay) {
+			this.overlay.style.transform = 'translateX(-50%) translateY(-50%) rotate(0deg) rotateY(0deg) scale(' + scale + ')'
+			if(e.deltaX < 0) {
+				this.overlay.classList.replace("green", "red") 
+			} else {
+				this.overlay.classList.replace("red", "green")
+			} 
+		}
+			
 			
 		if(e.isFinal) {
 			this.isPanning = false
@@ -101,7 +121,7 @@ class SwipeCards {
 			
 			// set back transition property
 			this.topCard.style.transition = 'transform 200ms ease-out'
-			if (this.nextCard) this.nextCard.style.transition = 'transform 100ms linear'
+			if (this.nextCard) this.overlay.style.transition = 'transform 100ms linear'
 			
 			// check threshold
 			if (propX > 0.25 && e.direction == Hammer.DIRECTION_RIGHT) {
@@ -128,12 +148,15 @@ class SwipeCards {
 				this.topCard.style.transform = 
 					'translateX(' + posX + 'px) translateY(' + posY + 'px) rotate(' + deg + 'deg)'
 					
+				// Save the results
+				let storageName = this.topCard.getElementsByTagName("input").item("conceptName").name
+				document.getElementsByTagName("input").namedItem(storageName).value = e.deltaX < 0 ? 0 : 1
+				
 				//wait transition end
 				setTimeout(() => {
 					// remove swiped card
 					this.board.removeChild(this.topCard)
-					// add new card
-					this.push()
+					this.board.removeChild(this.overlay)
 					// handle gestures on new top card
 					this.handle()
 				}, 200)
@@ -141,6 +164,7 @@ class SwipeCards {
 				
 				//reset card position
 				this.topCard.style.transform = 'translateX(-50%) translateY(-50%) rotate(0deg)'
+				this.board.removeChild(this.overlay)
 				if (this.nextCard) this.nextCard.style.transform = 
 					'translateX(-50%) translateY(-50%) rotate(0deg) rotateY(0deg) scale(0.95)'
 			}
@@ -181,8 +205,8 @@ class SwipeCards {
 		this.board.insertBefore(card, this.board.firstChild)
 	}
 
+	storeResult(result) {
+		this.topCard.querySelector("name")
+		
+	}
 }
-
-let board = document.querySelector("#board")
-
-let swipeCards = new SwipeCards(board)
