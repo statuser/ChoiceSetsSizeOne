@@ -1,0 +1,32 @@
+.logo {
+    width: 100%;
+    max-height: 3rem;
+}
+
+.att_1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.star-rating {
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+	  padding: .3em;
+	  margin-top: 0;
+	  margin-bottom: 0;
+}
+
+.c-star {
+      width: var(--size, 32px);
+      height: var(--size, 32px);
+     fill: lightgrey;
+    
+}
+
+.c-star.active {
+           fill: #fed94b;
+}
+
+

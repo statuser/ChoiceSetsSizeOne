@@ -1670,9 +1670,9 @@ Mountain Standard Time
   "RespNumStart": "",
   "Users": "[{\"UserName\":\"admin\",\"Key\":\"64GsIXycBMlfvPfSFIUf8OSzq6UzNyDR7heE5aLvZCw=\",\"Salt\":\"o2V2hjGjRxvEUqrWparGxEnEK6rajIepsrxBSqI7R84=\",\"FullAccess\":true,\"Password\":\"X1cUEz5thu5w0x7641IMpWb07GXc5Hii0rs53Bwz0A0=\"}]",
   "SelfHostRemoteStudyPath": "",
-  "SsiHostRemoteStudyPath": "",
+  "SsiHostRemoteStudyPath": "CSSO",
   "SelfHostSelectedAccount": "",
-  "SsiHostSelectedAccount": ""
+  "SsiHostSelectedAccount": "Swipe"
 }
 5
 47
@@ -3005,7 +3005,7 @@ True
 False
 2
 True
-
+https://Swipe.sawtoothsoftware.com/CSSO/admin.html
 2
 CBCSwipe
 True
@@ -3070,7 +3070,7 @@ False
 False
 
 1
-
+https://Swipe.sawtoothsoftware.com/CSSO/login.html
 False
 False
 False
