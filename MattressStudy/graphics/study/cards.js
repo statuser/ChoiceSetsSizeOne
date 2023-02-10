@@ -46,8 +46,8 @@ class SwipeCards {
 			})
 		} else {
 			//Advanced to the next screen
-			SSI_ShowAlert("Task Completed", "Task Completed", 300, 150, () => {} )
-			//SSI_SubmitMe(false)
+			//SSI_ShowAlert("Task Completed", "Task Completed", 300, 150, () => {} )
+			SSI_SubmitMe();
 		}
 	}
 	
@@ -74,7 +74,7 @@ class SwipeCards {
 			
 			//Create an overlay to indicate direction
 			this.overlay = document.createElement("div")
-			this.overlay.id = "overlay"
+			this.overlay.id = "swipeDirection"
 			this.overlay.classList.add("card", "green")
 			this.board.insertBefore(this.overlay, this.topCard)
 			

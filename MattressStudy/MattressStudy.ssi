@@ -897,7 +897,7 @@ False
 1
 
 0
-0
+1
 
 3
 
@@ -995,112 +995,112 @@ False
 2
 5
 {
-  "DisplayText": "<img src=\"[%GraphicsPath()%]casper.svg\" alt=\"casper\" border=\"0\" class=\"logo\">",
+  "DisplayText": "<img src='[%GraphicsPath()%]casper.svg' alt='casper' border='0' class='logo'>",
   "FriendlyLabel": "casper",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<img src=\"[%GraphicsPath()%]nectar.svg\" alt=\"nectar\" border=\"0\" class=\"logo\">",
+  "DisplayText": "<img src='[%GraphicsPath()%]nectar.svg' alt='nectar' border='0' class='logo'>",
   "FriendlyLabel": "nectar",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<img src=\"[%GraphicsPath()%]purple.svg\" alt=\"purple\" border=\"0\" class=\"logo\">",
+  "DisplayText": "<img src='[%GraphicsPath()%]purple.svg' alt='purple' border='0' class='logo'>",
   "FriendlyLabel": "purple",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<img src=\"[%GraphicsPath()%] sealy.svg\" alt=\"sealy\" border=\"0\" class=\"logo\">",
+  "DisplayText": "<img src='[%GraphicsPath()%]sealy.svg' alt='sealy' border='0' class='logo'>",
   "FriendlyLabel": "sealy",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<img src=\"[%GraphicsPath()%]serta.svg\" alt=\"serta\" border=\"0\" class=\"logo\">",
+  "DisplayText": "<img src='[%GraphicsPath()%]serta.svg' alt='serta' border='0' class='logo'>",
   "FriendlyLabel": "serta",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<img src=\"[%GraphicsPath()%]sleepnumber.svg\" alt=\"sleep number\" border=\"0\" class=\"logo\">",
+  "DisplayText": "<img src='[%GraphicsPath()%]sleepnumber.svg' alt='sleep number' border='0' class='logo'>",
   "FriendlyLabel": "sleepnumber",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<img src=\"[%GraphicsPath()%]tempurpedic.svg\" alt=\"tempurpedic\" border=\"0\" class=\"logo\">",
+  "DisplayText": "<img src='[%GraphicsPath()%]tempurpedic.svg' alt='tempurpedic' border='0' class='logo'>",
   "FriendlyLabel": "tempurpedic",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<img src=\"[%GraphicsPath()%]dreamcloud.svg\" alt=\"dreamcloud\" border=\"0\" class=\"logo\">",
+  "DisplayText": "<img src='[%GraphicsPath()%]dreamcloud.svg' alt='dreamcloud' border='0' class='logo'>",
   "FriendlyLabel": "dreamcloud",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<img src=\"[%GraphicsPath()%]saatva.svg\" alt=\"staava\" border=\"0\" class=\"logo\">",
+  "DisplayText": "<img src='[%GraphicsPath()%]saatva.svg' alt='staava' border='0' class='logo'>",
   "FriendlyLabel": "saatva",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<img src=\"[%GraphicsPath()%]helix.svg\" alt=\"helix\" border=\"0\" class=\"logo\">",
+  "DisplayText": "<img src='[%GraphicsPath()%]helix.svg' alt='helix' border='0' class='logo'>",
   "FriendlyLabel": "helix",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<img src=\"[%GraphicsPath()%]winkbed.svg\" alt=\"winkbed\" border=\"0\" class=\"logo\">",
+  "DisplayText": "<img src='[%GraphicsPath()%]winkbed.svg' alt='winkbed' border='0' class='logo'>",
   "FriendlyLabel": "winkbed",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<img src=\"[%GraphicsPath()%]layla.svg\" alt=\"layla\" border=\"0\" class=\"logo\">",
+  "DisplayText": "<img src='[%GraphicsPath()%]layla.svg' alt='layla' border='0' class='logo'>",
   "FriendlyLabel": "layla",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<img src=\"[%GraphicsPath()%]leesa.svg\" alt=\"leesa\" border=\"0\" class=\"logo\">",
+  "DisplayText": "<img src='[%GraphicsPath()%]leesa.svg' alt='leesa' border='0' class='logo'>",
   "FriendlyLabel": "leesa",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<img src=\"[%GraphicsPath()%]novaform.svg\" alt=\"novafoam (Costco)\" border=\"0\" class=\"logo\">",
+  "DisplayText": "<img src='[%GraphicsPath()%]novaform.svg' alt='novafoam (Costco)' border='0' class='logo'>",
   "FriendlyLabel": "novafoam (Costco)",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<img src=\"[%GraphicsPath()%]tuftandneedle.svg\" alt=\"tuft & needle\" border=\"0\" class=\"logo\">",
+  "DisplayText": "<img src='[%GraphicsPath()%]tuftandneedle.svg' alt='tuft & needle' border='0' class='logo'>",
   "FriendlyLabel": "tuft & needle",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<img src=\"[%GraphicsPath()%]ikea.svg\" alt=\"ikea\" border=\"0\" class=\"logo\">",
+  "DisplayText": "<img src='[%GraphicsPath()%]ikea.svg' alt='ikea' border='0' class='logo'>",
   "FriendlyLabel": "ikea",
   "NullLevel": "False"
 }
@@ -1115,35 +1115,35 @@ False
 2
 5
 {
-  "DisplayText": "<p class=\"star-rating\" aria-label=\"3 stars out of 5\">\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n</p>",
+  "DisplayText": "<p class='star-rating' aria-label='3 stars out of 5'>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n</p>",
   "FriendlyLabel": "3",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<p class=\"star-rating\" aria-label=\"3 stars out of 5\">\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\" fill=\"lightgrey\"></use>\r\n\t<use xlink:href=\"#star\" mask=url(\"#half\")></use>\r\n\t\r\n\t\r\n  </svg>\r\n  <svg class=\"c-star\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n</p>",
+  "DisplayText": "<p class='star-rating' aria-label='3 stars out of 5'>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star' fill='lightgrey'></use>\r\n\t<use xlink:href='#star' mask=url('#half')></use>\r\n\t\r\n\t\r\n  </svg>\r\n  <svg class='c-star' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n</p>",
   "FriendlyLabel": "3.5",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<p class=\"star-rating\" aria-label=\"3 stars out of 5\">\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n</p>",
+  "DisplayText": "<p class='star-rating' aria-label='3 stars out of 5'>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n</p>",
   "FriendlyLabel": "4",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<p class=\"star-rating\" aria-label=\"3 stars out of 5\">\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n  \t<use xlink:href=\"#star\" fill=\"lightgrey\"></use>\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n</p>",
+  "DisplayText": "<p class='star-rating' aria-label='3 stars out of 5'>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n  \t<use xlink:href='#star' fill='lightgrey'></use>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n</p>",
   "FriendlyLabel": "4.5",
   "NullLevel": "False"
 }
 2
 5
 {
-  "DisplayText": "<p class=\"star-rating\" aria-label=\"3 stars out of 5\">\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n  <svg class=\"c-star active\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\">\r\n    <use xlink:href=\"#star\"></use>\r\n  </svg>\r\n</p>",
+  "DisplayText": "<p class='star-rating' aria-label='3 stars out of 5'>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n</p>",
   "FriendlyLabel": "5",
   "NullLevel": "False"
 }
@@ -1479,9 +1479,8 @@ True
 True
 
 False
-2
+1
 <link href="[% GraphicsPath() %]study/choiceStyle.css" rel="stylesheet">
-<script src="[% GraphicsPath() %]study/hammer.min.js"></script>
 3
 
 
@@ -1676,7 +1675,7 @@ Mountain Standard Time
   "SsiHostSelectedAccount": ""
 }
 5
-46
+47
 6
 3
 False
@@ -1716,7 +1715,7 @@ False
 1
 8
 3
-Thanks of taking this survey.  We are interested in learnign about your preferences regarding purchasing a mattress. We will ask various questions that will help us understand different factors that influence you preferences for various mattresses. 
+Thanks of taking this survey.  We are interested in learning about your preferences when you buy a mattress. We will ask various questions that will help us understand different factors that you pay attention to when shopping for a mattress. 
 
 Please click the next button to start the survey.
 1
@@ -2020,7 +2019,7 @@ Thinking the mattress you currently sleep on, where did you purchase the mattres
 1
 
 1
-1
+2
 2
 False
 1
@@ -2030,6 +2029,16 @@ False
 Q1 = 6
 Q4
 
+
+2
+True
+0
+1
+
+1
+
+Q4
+CBCSwipe
 
 
 
@@ -2061,52 +2070,6 @@ False
 13
 2
 CBC_Random1
-1
-True
-False
-15
-2
-False
-2
-3
-
-
-1
-1
-1
-8
-1
-
-3
-
-
-1
-1
-1
-8
-1
-Would you purchase the matress shown below?  (Swipe right to indicate that you would purchase the matress.  Swipe left if you would not purchase the matress.)
-3
-
-
-1
-1
-1
-8
-1
-
-1
-0
-1
-
-1
-
-CBCSwipex1x1
-3
-<div id="board">
-</div>
-<script src="[%GraphicsPath()%]study/cards.js"></script>
-0
 1
 True
 False
@@ -2239,6 +2202,269 @@ False
 13
 2
 CBC_Random12
+1
+True
+False
+19
+2
+PageBreak23
+1
+True
+False
+15
+2
+False
+2
+3
+
+
+1
+1
+1
+8
+2
+<link href="[% GraphicsPath() %]study/swipeStyle.css" rel="stylesheet">
+<script src="[% GraphicsPath() %]study/hammer.min.js"></script>
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+1
+0
+1
+
+1
+
+CBCSwipe
+69
+<!-- Begin custom HTML for CBCSwipe Free Format Question -->
+                    <div class="invisible">
+                        <svg style="width:0; height: 0;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                          <defs>
+                            <mask id="half">
+                              <rect x="0" y="0" width="32" height="32" fill="white"></rect>
+                              <rect x="50%" y="0" width="32" height="32" fill="black"></rect>
+                            </mask>
+                    
+                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="star">
+                              <path d="M31.547 12a.848.848 0 00-.677-.577l-9.427-1.376-4.224-8.532a.847.847 0 00-1.516 0l-4.218 8.534-9.427 1.355a.847.847 0 00-.467 1.467l6.823 6.664-1.612 9.375a.847.847 0 001.23.893l8.428-4.434 8.432 4.432a.847.847 0 001.229-.894l-1.615-9.373 6.822-6.665a.845.845 0 00.214-.869z"></path>
+                            </symbol>
+                          </defs>
+                        </svg>
+                      </div>
+                    <div class="instructions">
+                        <p>Would you purchase the mattress shown below?
+                        </p>
+                        <p class="minimized">
+                            Swipe right to indicate that you would purchase the mattress. Swipe left if you would not purchase the mattress.
+                        </p>
+                    </div>
+                    
+                    <div id="board">
+                        
+                    </div>
+                    <script src="[% GraphicsPath() %]study/cards.js"></script>
+                    <script src="[% GraphicsPath() %]study/createCards.js"></script>
+					[%  Begin Unverified Perl
+						my $i = 1;
+						my $result = "";
+						for( my $taskNum = 1; $taskNum <= 12; $taskNum++) {
+							for ( my $conceptNum = 1; $conceptNum <= 4; $conceptNum++) {
+								my $conceptName = "Con" . $i;
+								my $att1 = CBCDESIGNLEVELTEXT ("CBC_Random" . $taskNum, $conceptNum, 1);
+								my $att2 = CBCDESIGNLEVELTEXT ("CBC_Random" . $taskNum, $conceptNum, 2);
+								my $att3 = CBCDESIGNLEVELTEXT ("CBC_Random" . $taskNum, $conceptNum, 3);
+								my $att4 = CBCDESIGNLEVELTEXT ("CBC_Random" . $taskNum, $conceptNum, 4);
+								my $att5 = CBCDESIGNLEVELTEXT ("CBC_Random" . $taskNum, $conceptNum, 5);
+								my $att6 = CBCDESIGNLEVELTEXT ("CBC_Random" . $taskNum, $conceptNum, 6);
+								my $att7 = CBCDESIGNLEVELTEXT ("CBC_Random" . $taskNum, $conceptNum, 7);
+
+								$result = $result . "<script type=\"text/javascript\">
+								    				    const concept${i} = new Concept(`${conceptName}`,
+									                                                 `${att1}`, 
+									                                                 `${att2}`, 
+									                                                 \"${att3}\", 
+									                                                 \"${att4}\", 
+									                                                 \"${att5}\",
+									                                                 \"${att6}\",
+									                                                 \"${att7}\");
+									       			    concept${i}.createCard();
+									       			</script>
+									                <input name=\"CBCSwipe_${conceptName}\" id=\"CBCSwipe_${conceptName}\" type=\"hidden\" value=\"\">\n";
+								$i++;
+							}
+						}
+											
+
+						return $result;
+						
+					End Unverified %]
+                    
+                    <script type="text/javascript">    
+                        let board = document.querySelector("#board")
+                        let swipeCards = new SwipeCards(board)
+                    </script>
+                    <!-- End custom HTML for CBCSwipe Free Format Question -->
+
+36
+7
+3
+CBCSwipe_Con1
+4
+7
+3
+CBCSwipe_Con2
+4
+7
+3
+CBCSwipe_Con3
+4
+7
+3
+CBCSwipe_Con4
+4
+7
+3
+CBCSwipe_Con5
+4
+7
+3
+CBCSwipe_Con6
+4
+7
+3
+CBCSwipe_Con7
+4
+7
+3
+CBCSwipe_Con8
+4
+7
+3
+CBCSwipe_Con9
+4
+7
+3
+CBCSwipe_Con10
+4
+7
+3
+CBCSwipe_Con11
+4
+7
+3
+CBCSwipe_Con12
+4
+7
+3
+CBCSwipe_Con13
+4
+7
+3
+CBCSwipe_Con14
+4
+7
+3
+CBCSwipe_Con15
+4
+7
+3
+CBCSwipe_Con16
+4
+7
+3
+CBCSwipe_Con17
+4
+7
+3
+CBCSwipe_Con18
+4
+7
+3
+CBCSwipe_Con19
+4
+7
+3
+CBCSwipe_Con20
+4
+7
+3
+CBCSwipe_Con21
+4
+7
+3
+CBCSwipe_Con22
+4
+7
+3
+CBCSwipe_Con23
+4
+7
+3
+CBCSwipe_Con24
+4
+7
+3
+CBCSwipe_Con25
+4
+7
+3
+CBCSwipe_Con26
+4
+7
+3
+CBCSwipe_Con27
+4
+7
+3
+CBCSwipe_Con28
+4
+7
+3
+CBCSwipe_Con29
+4
+7
+3
+CBCSwipe_Con30
+4
+7
+3
+CBCSwipe_Con31
+4
+7
+3
+CBCSwipe_Con32
+4
+7
+3
+CBCSwipe_Con33
+4
+7
+3
+CBCSwipe_Con34
+4
+7
+3
+CBCSwipe_Con35
+4
+7
+3
+CBCSwipe_Con36
+4
 1
 True
 False
@@ -2781,7 +3007,7 @@ False
 True
 
 2
-CBCSwipex1x1
+CBCSwipe
 True
 False
 False

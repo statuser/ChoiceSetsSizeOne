@@ -1,5 +1,6 @@
 .logo {
     width: 100%;
+    max-height: 3rem;
 }
 
 .att_1 {
@@ -29,87 +30,3 @@
 }
 
 
-html, body {
-	width: 100%;
-	height: 100%
-	margin: 0;
-	padding: 0;
-}
-
-#board {
-	width: 100%;
-	height: 100%;
-	min-height: 400px;
-	position: relative;
-	overflow: hidden;
-	background-color: rgb(245, 247, 250);
-	
-}
-
-.card {
-	width: 95%;
-	height: 95%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	border-color: rgba(.5, .5, .5, .25);
-	border-width: 1px;
-	border-style: solid;
-	border-radius: 1%;
-	box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.1);
-	background-color: rgb(255, 255, 255);
-	transform: translateX(-50%) translateY(-50%) scale(0.90);
-	padding: .2em;
-}
-
-.attribute_label {
-	font-size: .55em;
-	color: rgba(1,1,1,.7);
-	padding: .25em;
-}
-
-.level_label {
-	padding-left: 1em;
-	font-size: 1em;
-	color: rgba(1,1,1,.65);
-}
-
-.invisible {
-	display: none;
-}
-
-.minimized {
-	font-size: .5em;
-	color: rgba(1,1,1,.5);
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-.instructions > p {
-	margin-bottom: .1em;
-	margin-top: 0;
-}
-
-.freeformat {
-	margin-top: 0;
-	margin-bottom: 0;
-	padding: 0;
-}
-
-.red {
-	background-color: rgb(255, 62, 22);
-}
-
-.green {
-	background-color: rgb(135, 212, 53);
-	
-	
-}
-
-.submit_div {
-	display: none;
-}
-
-.progress_bar {
-	display: none;
-}
