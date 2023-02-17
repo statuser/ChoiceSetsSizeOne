@@ -1,0 +1,3434 @@
+__Lighthouse_Studio_Study_File__
+2
+9.14.2
+15
+0
+2
+11
+0
+2
+Q1List
+6
+3
+1
+Within the last year
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Between 2 and 3 years ago
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Between 3 and 5 years ago
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Between 5 and 10 years ago
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+More than 10 years ago
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+I wasn't the one that purchased the mattress
+
+False
+True
+1
+100
+False
+
+
+False
+
+1
+True
+False
+0
+2
+Q2List
+2
+3
+1
+Yes
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+No
+
+False
+True
+1
+100
+False
+
+
+False
+
+1
+True
+False
+0
+2
+Q3List
+4
+3
+1
+Within the next month
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Within the next 6 months
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Within the next year
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+In more than a year
+
+False
+True
+1
+100
+False
+
+
+False
+
+1
+True
+False
+0
+2
+Q4List
+7
+3
+1
+Online, direct from the manufacture
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Online, from a third party store (Amazon, Specialty Mattress retailer, etc.)
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+From a manufactores showroom
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+From a specialty mattress store
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+From a furniture store
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+From a department store (Macy's, Dillards, etc.)
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+From a general goods store (Costco, Walmart, etc.)
+
+False
+True
+1
+100
+False
+
+
+False
+
+1
+True
+False
+0
+2
+GenderList
+3
+3
+1
+Male
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Female
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Prefer not to answer
+
+False
+True
+1
+100
+False
+
+
+False
+
+1
+True
+False
+0
+2
+AgeList
+8
+3
+1
+18 - 24
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+25 - 34
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+35 - 44
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+45 - 54
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+55 - 64
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+65 - 74
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+75 - 84
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+85 or older
+
+False
+True
+1
+100
+False
+
+
+False
+
+1
+True
+False
+0
+2
+RaceList
+7
+3
+1
+White or Caucasian
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Black or African American
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+American Indian/Native American or Alaskan Native
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Asian
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Native Hawaiian or Other Pacific Islander
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Other
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Prefer not to say
+
+False
+True
+1
+100
+False
+
+
+True
+
+1
+True
+False
+0
+2
+EducationList
+7
+3
+1
+Some high school or less
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+High school diploma or GED
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Some college, but no degree
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Associates or technical degree
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Bachelor's degree
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Graduate or professional degree (MA, MS, MBA, PhD, JD, MD, DDS, etc.)
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Prefer not to say
+
+False
+True
+1
+100
+False
+
+
+True
+
+1
+True
+False
+0
+2
+IncomeList
+7
+3
+1
+Less than $25,000
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+$25,000 - $49,999
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+$50,000 - $74,999
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+$75,000 - $99,999
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+$100,000 - $149,999
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+$150,000 or more
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+Perfer not to say
+
+False
+True
+1
+100
+False
+
+
+True
+
+1
+True
+False
+0
+2
+ExperienceList
+3
+3
+1
+Yes
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+No
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+I don't remember
+
+False
+True
+1
+100
+False
+
+
+False
+
+1
+True
+False
+0
+2
+SatisfactionList
+7
+3
+1
+The survey was fun to take
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+The survey was boring
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+The survey was engaging
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+I enjoyed providing feedback about my preferences
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+This survey was easy to complete
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+This survey was too long
+
+False
+True
+1
+100
+False
+
+
+False
+
+3
+1
+None of the above
+
+False
+True
+1
+100
+False
+
+
+True
+
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+3
+0
+1
+1
+True
+False
+3
+1
+8
+CBC
+1
+False
+0
+0
+0
+True
+0
+-1
+5
+4
+1674746525
+2
+False
+1
+300
+False
+0
+249
+5
+9
+True
+1
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+16
+<div>
+	<svg style="width:0; height: 0;" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
+		<defs>
+			<mask id="half">
+				<rect x="0" y="0" width="32" height="32" fill="white" />
+				<rect x="50%" y="0" width="32" height="32" fill="black" />
+			</mask>
+			
+			<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="star">
+				<path d="M31.547 12a.848.848 0 00-.677-.577l-9.427-1.376-4.224-8.532a.847.847 0 00-1.516 0l-4.218 8.534-9.427 1.355a.847.847 0 00-.467 1.467l6.823 6.664-1.612 9.375a.847.847 0 001.23.893l8.428-4.434 8.432 4.432a.847.847 0 001.229-.894l-1.615-9.373 6.822-6.665a.845.845 0 00.214-.869z" />
+			</symbol>
+		</defs>
+	</svg>
+</div>
+
+If these were your only options, which would you choose?
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+([%CBCCurrentTask()%] of [%CBCTotalTasks()%])
+
+
+
+1
+
+3
+
+
+1
+1
+1
+8
+1
+Best
+False
+
+
+
+1
+
+3
+
+
+1
+1
+1
+8
+1
+Worst
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+False
+False
+3
+
+
+1
+1
+1
+8
+1
+
+0
+0
+
+3
+
+
+1
+1
+1
+8
+1
+Select
+True
+
+
+
+
+False
+
+
+
+
+
+False
+
+
+
+
+1
+1
+100
+1
+
+1
+
+False
+False
+True
+1
+Total:
+1
+
+1
+1
+0
+1
+0
+1
+
+1
+1
+
+
+
+1
+3
+1
+2
+1
+NONE: I wouldn't choose any of these.
+3
+
+
+1
+1
+1
+8
+1
+Given what you know about the market, would you really buy the XXXXXXXXX you chose above?
+3
+
+
+1
+1
+1
+8
+1
+
+
+No
+Yes
+1
+True
+False
+2
+0
+2
+7
+3
+6
+{
+  "DisplayText": "Brand",
+  "FriendlyLabel": "",
+  "RankOrder": "None",
+  "LevelCount": "16"
+}
+2
+5
+{
+  "DisplayText": "<img src='[%GraphicsPath()%]casper.svg' alt='casper' border='0' class='logo'>",
+  "FriendlyLabel": "casper",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<img src='[%GraphicsPath()%]nectar.svg' alt='nectar' border='0' class='logo'>",
+  "FriendlyLabel": "nectar",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<img src='[%GraphicsPath()%]purple.svg' alt='purple' border='0' class='logo'>",
+  "FriendlyLabel": "purple",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<img src='[%GraphicsPath()%]sealy.svg' alt='sealy' border='0' class='logo'>",
+  "FriendlyLabel": "sealy",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<img src='[%GraphicsPath()%]serta.svg' alt='serta' border='0' class='logo'>",
+  "FriendlyLabel": "serta",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<img src='[%GraphicsPath()%]sleepnumber.svg' alt='sleep number' border='0' class='logo'>",
+  "FriendlyLabel": "sleepnumber",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<img src='[%GraphicsPath()%]tempurpedic.svg' alt='tempurpedic' border='0' class='logo'>",
+  "FriendlyLabel": "tempurpedic",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<img src='[%GraphicsPath()%]dreamcloud.svg' alt='dreamcloud' border='0' class='logo'>",
+  "FriendlyLabel": "dreamcloud",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<img src='[%GraphicsPath()%]saatva.svg' alt='staava' border='0' class='logo'>",
+  "FriendlyLabel": "saatva",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<img src='[%GraphicsPath()%]helix.svg' alt='helix' border='0' class='logo'>",
+  "FriendlyLabel": "helix",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<img src='[%GraphicsPath()%]winkbed.svg' alt='winkbed' border='0' class='logo'>",
+  "FriendlyLabel": "winkbed",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<img src='[%GraphicsPath()%]layla.svg' alt='layla' border='0' class='logo'>",
+  "FriendlyLabel": "layla",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<img src='[%GraphicsPath()%]leesa.svg' alt='leesa' border='0' class='logo'>",
+  "FriendlyLabel": "leesa",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<img src='[%GraphicsPath()%]novaform.svg' alt='novafoam (Costco)' border='0' class='logo'>",
+  "FriendlyLabel": "novafoam (Costco)",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<img src='[%GraphicsPath()%]tuftandneedle.svg' alt='tuft & needle' border='0' class='logo'>",
+  "FriendlyLabel": "tuft & needle",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<img src='[%GraphicsPath()%]ikea.svg' alt='ikea' border='0' class='logo'>",
+  "FriendlyLabel": "ikea",
+  "NullLevel": "False"
+}
+3
+6
+{
+  "DisplayText": "Verified Buyer Ratings",
+  "FriendlyLabel": "",
+  "RankOrder": "None",
+  "LevelCount": "5"
+}
+2
+5
+{
+  "DisplayText": "<p class='star-rating' aria-label='3 stars out of 5'>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n</p>",
+  "FriendlyLabel": "3",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<p class='star-rating' aria-label='3 stars out of 5'>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star' fill='lightgrey'></use>\r\n\t<use xlink:href='#star' mask=url('#half')></use>\r\n\t\r\n\t\r\n  </svg>\r\n  <svg class='c-star' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n</p>",
+  "FriendlyLabel": "3.5",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<p class='star-rating' aria-label='3 stars out of 5'>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n</p>",
+  "FriendlyLabel": "4",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<p class='star-rating' aria-label='3 stars out of 5'>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n  \t<use xlink:href='#star' fill='lightgrey'></use>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n</p>",
+  "FriendlyLabel": "4.5",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "<p class='star-rating' aria-label='3 stars out of 5'>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n  <svg class='c-star active' width='32' height='32' viewBox='0 0 32 32'>\r\n    <use xlink:href='#star'></use>\r\n  </svg>\r\n</p>",
+  "FriendlyLabel": "5",
+  "NullLevel": "False"
+}
+3
+6
+{
+  "DisplayText": "Mattress Type",
+  "FriendlyLabel": "",
+  "RankOrder": "None",
+  "LevelCount": "5"
+}
+2
+5
+{
+  "DisplayText": "Memory Foam",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "Innerspring",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "Hybrid",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "Latex Foam",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "Hyper-elastic polymer",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+3
+6
+{
+  "DisplayText": "Firmness",
+  "FriendlyLabel": "",
+  "RankOrder": "None",
+  "LevelCount": "5"
+}
+2
+5
+{
+  "DisplayText": "Extra Firm",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "Firm",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "Medium",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "Soft",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "Extra Soft",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+3
+6
+{
+  "DisplayText": "Trial Period",
+  "FriendlyLabel": "",
+  "RankOrder": "None",
+  "LevelCount": "4"
+}
+2
+5
+{
+  "DisplayText": "30 Nights",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "90 Nights",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "180 Nights",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "365 Nights",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+3
+6
+{
+  "DisplayText": "Warranty",
+  "FriendlyLabel": "",
+  "RankOrder": "None",
+  "LevelCount": "4"
+}
+2
+5
+{
+  "DisplayText": "None",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "1 Year",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "5 Year",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "10 Year",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+3
+6
+{
+  "DisplayText": "Price (Queen)",
+  "FriendlyLabel": "",
+  "RankOrder": "None",
+  "LevelCount": "7"
+}
+2
+5
+{
+  "DisplayText": "$499",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "$749",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "$999",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "$1,249",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "$1,499",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "$1,749",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+5
+{
+  "DisplayText": "$1,999",
+  "FriendlyLabel": "",
+  "NullLevel": "False"
+}
+2
+0
+1
+True
+False
+False
+0
+0
+True
+2
+0
+0
+1
+True
+False
+2
+0
+1
+0
+True
+True
+True
+True
+True
+1
+2
+False
+True
+250
+15
+1
+0
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+2
+1
+True
+False
+2
+0
+1
+1
+True
+False
+11
+#218EBC
+
+
+
+8
+
+
+
+
+
+
+
+8
+8
+False
+True
+False
+1
+
+False
+1
+
+
+3
+
+
+1
+1
+1
+8
+1
+
+1
+1
+Next
+True
+1
+Back
+1
+
+True
+1
+
+
+
+True
+1
+
+1
+
+1
+
+1
+
+
+
+True
+
+False
+1
+<link href="[% GraphicsPath() %]study/choiceStyle.css" rel="stylesheet">
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+
+4
+2
+8
+1
+0
+1
+100
+
+
+
+
+
+1
+100
+False
+9
+3
+
+
+1
+1
+1
+8
+1
+
+1
+True
+False
+22
+18
+1
+An error has occurred on this page.  Please fix this error and try again.
+0
+1
+A response is required.  [%ErrText()%]
+1
+1
+The minimum number of checks is [%ErrMin()%].  [%ErrText()%]
+2
+1
+The maximum number of checks is [%ErrMax()%].  [%ErrText()%]
+3
+1
+The response must be between [%ErrMin()%] and [%ErrMax()%].  [%ErrText()%]
+4
+1
+The response must be a number.  [%ErrText()%]
+5
+1
+The response must contain at least [%ErrMin()%] characters.  [%ErrText()%]
+6
+1
+The response cannot contain more than [%ErrMax()%] characters.  [%ErrText()%]
+7
+1
+No additional interviewing permitted using this identifier.
+8
+1
+Your survey has already been submitted.  Thank you.
+9
+1
+Invalid login.  Access denied.
+10
+1
+Each response needs to be unique.  [%ErrText()%]
+11
+1
+Please rank [%ErrTotal()%] items.  [%ErrText()%]
+12
+1
+"None of the Above" and another option cannot both be selected.  [%ErrText()%]
+13
+1
+The responses need to sum to [%ErrTotal()%]. Their current sum is [%ErrCurSum()%].  [%ErrText()%]
+15
+1
+The same item cannot be selected twice.  [%ErrText()%]
+16
+1
+You've chosen some features that together are not feasible. The prohibited combinations are highlighted. Please reconsider.  [%ErrText()%]
+17
+1
+The price has changed on one or more of the items that you selected. Please review the price.
+19
+1
+The survey is currently being updated.  Please try again in a few seconds.
+20
+1
+Product cannot be chosen as both Best and Worst
+21
+1
+This survey requires a JavaScript-enabled browser. Please enable JavaScript for your browser and then enter the survey again.
+22
+1
+You are using a web browser that is not supported by this survey. Please update your web browser (or use a different one) and try again.
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+True
+True
+True
+Mountain Standard Time
+0
+
+10
+{
+  "EnableEmbedding": "False",
+  "EmbeddingDomains": "",
+  "EnableRemoteResources": "False",
+  "RemoteResourceDomains": "",
+  "EnableCustomHeaders": "False",
+  "CustomHeaders": "Cache-Control: no-cache, max-age=86400\nContent-Security-Policy: default-src 'self' 'unsafe-inline' data:; frame-ancestors 'self'\nSet-Cookie: HttpOnly; Secure;\nStrict-Transport-Security: max-age=31536000; includeSubDomains\nX-Content-Type-Options: nosniff\nX-Frame-Options: SAMEORIGIN\nX-XSS-Protection: 1; mode=block",
+  "UseHeadersInLocalhost": "True",
+  "EnableCookiesOverHttp": "False"
+}
+7
+9
+{
+  "MaxDatabaseFields": "100",
+  "RespNumStart": "",
+  "Users": "[{\"UserName\":\"admin\",\"Key\":\"64GsIXycBMlfvPfSFIUf8OSzq6UzNyDR7heE5aLvZCw=\",\"Salt\":\"o2V2hjGjRxvEUqrWparGxEnEK6rajIepsrxBSqI7R84=\",\"FullAccess\":true,\"Password\":\"X1cUEz5thu5w0x7641IMpWb07GXc5Hii0rs53Bwz0A0=\"}]",
+  "SelfHostRemoteStudyPath": "",
+  "SsiHostRemoteStudyPath": "Grid",
+  "SelfHostSelectedAccount": "",
+  "SsiHostSelectedAccount": "Swipe"
+}
+5
+53
+6
+3
+False
+2
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+3
+Thanks of taking this survey.  We are interested in learning about your preferences when you buy a mattress. We will ask various questions that will help us understand different factors that you pay attention to when shopping for a mattress. 
+
+Please click the next button to start the survey.
+1
+0
+1
+
+1
+
+Intro
+1
+True
+False
+
+19
+2
+PageBreak13
+1
+True
+False
+2
+3
+False
+False
+True
+1
+2
+1
+1
+0
+1
+0
+1
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+How recently did you purchase the mattress that you currently sleep on?
+3
+
+
+1
+1
+1
+8
+1
+
+1
+0
+
+
+1
+
+1
+
+Q1List
+Q1
+
+1
+True
+False
+3
+
+
+1
+1
+1
+8
+1
+
+19
+2
+PageBreak14
+1
+True
+False
+2
+3
+False
+False
+True
+1
+2
+1
+1
+0
+1
+0
+1
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+Are you currently considering purchasing a new mattress?
+3
+
+
+1
+1
+1
+8
+1
+
+1
+0
+
+
+1
+
+1
+
+Q2List
+Q2
+
+1
+True
+False
+3
+
+
+1
+1
+1
+8
+1
+
+19
+2
+PageBreak15
+1
+True
+False
+2
+3
+False
+False
+True
+1
+2
+1
+1
+0
+1
+0
+1
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+When do you expect to purchase a new mattress?
+3
+
+
+1
+1
+1
+8
+1
+
+1
+0
+
+
+1
+
+1
+
+Q3List
+Q3
+
+1
+True
+False
+3
+
+
+1
+1
+1
+8
+1
+
+19
+2
+PageBreak16
+1
+True
+False
+2
+3
+False
+False
+True
+1
+2
+1
+1
+0
+1
+0
+1
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+Thinking the mattress you currently sleep on, where did you purchase the mattress?
+3
+
+
+1
+1
+1
+8
+1
+
+1
+1
+2
+False
+1
+0
+
+1
+Q1 = 6
+Q4
+
+
+
+
+1
+
+1
+
+Q4List
+Q4
+
+1
+True
+False
+3
+
+
+1
+1
+1
+8
+1
+
+19
+2
+PageBreak17
+1
+True
+False
+13
+2
+CBC_Random1
+1
+True
+False
+19
+2
+PageBreak
+1
+True
+False
+13
+2
+CBC_Random2
+1
+True
+False
+19
+2
+PageBreak1
+1
+True
+False
+13
+2
+CBC_Random3
+1
+True
+False
+19
+2
+PageBreak2
+1
+True
+False
+13
+2
+CBC_Random4
+1
+True
+False
+19
+2
+PageBreak3
+1
+True
+False
+13
+2
+CBC_Random5
+1
+True
+False
+19
+2
+PageBreak11
+1
+True
+False
+13
+2
+CBC_Random6
+1
+True
+False
+19
+2
+PageBreak5
+1
+True
+False
+13
+2
+CBC_Random7
+1
+True
+False
+19
+2
+PageBreak6
+1
+True
+False
+13
+2
+CBC_Random8
+1
+True
+False
+19
+2
+PageBreak7
+1
+True
+False
+13
+2
+CBC_Random9
+1
+True
+False
+19
+2
+PageBreak12
+1
+True
+False
+13
+2
+CBC_Random10
+1
+True
+False
+19
+2
+PageBreak9
+1
+True
+False
+13
+2
+CBC_Random11
+1
+True
+False
+19
+2
+PageBreak10
+1
+True
+False
+13
+2
+CBC_Random12
+1
+True
+False
+19
+2
+PageBreak23
+1
+True
+False
+6
+3
+False
+2
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+On the following page you will be asked to provide input on a number of different mattresses.  For each mattress, please indicate whether or not you would consider purchasing that mattress.
+3
+
+
+1
+1
+1
+8
+1
+To indicate that you would consider a mattress please swipe the mattress to the right.  If you do not like the mattress please swipe it to the left.
+1
+1
+2
+True
+0
+0
+
+1
+
+SwipeIntro
+Gender
+
+1
+
+1
+
+SwipeIntro
+1
+True
+False
+
+19
+2
+PageBreak25
+1
+True
+False
+15
+2
+False
+2
+3
+
+
+1
+1
+1
+8
+2
+<link href="[% GraphicsPath() %]study/swipeStyle.css" rel="stylesheet">
+<script src="[% GraphicsPath() %]study/hammer.min.js"></script>
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+1
+0
+1
+
+1
+
+CBCSwipe
+69
+<!-- Begin custom HTML for CBCSwipe Free Format Question -->
+                    <div class="invisible">
+                        <svg style="width:0; height: 0;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                          <defs>
+                            <mask id="half">
+                              <rect x="0" y="0" width="32" height="32" fill="white"></rect>
+                              <rect x="50%" y="0" width="32" height="32" fill="black"></rect>
+                            </mask>
+                    
+                            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="star">
+                              <path d="M31.547 12a.848.848 0 00-.677-.577l-9.427-1.376-4.224-8.532a.847.847 0 00-1.516 0l-4.218 8.534-9.427 1.355a.847.847 0 00-.467 1.467l6.823 6.664-1.612 9.375a.847.847 0 001.23.893l8.428-4.434 8.432 4.432a.847.847 0 001.229-.894l-1.615-9.373 6.822-6.665a.845.845 0 00.214-.869z"></path>
+                            </symbol>
+                          </defs>
+                        </svg>
+                      </div>
+                    <div class="instructions">
+                        <p>Would you purchase the mattress shown below?
+                        </p>
+                        <p class="minimized">
+                            Swipe right to indicate that you would purchase the mattress. Swipe left if you would not purchase the mattress.
+                        </p>
+                    </div>
+                    
+                    <div id="board">
+                        
+                    </div>
+                    <script src="[% GraphicsPath() %]study/cards.js"></script>
+                    <script src="[% GraphicsPath() %]study/createCards.js"></script>
+					[%  Begin Unverified Perl
+						my $i = 1;
+						my $result = "";
+						for( my $taskNum = 1; $taskNum <= 12; $taskNum++) {
+							for ( my $conceptNum = 1; $conceptNum <= 4; $conceptNum++) {
+								my $conceptName = "Con" . $i;
+								my $att1 = CBCDESIGNLEVELTEXT ("CBC_Random" . $taskNum, $conceptNum, 1);
+								my $att2 = CBCDESIGNLEVELTEXT ("CBC_Random" . $taskNum, $conceptNum, 2);
+								my $att3 = CBCDESIGNLEVELTEXT ("CBC_Random" . $taskNum, $conceptNum, 3);
+								my $att4 = CBCDESIGNLEVELTEXT ("CBC_Random" . $taskNum, $conceptNum, 4);
+								my $att5 = CBCDESIGNLEVELTEXT ("CBC_Random" . $taskNum, $conceptNum, 5);
+								my $att6 = CBCDESIGNLEVELTEXT ("CBC_Random" . $taskNum, $conceptNum, 6);
+								my $att7 = CBCDESIGNLEVELTEXT ("CBC_Random" . $taskNum, $conceptNum, 7);
+
+								$result = $result . "<script type=\"text/javascript\">
+								    				    const concept${i} = new Concept(`${conceptName}`,
+									                                                 `${att1}`, 
+									                                                 `${att2}`, 
+									                                                 \"${att3}\", 
+									                                                 \"${att4}\", 
+									                                                 \"${att5}\",
+									                                                 \"${att6}\",
+									                                                 \"${att7}\");
+									       			    concept${i}.createCard();
+									       			</script>
+									                <input name=\"CBCSwipe_${conceptName}\" id=\"CBCSwipe_${conceptName}\" type=\"hidden\" value=\"\">\n";
+								$i++;
+							}
+						}
+											
+
+						return $result;
+						
+					End Unverified %]
+                    
+                    <script type="text/javascript">    
+                        let board = document.querySelector("#board")
+                        let swipeCards = new SwipeCards(board)
+                    </script>
+                    <!-- End custom HTML for CBCSwipe Free Format Question -->
+
+36
+7
+3
+CBCSwipe_Con1
+4
+7
+3
+CBCSwipe_Con2
+4
+7
+3
+CBCSwipe_Con3
+4
+7
+3
+CBCSwipe_Con4
+4
+7
+3
+CBCSwipe_Con5
+4
+7
+3
+CBCSwipe_Con6
+4
+7
+3
+CBCSwipe_Con7
+4
+7
+3
+CBCSwipe_Con8
+4
+7
+3
+CBCSwipe_Con9
+4
+7
+3
+CBCSwipe_Con10
+4
+7
+3
+CBCSwipe_Con11
+4
+7
+3
+CBCSwipe_Con12
+4
+7
+3
+CBCSwipe_Con13
+4
+7
+3
+CBCSwipe_Con14
+4
+7
+3
+CBCSwipe_Con15
+4
+7
+3
+CBCSwipe_Con16
+4
+7
+3
+CBCSwipe_Con17
+4
+7
+3
+CBCSwipe_Con18
+4
+7
+3
+CBCSwipe_Con19
+4
+7
+3
+CBCSwipe_Con20
+4
+7
+3
+CBCSwipe_Con21
+4
+7
+3
+CBCSwipe_Con22
+4
+7
+3
+CBCSwipe_Con23
+4
+7
+3
+CBCSwipe_Con24
+4
+7
+3
+CBCSwipe_Con25
+4
+7
+3
+CBCSwipe_Con26
+4
+7
+3
+CBCSwipe_Con27
+4
+7
+3
+CBCSwipe_Con28
+4
+7
+3
+CBCSwipe_Con29
+4
+7
+3
+CBCSwipe_Con30
+4
+7
+3
+CBCSwipe_Con31
+4
+7
+3
+CBCSwipe_Con32
+4
+7
+3
+CBCSwipe_Con33
+4
+7
+3
+CBCSwipe_Con34
+4
+7
+3
+CBCSwipe_Con35
+4
+7
+3
+CBCSwipe_Con36
+4
+1
+True
+False
+19
+2
+PageBreak4
+1
+True
+False
+2
+3
+False
+False
+True
+1
+2
+1
+1
+0
+1
+0
+1
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+What is your gender?
+3
+
+
+1
+1
+1
+8
+1
+
+1
+0
+
+
+1
+
+1
+
+GenderList
+Gender
+
+1
+True
+False
+3
+
+
+1
+1
+1
+8
+1
+
+19
+2
+PageBreak8
+1
+True
+False
+2
+3
+False
+False
+True
+1
+2
+1
+1
+0
+1
+0
+1
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+What is your age range?
+3
+
+
+1
+1
+1
+8
+1
+
+1
+0
+
+
+1
+
+1
+
+AgeList
+Age
+
+1
+True
+False
+3
+
+
+1
+1
+1
+8
+1
+
+19
+2
+PageBreak18
+1
+True
+False
+2
+3
+False
+False
+True
+1
+2
+2
+1
+0
+1
+0
+1
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+Choose one or more races that you consider yourself to be
+3
+
+
+1
+1
+1
+8
+1
+
+1
+0
+
+
+1
+
+1
+
+RaceList
+Race
+
+1
+True
+False
+3
+
+
+1
+1
+1
+8
+1
+
+19
+2
+PageBreak19
+1
+True
+False
+2
+3
+False
+False
+True
+1
+2
+1
+1
+0
+1
+0
+1
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+What is the highest level of education you have completed?
+3
+
+
+1
+1
+1
+8
+1
+
+1
+0
+
+
+1
+
+1
+
+EducationList
+Education
+
+1
+True
+False
+3
+
+
+1
+1
+1
+8
+1
+
+19
+2
+PageBreak20
+1
+True
+False
+2
+3
+False
+False
+True
+1
+2
+1
+1
+0
+1
+0
+1
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+What was your total household income before taxes during the last 12 months?
+3
+
+
+1
+1
+1
+8
+1
+
+1
+0
+
+
+1
+
+1
+
+IncomeList
+Income
+
+1
+True
+False
+3
+
+
+1
+1
+1
+8
+1
+
+19
+2
+PageBreak22
+1
+True
+False
+2
+3
+False
+False
+True
+1
+2
+1
+1
+0
+1
+0
+1
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+Have you ever taken a survey like this in the past?
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+1
+0
+
+
+1
+
+1
+
+ExperienceList
+Experience
+
+1
+True
+False
+3
+
+
+1
+1
+1
+8
+1
+
+19
+2
+PageBreak24
+1
+True
+False
+2
+3
+False
+False
+True
+1
+2
+2
+1
+0
+1
+0
+1
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+Thanks for your answers.  Which of the following statements do you agree with about this survey?  (check all that apply)
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+1
+0
+
+
+1
+
+1
+
+SatisfactionList
+Satisfaction
+
+1
+True
+False
+3
+
+
+1
+1
+1
+8
+1
+
+19
+2
+PageBreak21
+1
+True
+False
+20
+4
+Terminate
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+Thank you for completing our survey!  You may now close the browser.
+3
+
+
+1
+1
+1
+8
+1
+
+3
+
+
+1
+1
+1
+8
+1
+
+1
+
+1
+True
+False
+True
+5
+-1
+DoNotRedirect
+Click to be redirected
+5
+https://
+
+1
+0
+1
+0
+1
+0
+1
+0
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+True
+False
+3
+0
+1
+1
+True
+False
+False
+2
+0
+1
+1
+True
+False
+3
+True
+1
+
+
+False
+2
+0
+1
+True
+False
+2
+0
+1
+True
+False
+2
+0
+1
+True
+False
+2
+True
+https://Swipe.sawtoothsoftware.com/Grid/admin.html
+2
+CBCSwipe
+True
+False
+False
+
+False
+False
+False
+False
+1
+
+
+3
+0
+0
+2
+3
+1
+IncompleteFieldOnly
+Incomplete (test data removed)
+sys_RespStatus = 2 AND sys_DataSource < 4
+1
+DisqualifiedFieldOnly
+Disqualified (test data removed)
+sys_RespStatus = 4 AND sys_DataSource < 4
+1
+CompleteFieldOnly
+Qualified / Complete (test data removed)
+sys_RespStatus = 5 AND sys_DataSource < 4
+1
+
+1
+True
+1
+0
+0
+
+
+
+1
+True
+False
+1
+True
+False
+1
+True
+False
+1
+0
+1
+0
+3
+70
+100
+0
+False
+False
+8
+False
+False
+
+1
+https://Swipe.sawtoothsoftware.com/Grid/login.html
+False
+False
+False
+DLLEJ6H89GUBJ3NEUKVK8C9ZN0NKMLPM

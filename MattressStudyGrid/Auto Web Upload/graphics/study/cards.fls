@@ -1,0 +1,6 @@
+PWD /Users/jrhowell/src/ChoiceSetsSizeOne/MattressStudy/graphics/study
+INPUT /Users/jrhowell/Library/TinyTeX/texmf.cnf
+INPUT /Users/jrhowell/Library/TinyTeX/texmf-dist/web2c/texmf.cnf
+INPUT /Users/jrhowell/Library/TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT cards.js
+OUTPUT cards.log
