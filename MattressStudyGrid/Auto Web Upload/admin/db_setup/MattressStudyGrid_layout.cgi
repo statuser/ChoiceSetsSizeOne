@@ -1,4 +1,4 @@
-9674886ebe91aa02f9821d83963c5199a35e6e27277c565a0c2adbcea1f877fa
+ed2aa4805bbd9080300c958ca1ad18b0cede7cf5fc94b10a1d372eea1e0fcdc6
 sys_RespNum,int
 sys_ElapsedTime,int
 sys_SumPageTimes,int
@@ -18,6 +18,9 @@ sys_ScreenWidth,int
 sys_ShowPrev,bool
 sys_CheckSum,int
 sys_CAPIDeviceID,text
+PROLIFICPID,text
+SESSIONID,text
+SURVEYID,text
 Q1,int
 Q2,int
 Q3,int

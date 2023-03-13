@@ -1,0 +1,1 @@
+This file was created by Lighthouse Studio. It marks this folder so that it is not included in project backups, preventing redundant backups.

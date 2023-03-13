@@ -1,0 +1,2885 @@
+html,
+body
+{
+    margin: 0;
+    /* Removing browser default 10px margin. */
+    font-family: sans-serif;
+    /* iphones try to resize text (seen in select question but likely elsewhere too) if the texts spans more than one line. In select question this can result in having more than one font size in the list of options*/
+    -webkit-text-size-adjust: 100%;
+}
+
+.page
+{
+    padding-top: 1px;
+    /*This helps to avoid nested collapsing margins*/
+    padding-bottom: 1px;
+    /*This helps to avoid nested collapsing margins*/
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+    background-color: #ffffff;
+}
+
+/*This is needed for IE to not put any space around the "form" element */
+form
+{
+    margin: 0;
+}
+
+/*this is to hide text inputs so that they behave similar to hidden inputs becasue on browser back, Chrome doesn't restore hidden inputs from cache that were dynamically changed after the initial cache was created*/
+.hidden_input{
+    display: none;
+}
+
+.page_header,
+.question,
+.page_footer
+{
+    margin: 10px;
+}
+
+.header_text
+{
+	width: 100%;
+}
+
+.page_footer
+{
+    text-align: center;
+    padding: 5px;
+    font-size: .8em;
+}
+
+.header1,
+.header2,
+.question_body,
+.footer
+{
+    padding: 5px;
+}
+
+.question
+{
+    padding: 5px;
+    min-height: 1px;
+}
+
+.indent
+{
+    margin-left: 20px;
+}
+
+.submit_div
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+    .submit_div input
+    {
+        padding: 2px 3px 2px 3px;
+    }
+
+.navigation_button
+{
+    display: inline-block;
+    cursor: pointer;
+	margin: 12px;
+}
+
+.text_nav_button
+{
+    padding: 9px 17px;
+    background-color: #ebebeb;
+    border: 1px solid #d1d1d1;
+    visibility: hidden; /*Hide until AdjustNavButtonWidth has run.  This avoids flicker.*/
+}
+
+img
+{
+    max-width: 100%;
+}
+
+.print_study .text_nav_button
+{
+    visibility: visible; /*Show for paper and pencil etc.*/
+}
+
+.print_study .page
+{
+    /*The PDF generator can't handle display: flex on the page div correctly*/
+    display: block !important;
+    max-width: 900px !important;
+}
+
+.graphical_next_button,
+.graphical_previous_button
+{
+    width: 36px;
+    height: 36px;
+}
+
+.graphical_next_button
+{
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='1244 3639.5 47.48 47.551'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23888888; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Right_page_navigation_arrow' data-name='Right page navigation arrow' class='cls-1' d='M-2931.028,836.559H-2948.5V812.992h17.472V801l30.009,23.512-30.009,24.039Z' transform='translate%284192.5 2838.5%29'/%3E%3C/svg%3E") no-repeat center center;
+    background-size: contain;
+}
+
+.graphical_previous_button
+{
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='1161.001 3639.5 47.479 47.551'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23888888; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Left_page_navigation_arrow' data-name='Left page navigation arrow' class='cls-1' d='M-2931.028,836.559H-2948.5V812.992h17.472V801l30.008,23.512-30.008,24.039Z' transform='translate%28-1740.02 4488.051%29 rotate%28180%29'/%3E%3C/svg%3E%0A") no-repeat center center;
+    background-size: contain;
+}
+
+.progress_bar
+{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+    position: relative;
+    vertical-align: middle;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.progress_bar_outer
+{
+    background-color: #AFAFAF;
+    width: 100%;
+    height: 10px;
+    text-align: left;
+    /*This is for Opera*/
+}
+
+.progress_bar_inner
+{
+    background-color: #0D58A6;
+    margin-left: 0px;
+    margin-right: auto;
+    height: 10px;
+    font-size: 5px;
+}
+
+.progress_bar_table
+{
+    width: 100%;
+}
+
+    .progress_bar_table .left_cell
+    {
+        text-align: right;
+        vertical-align: middle;
+        width: 5%;
+    }
+
+    .progress_bar_table .middle_cell
+    {
+        text-align: center;
+        vertical-align: middle;
+        width: 90%;
+    }
+
+    .progress_bar_table .right_cell
+    {
+        text-align: left;
+        vertical-align: middle;
+        width: 5%;
+    }
+
+td,
+table
+{
+    border-color: #6A6A6A;
+}
+
+.select_column_spacing
+{
+    padding-left: 20px;
+}
+
+#sawtooth_logo
+{
+    border: solid 2px #D1D1D1;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 300px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    letter-spacing: 2px;
+    font-family: arial;
+    font-size: 12px;
+    background-color: #ffffff;
+    color: #6A6A6A;
+    margin: 100px auto 100px auto;
+    text-align: center;
+	display: block;
+    text-decoration: none;
+}
+
+.total
+{
+    background-color: #c0c0c0;
+}
+
+.consum_total_row table
+{
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table
+{
+    border-collapse: collapse;
+}
+
+.input_cell
+{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.password .input_cell
+{
+    text-align: left;
+}
+
+.password .inner_table td
+{
+    padding-left: 0px;
+}
+
+.acarating .row_label_cell,
+.grid .row_label_cell,
+.password .row_label_cell
+{
+    text-align: right;
+}
+
+.acaimportance .row_label_cell
+{
+    text-align: center;
+}
+
+.acapair .level_text_div, .cva .level_text_div
+{
+	border: 1px solid #c4c4c4;
+	padding: 20px 30px;
+	width: 50%;
+	border-radius: 3px;
+}
+
+.cva .single_concept .level_text_div
+{
+	width: 100%;
+}
+
+.acapair_row, .cvapair_row
+{
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.acapair .level_text, .cva .level_text 
+{
+    margin: 10px 0;
+}
+
+.acapair_options, .cva_options
+{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+	padding: 10px;
+}
+
+.acapair_options .option_div, .cva_options .option_div
+{
+	margin: 0 5px;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.acapair_options .options, .cva_options .options
+{
+	height: 75px;
+    display: flex;
+    align-items: center;
+	padding: 5px
+}
+
+.acapair_options label, .cva_options label
+{
+	width: 100%;
+}
+
+.acapair .input_cell, .cva .input_cell
+{
+	padding: 18px 10px;
+}
+
+.acarating .anchor_text_cell,
+.acaimportance .anchor_text_cell,
+.acapair .anchor_text_cell,
+.cva .anchor_text_cell,
+.cbcrating .column_header_row
+{
+    text-align: center;
+    font-size: 12px;
+}
+
+.inner_table td
+{
+    padding: 5px;
+}
+
+.inner_table .other_specify_table td
+{
+    padding: 0px;
+}
+
+.inner_table .other_specify_row .input_cell
+{
+    vertical-align: middle;
+}
+
+.inner_table table .input_cell,
+.freeformat .input_cell
+{
+    vertical-align: top;
+    padding: 5px;
+}
+
+.inner_table table .option_cell
+{
+    vertical-align: middle;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 5px;
+}
+
+.inner_table table .multiline_other_cell
+{
+    padding-top: 6px;
+}
+
+.constantsum .inner_table table .input_cell,
+.constantsum .inner_table table .option_cell,
+.ranking .inner_table table .input_cell,
+.ranking .inner_table table .option_cell
+{
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+.numeric input,
+.openend input
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.acapair_table
+{
+    margin-bottom: 10px;
+}
+
+.acapair .or_header, .cva .or_header
+{
+    text-align: center;
+	margin: auto 30px;
+	padding: 20px;
+}
+
+.acacalibration .single_concept
+{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.acacalibration .inner_table td
+{
+    text-align: center;
+}
+
+
+/* CBC settings */
+
+.cbc .dual_response_none .input_cell
+{
+    padding-right: 0px;
+    padding-top: 0px;
+}
+
+.cbc .dual_response_none td
+{
+    padding: 3px;
+}
+
+.cbc .cbc_totals_box input
+{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.cbc .level_text_cell
+{
+    vertical-align: top;
+}
+
+.cbc .none_option
+{
+    vertical-align: middle;
+    height: 50px;
+}
+
+.cbcrating .row_label_cell
+{
+    text-align: right;
+    vertical-align: middle;
+}
+
+.cbc .concept_label_cell
+{
+    text-align: center;
+}
+
+.cbc .input_cell
+{
+    text-align: center;
+}
+
+.cbc .inner_table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cbc .dual_response_none table
+{
+    padding: 5px;
+}
+
+.cbc .shelf_display .level_text_cell
+{
+    vertical-align: bottom;
+}
+
+.cbc .shelf_display .cbc_shelf .shelf_cell
+{
+    background-color: #c0c0c0;
+}
+
+.cbc .shelf_display .cbc_top_row .shelf_cell
+{
+    border-bottom: 3px solid #000000;
+    padding: 0px;
+}
+
+.cbc .shelf_display .cbc_bottom_row .shelf_cell
+{
+    border-bottom: 1px solid #000000;
+    text-align: center;
+}
+
+.cbc .shelf_display td
+{
+    padding: 2px;
+}
+
+.cbc .top_corner_label_cell,
+.cbc .bottom_corner_label_cell
+{
+    text-align: right;
+}
+
+.cbc .concept_labels_row td
+{
+    vertical-align: bottom;
+}
+
+.cbc .cell_between_concepts
+{
+    padding: 0px;
+}
+
+.cbc .spacer_between_concepts
+{
+    width: 20px;
+}
+
+.cbc .cell_between_rows
+{
+    padding: 0px;
+    height: 20px;
+}
+
+/*Assuming CBC Rating Grids only ever have four columns*/
+.cbcrating .grid_c4
+{
+	border-left: 20px solid #ffffff;
+}
+
+/* CVA */
+.cva .or_header_cell
+{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cva .row_label_cell
+{
+    text-align: right;
+    vertical-align: top;
+}
+
+.cva .numeric_input 
+{
+    margin: 30px;
+}
+    .cva .single_concept .input_row_cell
+    {
+        text-align: center;
+    }
+
+
+/* MaxDiff */
+
+
+.maxdiff .inner_table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+    /*Include just the table to fix a weird bug in Firefox*/
+
+
+    .maxdiff .inner_table td,
+    .maxdiff .inner_table
+    {
+        border-width: 1px;
+        border-style: solid;
+    }
+
+.maxdiff .best_input_cell,
+.maxdiff .worst_input_cell
+{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.maxdiff .item_text_cell
+{
+    text-align: center;
+    width: auto;
+}
+
+    .maxdiff .item_text_cell td
+    {
+        border-style: none !important;
+    }
+
+.maxdiff .best_header,
+.maxdiff .worst_header,
+.maxdiff .items_header
+{
+    text-align: center;
+}
+
+    .maxdiff .best_header td,
+    .maxdiff .worst_header td,
+    .maxdiff .items_header td
+    {
+        border-style: none !important;
+    }
+
+.maxdiff .dual_response_anchor
+{
+    margin-top: 30px;
+}
+
+    .maxdiff .dual_response_anchor td
+    {
+        padding: 4px 0px 4px 2px;
+    }
+
+    .maxdiff .dual_response_anchor .question_text
+    {
+        margin-bottom: 15px;
+    }
+
+/* ACBC */
+
+
+.panel_table td
+/*Do not include .acbc_byo, because it makes it too specific and overrides settings above.*/
+{
+    padding: 5px;
+}
+
+.acbc_byo .task_center_panel_cell
+{
+    padding: 0px;
+}
+
+.acbc_byo .attributes_header_cell,
+.acbc_byo .levels_header_cell,
+.acbc_byo .price_header_cell
+{
+    text-align: center;
+}
+
+.acbc_byo_price_box
+{
+    width: 70px;
+    background-color: #cccccc;
+}
+
+.acbc_byo .task_left_panel_cell,
+.acbc_byo .task_right_panel_cell
+{
+    vertical-align: top;
+}
+
+.acbc_byo .task_center_panel_cell
+{
+    text-align: center;
+    vertical-align: top;
+}
+
+.acbc_byo .acbc_proh_error
+{
+    border: 1px solid red;
+}
+
+.acbc_byo .acbc_price_change_warning td
+{
+    background-color: yellow;
+}
+
+.acbc_byo .label_text_cell,
+.acbc_byo .level_text_cell,
+.acbc_byo .price_cell,
+.acbc_screener .label_text_cell,
+.acbc_screener .options_cell,
+.acbc_screener .level_text_cell,
+.acbc_unacceptable .center_panel_cell,
+.acbc_unacceptable .body_text_cell,
+.acbc_musthave .center_panel_cell,
+.acbc_musthave .body_text_cell,
+.acbc_choicetask .label_text_cell,
+.acbc_choicetask .options_cell,
+.acbc_choicetask .level_text_cell
+{
+    vertical-align: top;
+    text-align: left;
+}
+
+.acbc_byo .price_cell
+{
+    text-align: center;
+}
+
+    .acbc_byo .price_cell td
+    {
+        padding: 0px 2px 0px 2px;
+        vertical-align: middle;
+        border-width: 0px !important;
+    }
+
+.acbc_byo .level_text_cell select
+{
+    width: 100%;
+}
+
+.acbc_rules img
+{
+    vertical-align: text-top;
+}
+
+.inner_table table.acbc_rules .input_cell
+{
+    vertical-align: middle;
+}
+
+
+
+/* This style is needed for IE and Firefox to look the same */
+
+
+.acbc_previous_rules ul
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.acbc_common_level
+{
+    background-color: #c0c0c0 !important;
+}
+
+.acbc_calibration_options
+{
+    margin-left: auto;
+    margin-right: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.acbc_calibration_options .clickable 
+{
+    padding: 5px 10px;
+	width: 120px;
+    margin: 0 5px;
+}
+
+.acbc_calibration_options .input_cell
+{
+	padding: 15px;
+}
+
+.acbc_calibration_options .options
+{
+	text-align: center;
+	height: 50px;
+}
+
+.acbc_calibration .combo_input_cell
+{
+    text-align: center;
+}
+
+.acbc_calibration .inner_table
+{
+    margin: 20px auto;
+}
+
+.acbc_byo .attributes_header_cell,
+.acbc_byo .levels_header_cell,
+.acbc_byo .price_header_cell,
+.acbc_byo .total_label_cell
+{
+    font-weight: bold;
+}
+
+.acbc_byo .total_label_cell
+{
+    text-align: right;
+}
+
+.acbc_byo .inner_table td,
+.acbc_screener .inner_table td,
+.acbc_choicetask .inner_table td,
+.acbc_calibration .inner_table td
+{
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+
+.acbc_byo .inner_table,
+.acbc_screener .inner_table,
+.acbc_choicetask .inner_table,
+.acbc_calibration .inner_table
+{
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+.acbc_byo .acbc_task_top_row td,
+.acbc_screener .acbc_task_top_row td,
+.acbc_choicetask .acbc_task_top_row td,
+.acbc_calibration .acbc_task_top_row td
+{
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+
+.acbc_byo .acbc_task_bottom_row td,
+.acbc_screener .acbc_task_bottom_row td,
+.acbc_choicetask .acbc_task_bottom_row td,
+.acbc_calibration .acbc_task_bottom_row td
+{
+    border-top-width: 2px;
+    border-top-style: solid;
+}
+
+.acbc_byo .inner_table,
+.acbc_screener .inner_table,
+.acbc_choicetask .inner_table,
+.acbc_calibration .inner_table
+{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.acbc_byo .acbc_byo_options td,
+.acbc_screener .acbc_screener_options td,
+.acbc_calibration .acbc_calibration_options td
+{
+    border-width: 0px !important;
+    border-style: solid;
+}
+
+.acbc_screener_options
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*IE 10+ specific CSS below*/
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) 
+{  
+	table 
+	{
+		table-layout: fixed;
+	}
+
+	.acbc_byo_options img
+	{
+		width: 100%;
+	}
+}
+
+/* Grid */
+.grid .col_label_cell
+{
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.grid .input_cell
+{
+    text-align: center;
+    vertical-align: middle;
+}
+
+    .grid .input_cell textarea
+    {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.grid_cell_label_table td
+{
+    padding: 0px;
+    vertical-align: middle;
+    border-style: none !important;
+}
+
+.grid_cell_label_table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alt_color1
+{
+    background-color: #BBD6EF;
+}
+
+.alt_color2
+{
+    background-color: #EFF7FF;
+}
+
+.text_input,
+.numeric_input
+{
+    padding: 4px;
+}
+
+.passin_name
+{
+    margin-top: 10px;
+}
+
+.openend textarea
+{
+    width: 700px;
+    height: 100px;
+    padding: 3px;
+    margin: 2px;
+}
+
+.options textarea
+{
+    width: 300px;
+    height: 50px;
+    padding: 3px;
+    margin: 2px;
+}
+
+.grid textarea
+{
+    width: 150px;
+    height: 50px;
+    margin-top: 2px;
+    margin-left: 2px;
+    display: block;
+}
+
+.open_end_text_box
+{
+    width: 170px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.grid .open_end_text_box
+{
+    width: 130px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.row_label_cell .grid_options textarea
+{
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.col_label_cell .grid_options textarea
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid_options td
+{
+    border-style: none !important;
+}
+
+.ranking textarea,
+.constantsum textarea
+{
+    display: block;
+}
+
+.semanticdiff .left_label_cell
+{
+    text-align: right;
+    padding-right: 15px;
+}
+
+.semanticdiff .right_label_cell
+{
+    text-align: left;
+    padding-left: 15px;
+}
+
+.semanticdiff .column_header_row td
+{
+    text-align: center;
+}
+
+.semanticdiff .anchor_table td
+{
+    border-width: 0px !important;
+    border-style: solid;
+}
+
+.simple_browser_close
+{
+    text-align: right;
+}
+
+
+/*Use this to hide elements*/
+
+
+.HideElement
+{
+    display: none;
+}
+
+.ShowElement
+{
+    display: block;
+}
+
+.checkbox,
+.checkboxselected,
+.radiobox,
+.radioboxselected
+{
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox
+{
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='1171 -2903 19 19'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23ffffff; stroke: %234a4a4a; %7D .cls-2 %7B stroke: none; %7D .cls-3 %7B fill: none; %7D %3C/style%3E%3C/defs%3E%3Cg id='Checkbox_unselected' data-name='Checkbox unselected' class='cls-1' transform='translate%281171 -2903%29'%3E%3Crect class='cls-2' width='19' height='19' rx='4'/%3E%3Crect class='cls-3' x='0.5' y='0.5' width='18' height='18' rx='3.5'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center center;
+}
+
+.checkboxselected
+{
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='1171 -2723 19 19'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23ffffff; stroke: %234a4a4a; %7D .cls-2 %7B fill: %234a4a4a; %7D .cls-3 %7B stroke: none; %7D .cls-4 %7B fill: none; %7D %3C/style%3E%3C/defs%3E%3Cg id='Checkbox_selected' data-name='Checkbox selected' transform='translate%28582 -3040%29'%3E%3Cg id='Rectangle_2' data-name='Rectangle 2' class='cls-1' transform='translate%28589 317%29'%3E%3Crect class='cls-3' width='19' height='19' rx='4'/%3E%3Crect class='cls-4' x='0.5' y='0.5' width='18' height='18' rx='3.5'/%3E%3C/g%3E%3Cpath id='Union_1' data-name='Union 1' class='cls-2' d='M-381,4226v-3h4v-9h3v12Z' transform='translate%283849.441 -2391.941%29 rotate%2845%29'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center center;
+}
+
+.radiobox
+{
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='864 -2903 20 20'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23ffffff; stroke: %234a4a4a; %7D .cls-2 %7B stroke: none; %7D .cls-3 %7B fill: none; %7D %3C/style%3E%3C/defs%3E%3Cg id='Radio_unselected' data-name='Radio unselected' class='cls-1' transform='translate%28864 -2903%29'%3E%3Ccircle class='cls-2' cx='10' cy='10' r='10'/%3E%3Ccircle class='cls-3' cx='10' cy='10' r='9.5'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center center;
+}
+
+.radioboxselected
+{
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='864 -2723 20 20'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23ffffff; stroke: %234a4a4a; %7D .cls-2 %7B fill: %234a4a4a; %7D .cls-3 %7B stroke: none; %7D .cls-4 %7B fill: none; %7D %3C/style%3E%3C/defs%3E%3Cg id='Radio_selected' data-name='Radio selected' transform='translate%28275 -2984%29'%3E%3Cg id='Ellipse_3' data-name='Ellipse 3' class='cls-1' transform='translate%28589 261%29'%3E%3Ccircle class='cls-3' cx='10' cy='10' r='10'/%3E%3Ccircle class='cls-4' cx='10' cy='10' r='9.5'/%3E%3C/g%3E%3Ccircle id='Ellipse_4' data-name='Ellipse 4' class='cls-2' cx='6' cy='6' r='6' transform='translate%28593 265%29'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center center;
+}
+
+
+/*The td below is for ACBC BYO to display highlight over prohibition and price adjustment colors */
+
+
+.highlight,
+.highlight td
+{
+    background-color: #CDCDCD !important;
+}
+
+.clickable,
+.highlight,
+label
+{
+    cursor: pointer;
+}
+
+.page_break
+{
+    page-break-after: always;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.page_break_text
+{
+    color: #000000;
+    text-align: center;
+    font-family: verdana, arial, helvetica, san-serif;
+    font-size: 10px;
+    width: 100%;
+    background-color: #ACA899;
+    border-top: 2px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+@media print
+{
+    .page_break_text
+    {
+        display: none;
+    }
+}
+
+.test_label
+{
+    line-height: 20px;
+    position: relative;
+    margin: 3px;
+    padding: 2px 3px;
+    font-size: 12px;
+    letter-spacing: .05em;
+    font-family: verdana, arial, helvetica, san-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: dashed 1px #336688;
+    display: none;
+}
+
+.rank_drag_container .test_label
+{
+	position: absolute;
+	width: auto;
+	margin: -20px 0 0 20px;
+}
+
+.print_study .test_label
+{
+    border: dotted 2px #336688;
+}
+
+.test_mode
+{
+    padding-top: 0px;
+}
+
+    .test_mode.show_names .test_question_label,
+    .test_mode.show_vars .test_var_label
+    {
+        display: inline;
+    }
+
+#test_mode_submit_msg
+{
+    display: none;
+    margin-left: 100px;
+}
+
+.new_tooltip
+{
+    display: none;
+    position: absolute;
+    width: auto;
+    height: auto;
+    max-width: 240px;
+    color: #000000;
+    line-height: 1.4em;
+    text-align: center;
+    border-radius: 6px;
+    margin: -30px 0 0 50px;
+    z-index: 999;
+    background: #F9EDBE;
+    border: 1px solid #F0C36D;
+    padding: 5px;
+}
+
+.preview_note
+{
+    max-width: 500px;
+    text-align: left;
+    padding: 15px;
+    color: black;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: dashed 1px #336688;
+    line-height: 1.5em;
+}
+
+.preview_title
+{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#passin_title
+{
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#passin_fields input
+{
+    width: 100%;
+    max-width: 250px;
+}
+
+.quota_preview
+{
+    border: dotted 2px #336688;
+    margin: 30px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.script_preview
+{
+    border: dashed 2px #336688;
+    margin: 10px 5px 10px 5px;
+    background-color: white;
+    color: black;
+    padding: 3px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+/* Error messages */
+
+
+.error_quest_highlight
+{
+    border: 1px solid red !important;
+}
+
+.error_var_highlight
+{
+    border: 1px solid red !important;
+}
+
+.error_var_highlight_left
+{
+    border-left-style: solid;
+    border-left-color: red !important;
+    border-left-width: 1px;
+}
+
+.error_var_highlight_center
+{
+    border-top-style: solid;
+    border-top-color: red !important;
+    border-top-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: red !important;
+    border-bottom-width: 1px;
+}
+
+.error_var_highlight_right
+{
+    border-right-style: solid;
+    border-right-color: red !important;
+    border-right-width: 1px;
+}
+
+.error_var_highlight_top
+{
+    border-top-style: solid;
+    border-top-color: red !important;
+    border-top-width: 1px;
+}
+
+.error_var_highlight_middle
+{
+    border-left-style: solid;
+    border-left-color: red !important;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-right-color: red !important;
+    border-right-width: 1px;
+}
+
+.error_var_highlight_bottom
+{
+    border-bottom-style: solid;
+    border-bottom-color: red !important;
+    border-bottom-width: 1px;
+}
+
+.error_messages
+{
+    color: red;
+    text-align: left;
+}
+
+.page_error,
+.server_verification_error
+{
+    font-weight: bold;
+    padding: 10px;
+    margin: 15px 0px 15px 0px;
+}
+
+.question_errors
+{
+    padding: 5px 5px 5px 10px;
+}
+
+.server_verification_error .question_errors
+{
+    padding: 0px 10px 10px 10px;
+}
+
+.question_error_box
+{
+    margin-bottom: 5px;
+}
+
+.tool_tip_link
+{
+    font-weight: bold;
+}
+
+.tool_tip_link_mouseover
+{
+    text-decoration: underline;
+    cursor: default;
+}
+
+.tool_tip_text
+{
+    font-size: 12px;
+    max-width: 300px;
+    text-align: left;
+    height: auto;
+    background-color: #E6E6E6;
+    padding: 6px;
+    z-index: 1000;
+    display: none;
+}
+.tool_tip_text_container .tool_tip_text
+{
+    display: block;
+}
+.tool_tip_text_container
+{
+    padding: 0px;
+    border: 1px solid #7F7F7F;
+    max-width: none;
+}
+
+
+/*Slider Style*/
+
+
+.ui-slider-horizontal .ui-slider-handle
+{
+    top: -4px;
+    margin-left: -10px;
+}
+
+.ui-slider-horizontal .ui-slider-range
+{
+    top: 0;
+    height: 100%;
+}
+
+.ui-slider-horizontal .ui-slider-range-min
+{
+    left: 0;
+}
+
+.ui-slider-horizontal .ui-slider-range-max
+{
+    right: 0;
+}
+
+
+/*Slider bar they are dragging on*/
+
+.ui-slider-horizontal
+{
+    border: 1px solid #D6D6D6;
+    height: 10px;
+    position: relative;
+    text-align: left;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+}
+
+
+/*Needs to have both classes so that it is not overwritten by jquery-ui style*/
+
+.slider_control .ui-slider-handle
+{
+    position: absolute;
+    z-index: 2;
+    width: 18px;
+    height: 18px;
+    margin-top: -1px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    background: #eeeeee;
+    border: 1px solid #c0c0c0;
+    cursor: pointer;
+}
+
+.slider_continuous_scale
+{
+    margin: 0px 10px 0px 10px;
+}
+
+.slider_tool_tip
+{
+    border: 1px solid #c0c0c0;
+    height: 20px;
+    width: 38px;
+    overflow: hidden;
+    position: absolute;
+    top: -28px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    color: #202020;
+    background-color: white;
+}
+
+.slider_control .ui-state-hover
+{
+    background: #f2f2f2;
+    border: 1px solid #cccccc;
+}
+
+.semanticdiff .radio_slider .input_cell
+{
+    padding: 0px !important;
+    width: 0px !important;
+}
+
+    .semanticdiff .radio_slider .input_cell input
+    {
+        margin: 0px;
+    }
+
+.debug_box
+{
+    margin: 20px 0px 20px 0px;
+}
+
+    .debug_box table
+    {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .debug_box td
+    {
+        text-align: left;
+    }
+
+.debug_header
+{
+    background-color: #FF9900;
+}
+
+.debug_section
+{
+    background-color: #c3c3c3;
+}
+
+#submit_overlay
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*dim the background*/
+}
+
+.ui-widget-overlay
+{
+    background-color: #000000;
+}
+
+.ui-dialog .ui-dialog-title
+{
+    min-height: 20px;
+}
+
+.dialog
+{
+    display: none;
+}
+
+#submit_progress_bar
+{
+    background-color: white;
+    z-index: 11;
+    padding: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -55px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.acbc_byo .conditional_att
+{
+    display: none;
+}
+
+/*Modifications to preview mode for C2*/
+
+.c2_preview
+{
+    background-color: white;
+}
+
+    .c2_preview .page
+    {
+        width: 100% !important;
+		max-width: none;
+        border: 0 solid white;
+        margin: 0;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+    }
+
+    .c2_preview .question
+    {
+        margin: 0;
+		border: 0 solid white;
+    }
+
+
+/*end C2*/
+
+
+/*classes that replace the inner_table class and it's nested tables*/
+
+.response_body
+{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.response_column
+{
+    padding: 6px;
+}
+
+.response_row
+{
+    margin: 3px;
+    /*display:inline-block;*/
+    width: 100%;
+    min-width: 50px;
+}
+
+.option_column
+{
+    /*float:left;*/
+    padding: 3px;
+    height: 100%;
+    max-width: 85%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.semdif_row
+{
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+    border: 1px solid black;
+    display: table;
+}
+
+.semdif_column
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+    .semdif_column.label
+    {
+        padding-top: 0px;
+    }
+
+.left_label_header,
+.right_label_header
+{
+    text-align: center;
+}
+
+.col_label_cell
+{
+    text-align: center;
+    padding-top: 0px;
+}
+
+
+/*drag and drop ranking*/
+.sort_containers
+{
+    display:flex;
+    width:100%;
+}
+
+.sort_container
+{
+    display: inline-block;
+    position: relative;
+    /*prevent text highlighting*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.draggable_button
+{
+    background: #F6F6F6;
+    border: 1px solid #c0c0c0;
+    margin: 9px;
+    padding: 5px;
+    border-radius: 8px;
+    max-width: none;
+    display: flex;
+}
+
+    .draggable_button:hover
+    {
+        cursor: move;
+    }
+
+.button_content
+{
+    padding: 4px 7px;
+    /* this works around a bug in Chrome where images aren't sized correctly in flex containers https://github.com/philipwalton/flexbugs/issues/225 */
+    flex: 1 1 auto; 
+    min-width: 1px; /*for IE images that are just toooooo big*/
+}
+
+.rank_number
+{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    /*IE8 needs this to display the ovals */
+    padding: 3px;
+    text-align: center;
+    background-color: #e2e3e4;
+}
+
+.draggable_button.unanswered
+{
+    opacity: 0.7;
+}
+
+.draggable_button img
+{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.rank_display
+{
+    display: inline-block;
+    height: 100%;
+    float: left;
+}
+
+.unanswered .rank_display .rank_number
+{
+    visibility: hidden;
+}
+
+.unanswered:hover .rank_display .rank_number
+{
+    visibility: visible;
+}
+
+.unanswered:hover
+{
+    opacity: 1;
+}
+
+.horizontal_rank .draggable_button
+{
+    float: left;
+    visibility: hidden;
+}
+
+
+/*ranking containers*/
+
+.rank_drag_container
+{
+    border: 1px solid #B8B8B8;
+    max-width: 45%;
+    display:flex;
+    flex-direction: column;
+}
+
+.unranked_container
+{
+    margin-right: 50px;
+}
+
+.container_sort_area
+{
+    padding: 5px;
+    position: relative;
+    /*Don't allow text to be selected.  This can interfere with drag and drop*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.unranked_container .rank_display,
+.revert_clone .rank_display
+{
+    visibility: hidden;
+}
+
+.rank_drag_container_label
+{
+    padding: 9px;
+    background-color: #e2e3e4;
+    text-align: center;
+}
+
+.hide_for_processing
+{
+    visibility: hidden;
+}
+
+#demo_header
+{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    color: #000000;
+}
+
+#demo_title
+{
+    font-size: 1.5em;
+}
+
+#demo_warning
+{
+    margin-top: 10px;
+    font-size: .8em;
+}
+
+#demo_mode .page_footer
+{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/*======mobile grid=====*/
+
+.mobile_grid_card
+{
+    margin: 20px 10px 20px 20px;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.mobile_grid_question,
+.mobile_grid_question.col_label_cell,
+.grid .mobile_grid_question.row_label_cell
+{
+    text-align: left;
+}
+
+.mobile_grid_options
+{
+    margin: 8px 5px 8px 15px;
+}
+
+.mobile_grid .mobile_grid_options .input_row
+{
+    text-align: left;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.mobile_select
+{
+    background-color: #D1D1D1;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+}
+
+    .mobile_select.mobile_selected
+    {
+        background-color: #EBEBEB;
+        box-shadow: 5px 5px 5px #B5B5B5;
+    }
+
+        .mobile_select.mobile_selected.highlight
+        {
+            background-color: #EBEBEB !important;
+            box-shadow: 5px 5px 5px #B5B5B5;
+        }
+
+.mobile_grid .input_cell textarea
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.mobile_grid .response_row
+{
+    width: auto;
+}
+
+.mobile_grid .user_defined_label
+{
+    display: none;
+}
+
+
+/*===============*/
+
+
+/*New CBC Styles*/
+
+
+/*===============*/
+
+.cbc_task,
+.task_controls
+{
+    margin-top: 16px;
+}
+
+.mobile_horizontal .cbc_task,
+.mobile_horizontal .task_controls
+{
+    margin-top: 0;
+}
+
+.cbc_task
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.cbc_task.owl-carousel
+{
+    z-index: initial;
+}
+
+.owl-stage {
+    display: flex;
+    align-items: stretch;
+}
+
+.owl-item {
+    display: flex;
+    align-self: stretch;
+}
+
+.cbc_concept
+{
+    /*flex-grow: 1;*/
+    border: 2px solid transparent;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .4);
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+}
+
+.constant_sum .cbc_concept
+{
+    border-width: 0;
+}
+
+.constant_sum .cbc_response_cell
+{
+    text-align: center;
+}
+
+.cbc_concept.best
+{
+    border-color: #2DAD33;
+}
+
+.cbc_concept.worst
+{
+    border-color: #C40606;
+}
+
+.cbc_concept.lower_none
+{
+    flex-grow: 1;
+}
+
+.cbc_concept,
+.attribute_label_column
+{
+    box-sizing: border-box;
+}
+
+.extra_concept_row,
+.lower_none
+{
+    margin-top: 24px;
+}
+
+.concept_label_cell
+{
+    font-weight: bold;
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+
+.cbc_concept .cbc_cell.concept_label_cell
+{
+    border-width: 1px;
+}
+
+.cbc_concept .concept_label_cell.repeated_label
+{
+    border-width: 0px;
+}
+
+.cbc_concept.none_concept
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.cbc_concept.none_concept .level {
+    width: 100%;
+}
+
+.cbc_concept ul,
+.cbc_concept ol
+{
+    padding: 0;
+    padding-left: 16px;
+}
+
+.none_concept .cbc_cell
+{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+    .none_concept .cbc_cell.cbc_response_cell
+    {
+        display: block;
+        flex-grow: 0;
+    }
+
+    .none_concept .cbc_cell.concept_label_cell
+    {
+        display: block;
+        flex-grow: 0;
+    }
+
+.attribute_label_column
+{
+    border-top: 2px solid transparent;
+    text-align: right;
+    font-weight: bold;
+    width: 17%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.cbc_cell.first_att
+{
+    padding-top: 24px;
+}
+
+.cbc .mobile_horizontal .task_nav
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.level_text
+{
+    text-align: left;
+}
+
+.none_text
+{
+    text-align: center;
+}
+
+.custom_position_none .none_text 
+{
+    text-align: left;
+    padding-bottom: 6px;
+}
+
+.custom_position_none
+{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.response_cell
+{
+    text-align: center;
+    padding: 15px;
+}
+
+.mobile_attribute_label
+{
+    display: none;
+    font-weight: bold;
+}
+
+.task_controls
+{
+    display: none;
+}
+
+.cbc.mobile_horizontal .task_controls
+{
+    justify-content: center;
+}
+
+.task_controls.flex_end
+{
+    display: flex;
+    align-items: flex-end;
+}
+
+.carousel_arrow
+{
+    cursor: pointer;
+}
+    .carousel_arrow .cbc_nav_arrow
+    {
+        fill: #888888;
+    }
+
+    .carousel_arrow.disable .cbc_nav_arrow
+    {
+       fill: #d1d1d1;
+    }
+
+.cbc .carousel_prev
+{
+   margin-right: 20px;
+}
+
+.cbc .carousel_next
+{
+    margin-left: 20px;
+}
+
+/*Remove background images from legacy styles*/
+.cbc .carousel_prev, .cbc .carousel_next, .cbc .nav_dot
+{
+	background-image: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.task_nav_dots
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_dot
+{
+    cursor: pointer;
+	box-sizing: content-box;
+    font-size: 0;
+}
+
+.nav_dot .nav_dot_border
+{
+	display: none;
+}
+
+.nav_dot.best .nav_dot_border,
+.nav_dot.worst .nav_dot_border
+{
+	display: block;
+}
+
+/*Remove background images from legacy styles*/
+.cbc .nav_dot.best, .cbc .nav_dot.worst
+{
+	background: none;
+}
+
+.nav_dot.active .nav_dot_circle
+{
+	fill: #4d4d4d;
+}
+
+.nav_dot.best .nav_dot_circle
+{
+    fill: #2DAD33;
+}
+
+.nav_dot.best .nav_dot_border
+{
+	stroke: #2DAD33;
+}
+
+.nav_dot.worst .nav_dot_circle
+{
+    fill: #C40606;
+}
+
+.nav_dot.worst .nav_dot_border
+{
+	stroke: #C40606;
+}
+
+.nav_dot.active
+{
+    border-color: #888888;
+}
+
+
+.cbc .mobile_vertical .nav_dot
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mobile_vertical .task_nav_dots
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile_vertical .nav_dot
+{
+    margin-top: 5px;
+}
+
+    .mobile_vertical .nav_dot.dot_1
+    {
+        margin-top: 0;
+    }
+
+.cbc .mobile_horizontal .nav_dot
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.cbc .mobile_vertical .carousel_next,
+.cbc .mobile_vertical .carousel_prev
+{
+    display: none;
+}
+
+.cbc_cell
+{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
+    /* this is to fix a bug in IE with nested flexboxes. Thank you IE. */
+    min-height: 1px;
+}
+
+.cbc_concept .cbc_cell
+{
+    border-bottom: 0px solid #D1D1D1;
+}
+
+ol.merged_text, ul.merged_text 
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cbc_concept .merged_text img
+{
+    vertical-align: top;
+}
+
+.attribute_label_column .cbc_cell
+{
+    border-bottom: 0px solid transparent;
+}
+
+.attribute_label_column .cbc_cell
+{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.attribute_label_column .concept_label_cell
+{
+    text-align: right;
+}
+
+.attribute_label_column .bottom_corner_label
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+/*.cbc_cell.identical_row {
+    background-color: grey;
+}*/
+
+.grow_cell{
+    flex-grow: 1;
+}
+
+.cbc_response_cell
+{
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+    .cbc_response_cell.stack
+    {
+        flex-wrap: wrap;
+    }
+
+.task_select_button,
+.dual_response_none_button
+{
+    background-color: #EBEBEB;
+    border: 1px solid #d1d1d1;
+    color: #000000;
+    padding: 9px 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 98px;
+    margin: auto;
+}
+
+    .task_select_button:focus,
+    .dual_response_none_button:focus
+    {
+        outline: none;
+    }
+
+    .task_select_button.worst_button
+    {
+        margin-top: 10px;
+    }
+
+.dual_response_none_button
+{
+    width: 40%;
+}
+
+.cbc_concept.lower_none .cbc_response_cell
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.discrete.lower_none .cbc_response_cell 
+{
+    flex-direction: column;
+}
+
+.task_select_button:hover,
+.dual_response_none_button:hover
+{
+    cursor: pointer;
+}
+
+.cbc_response_cell .selected_image
+{
+    text-align: center;
+}
+
+.custom_position_none .task_select_button 
+{
+    max-width: 250px;
+    margin-left: 12px;
+}
+
+.cbc_concept.best .best_button,
+.cbc_concept.discrete.best .task_select_button,
+.dual_response_none_button.would_button.selected,
+.custom_position_none.best .best_button
+{
+    background-color: #2DAD33;
+    border-color: #2DAD33;
+    color: white;
+}
+
+.cbc_concept.worst .worst_button,
+.dual_response_none_button.would_not_button.selected,
+.custom_position_none.worst .worst_button
+{
+    background-color: #C40606;
+    border-color: #C40606;
+    color: white;
+}
+
+        .cbc_concept.worst .worst_button .input_label.show_when_selected
+        {
+            display: block;
+        }
+
+.cbc_response_cell input[type="radio"]
+{
+    display: none;
+}
+
+.cbc_concept .selected_image,
+.custom_position_none .selected_image
+{
+    display: none;
+}
+
+.task_select_button .input_label
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*This is for free format CBC*/
+.task_select_button .input_cell
+{
+    display: none;
+}
+
+.cbc_concept.best .best_button .selected_image,
+.custom_position_none.best .best_button .selected_image,
+.cbc_concept.worst .worst_button .selected_image,
+.custom_position_none.worst .worst_button .selected_image
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.cbc_concept.best .best_button .input_label,
+.custom_position_none.best .best_button .input_label,
+.cbc_concept.worst .worst_button .input_label,
+.custom_position_none.worst .worst_button .input_label
+{
+    display: none;
+}
+
+.cbc_concept.best .best_button .selected_image,
+.custom_position_none.best .best_button .selected_image
+{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='1395.32 536.393 28.287 21.213'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cg id='Best_icon' data-name='Best icon' transform='translate%28-130 2%29'%3E%3Crect id='Rectangle_6' data-name='Rectangle 6' class='cls-1' width='6' height='24' transform='translate%281549.364 534.393%29 rotate%2845%29'/%3E%3Crect id='Rectangle_7' data-name='Rectangle 7' class='cls-1' width='6' height='16' transform='translate%281540.876 551.364%29 rotate%28135%29'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.cbc_concept.worst .worst_button .selected_image,
+.custom_position_none.worst .worst_button .selected_image
+{
+    background-image: url("data:image/svg+xml,%0A%3Csvg id='Worst_icon' data-name='Worst icon' xmlns='http://www.w3.org/2000/svg' viewBox='1522.393 534.393 21.213 21.213'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Crect id='Rectangle_6' data-name='Rectangle 6' class='cls-1' width='6' height='24' transform='translate%281539.364 534.393%29 rotate%2845%29'/%3E%3Crect id='Rectangle_7' data-name='Rectangle 7' class='cls-1' width='6' height='24' transform='translate%281543.607 551.364%29 rotate%28135%29'/%3E%3C/svg%3E");
+}
+
+.cbc_concept.best .task_select_button .selected_image .best,
+.cbc_concept.worst .task_select_button .selected_image .worst
+{
+    display: block;
+}
+
+.shelf_display .lower_none .task_select_button
+{
+    max-width: 200px;
+    width:100%;
+}
+
+/*This is for free format CBC*/
+
+.task_select_button .input_cell
+{
+    display: none;
+}
+
+.cbc_concept.best .task_select_button .input_label.show_when_selected
+{
+    display: block;
+}
+
+.cbc_concept.lower_none .cbc_cell
+{
+    justify-content: space-evenly;
+}
+
+.cbc_concept.best_worst.lower_none .cbc_cell.cbc_response_cell {
+    flex-direction: column;
+}
+
+.cbc_concept.lower_none.dual_response_none .cbc_response_cell {
+    flex-direction: row;
+}
+
+.dual_response_none_question
+{
+    font-size: 16px;
+    color: #3c3c3c;
+}
+
+.lower_none .level {
+    text-align: center;
+}
+
+.cbc .cbc_totals_label.left
+{
+    font-weight: bold;
+}
+
+.cbc .cbc_totals_box
+{
+    padding: 24px 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+.cbc_totals_box.fixed_total
+{
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 -1px 6px #444444;
+}
+
+.cbc .cbc_total
+{
+    padding: 0 3px;
+}
+
+
+/*shelf facing display*/
+
+
+.shelf_display .cbc_task
+{
+    display: block;
+}
+
+.shelf_display .shelf_container
+{
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.shelf_display .cbc_concept
+{
+    position: relative;
+    z-index: 99;
+    box-shadow: none;
+    margin-top: 18px;
+    /*this somehow fixes a bug in IE11 - Internet Explorer*/
+    min-width: 1px;
+    border-width: 0;
+    background-color: transparent;
+}
+
+.shelf_display .cbc_cell.att_1
+{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 0;
+}
+
+    .shelf_display .cbc_cell.att_1 .level
+    {
+        /*this somehow fixes a bug in IE11 - Internet Explorer*/
+        min-width: 1px;
+    }
+
+.shelf_display .cbc_cell.att_2
+{
+    padding-top: 18px;
+}
+
+.shelf_display .cbc_cell
+{
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.cbc_shelf
+{
+    position: absolute;
+}
+
+.shelf_top
+{
+    width: 810px;
+    position: relative;
+    z-index: 2;
+    border-bottom: 25px solid #EBEBEB;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+.shelf_edge
+{
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, .4);
+}
+
+.shelf_display .cbc_concept.lower_none
+{
+    margin-top: 36px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .4);
+}
+
+    .shelf_display .cbc_concept.lower_none .cbc_cell
+    {
+        padding-top: 18px;
+    }
+
+.page_header
+{
+	display: flex;
+	align-items: center;
+}
+
+.header_logo 
+{
+	display: flex;
+	align-items: center;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.header_logo img 
+{
+	max-height: 50px;
+}
+
+/*Start mobile style*/
+
+
+@media only screen and (max-width: 800px)
+{
+    body
+    {
+        font-size: 14px;
+        margin: 0;
+        /* Amount of negative space around the outside of the body */
+        padding: 0;
+        /* Amount of negative space around the inside of the body */
+    }
+
+    /*this is to prevent iOS from zooming in on text inputs and dropdowns*/
+    input, select, textarea {
+        font-size: 16px;
+    }
+
+    .question
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .question,
+    .page_error,
+    .submit_div
+    {
+        margin-bottom: 27px;
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .page_error,
+    .submit_div,
+    .header1,
+    .header2,
+    .page_footer,
+    .question_body
+    {
+        padding: 3px 12px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #invisible_submit
+    {
+        display: none;
+    }
+
+    .graphical_next_button,
+    .graphical_previous_button
+    {
+        width: 72px;
+        height: 54px;
+    }
+
+    .button_highlight
+    {
+        background-color: #e2e2e2;
+    }
+
+    .page_header
+    {
+        margin: 0;
+        font-size: 20px;
+        text-align: center;
+        width: auto;
+        line-height: 1.3em;
+    }
+
+    .page_footer
+    {
+        width: auto;
+    }
+    /*Last textarea for Free Format*/
+    .openend textarea,
+    .options textarea,
+    .grid textarea,
+    textarea
+    {
+        width: 97%;
+    }
+
+    .text_box
+    {
+        width: 97%;
+    }
+
+    .grid .text_box
+    {
+        width: 100%;
+    }
+
+    .indent
+    {
+        margin-left: 0px;
+    }
+
+    .progress_bar
+    {
+        width: 90%;
+    }
+
+    .unranked_container
+    {
+        margin-right: 20px;
+    }
+
+    .rank_drag_container
+    {
+        margin-top: 20px;
+    }
+
+    input
+    {
+        max-width: 100%;
+    }
+
+    .question.select .response_body
+    {
+        display: block;
+    }
+
+    .question.select .response_column
+    {
+        float: none;
+        display: block;
+    }
+
+    .question.select .response_row
+    {
+        width: auto;
+    }
+
+    /*new CBC*/
+    .cbc .question_body
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .question.cbc
+	{
+		margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .dual_response_none
+    {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .mobile_vertical
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 12px;
+    }
+
+        .mobile_vertical .cbc_totals_box
+        {
+            width: 100%;
+        }
+
+        .mobile_horizontal .task_controls,
+        .mobile_vertical .task_controls
+        {
+            display: block;
+        }
+
+    .mobile_horizontal .cbc_concept
+    {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .mobile_vertical .task_controls
+    {
+        display: flex;
+        width: 5%;
+        max-width: 15px;
+        margin-bottom: 0;
+    }
+
+    .mobile_vertical .cbc_concept
+    {
+        margin-top: 0;
+        margin-left: 10px !important;
+        max-width: 400px;
+    }
+
+    .mobile_vertical .cbc_concept,
+    .mobile_vertical .task_nav
+    {
+        margin-bottom: 20px;
+    }
+
+    .mobile_vertical .fixed_nav,
+    .mobile_horizontal .fixed_nav
+    {
+        position: fixed;
+    }
+
+    .mobile_vertical .fixed_nav
+    {
+        top: 20px;
+    }
+
+    .mobile_horizontal .fixed_nav,
+    .test_mode.test_frame .mobile_horizontal .fixed_nav
+    {
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 99;
+        box-shadow: 0 1px 6px #444444;
+    }
+
+    .test_mode .mobile_horizontal .fixed_nav
+    {
+        top: 43px;
+    }
+
+    .fixed_nav.absolute_nav
+    {
+        position: absolute;
+    }
+
+    .mobile_vertical .task_controls.flex_end
+    {
+        align-items: flex-end;
+    }
+
+    .mobile_vertical .cbc_task
+    {
+        width: 90%;
+        flex-grow: 1;
+        max-width: 400px;
+    }
+
+    .mobile_horizontal .cbc_task
+    {
+        display: block;
+    }
+
+    .mobile_horizontal .attribute_label_column,
+    .mobile_vertical .attribute_label_column
+    {
+        display: none;
+    }
+
+    .mobile_horizontal .mobile_attribute_label,
+    .mobile_vertical .mobile_attribute_label
+    {
+        display: block;
+        padding-bottom: 3px;
+    }
+
+    .mobile_vertical .cbc_concept
+    {
+        width: 100% !important;
+    }
+
+    .lower_none .level {
+        text-align: left;
+    }
+
+    .no_mobile .lower_none .level {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 700px)
+{
+	.acapair .or_header, .cva .or_header 
+	{
+		margin: auto 0;
+	}
+
+	.acapair, .cva
+	{
+		min-width: 700px;
+	}
+}
+
+@media only screen and (max-width: 400px)
+{
+    .rank_drag_container
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.sr-only
+{
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+.using-keyboard :focus {
+    outline: 1px solid black !important;
+}
